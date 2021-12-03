@@ -1,0 +1,161 @@
+// Projects
+.projects {
+  padding-top: $padding-vertical--medium;
+  @include breakpoint(laptop) {
+    padding-top: $padding-vertical--big;
+  }
+  .project {
+    @include breakpoint(laptop) {
+      display: flex;
+    }
+    h2 {
+      @include breakpoint(laptop) {
+        font-size: calc(20px + 2vw);
+      }
+    }
+    &:after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 30px;
+      width: 80px;
+      height: 80px;
+      display: none;
+      font-family: $font--big;
+      @include breakpoint(laptop) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    @for $i from 1 through 6 {
+      &:nth-child(6n + #{$i}) {
+        &:after {
+          content: "0" + $i;
+        }
+      }
+    }
+    &:not(:first-of-type) {
+      margin-top: $padding-vertical--medium;
+    }
+    a.project-img {
+      width: 100%;
+      overflow: hidden;
+
+      &:hover img {
+        @include breakpoint(laptop) {
+          transform: scale(1.05);
+        }
+      }
+      img {
+        max-height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        @extend %transition;
+      }
+      @include breakpoint(laptop) {
+        width: 50%;
+        img {
+          max-height: 70vh;
+        }
+      }
+    }
+    .info {
+      padding: 30px;
+      border-top-width: 0px;
+      @include breakpoint(laptop) {
+        border-left: none;
+        border-top-width: 1px;
+        padding: 50px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .project-details {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          li {
+            display: inline;
+            font-family: $font--small;
+            margin-right: 5px;
+            @include breakpoint(laptop) {
+              margin-right: 10px;
+            }
+            &.dot {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      p {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        max-width: 100%;
+        @include breakpoint(laptop) {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .project {
+    &:after {
+      color: $white;
+      @include breakpoint(laptop) {
+        border-left: 1px solid rgba($soft-black, 0.4);
+        border-bottom: 1px solid rgba($soft-black, 0.4);
+      }
+    }
+    .info {
+      background: $dark--background;
+      border: 1px solid rgba($soft-black, 0.4);
+      .project-details {
+        ul {
+          li {
+            color: $white;
+            &.dot {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (prefers-color-scheme: light) {
+  .project {
+    &:after {
+      color: $white;
+      @include breakpoint(laptop) {
+        color: $black;
+        border-left: 1px solid rgba($soft-black, 0.1);
+        border-bottom: 1px solid rgba($soft-black, 0.1);
+      }
+    }
+    .info {
+      background: $light--background;
+      border: 1px solid rgba($soft-black, 0.1);
+      .project-details {
+        ul {
+          li {
+            color: $soft-black;
+            opacity: 0.6;
+            @include breakpoint(laptop) {
+              opacity: 1;
+            }
+            &.dot {
+              color: $soft-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

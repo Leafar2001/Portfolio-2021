@@ -1,0 +1,24 @@
+// Main
+main {
+  padding-top: $padding-vertical--big;
+  padding-bottom: $padding-vertical--big;
+}
+
+// Container
+.container {
+  @extend %horizontal-padding;
+}
+
+// Sections
+section {
+  p {
+    margin-top: 20px;
+    @include breakpoint(tablet) {
+      margin-top: 30px;
+      max-width: 80%;
+    }
+    @include breakpoint(laptop) {
+      max-width: 40%;
+    }
+  }
+}

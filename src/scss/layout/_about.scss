@@ -1,0 +1,9 @@
+// About
+.about {
+  p:last-of-type {
+    margin-bottom: 20px;
+    @include breakpoint(tablet) {
+      margin-bottom: 30px;
+    }
+  }
+}

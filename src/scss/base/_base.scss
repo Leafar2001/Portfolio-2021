@@ -1,0 +1,107 @@
+// Base styling
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  &:after,
+  &:before {
+    box-sizing: border-box;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+// Body styling
+body,
+html {
+  width: 100%;
+  background: $body--bg;
+  // scroll-behavior: smooth;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+  }
+}
+
+// Scrollbars
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  @include border-radius(16px);
+}
+
+body::-webkit-scrollbar-track {
+  width: 4px;
+  background-clip: padding-box;
+  @include border-radius(16px);
+}
+
+@media (prefers-color-scheme: light) {
+  body::-webkit-scrollbar-thumb {
+    border: 8px solid rgba($black, 0);
+    background-color: rgba($black, 0.75);
+  }
+  body::-webkit-scrollbar-track {
+    background-color: rgba($black, 0.1);
+    border: 8px solid rgba($black, 0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body::-webkit-scrollbar-thumb {
+    border: 8px solid rgba($white, 0);
+    background-color: rgba($white, 0.75);
+  }
+  body::-webkit-scrollbar-track {
+    background-color: rgba($white, 0.1);
+    border: 8px solid rgba($white, 0);
+  }
+}
+
+// Firefox scrollbar
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-width: thin;
+  }
+}
+
+// Selection
+@media (prefers-color-scheme: dark) {
+  ::-moz-selection {
+    background: $white;
+    color: $black;
+  }
+
+  ::selection {
+    background: $white;
+    color: $black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  ::-moz-selection {
+    background: $black;
+    color: $white;
+  }
+
+  ::selection {
+    background: $black;
+    color: $white;
+  }
+}

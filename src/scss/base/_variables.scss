@@ -1,0 +1,64 @@
+// Imports
+@font-face {
+  font-family: "MadeTommy-Bold";
+  src: url("../../../src/fonts/made-tommy/made-tommy-bold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "MadeTommy-Regular";
+  src: url("../../../src/fonts/made-tommy/made-tommy-regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../../src/fonts/poppins/poppins-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../../src/fonts/poppins/poppins-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Averta-Bold";
+  src: url("../../../src/fonts/averta/averta-bold.woff2") format("woff2");
+}
+
+// Fonts
+$font--big: "Averta-Bold", sans-serif;
+$font--small: "Poppins-Regular", sans-serif;
+
+// Whites
+$white: #ffffff;
+$ghost-white: #f9faff;
+
+// Blacks
+$black: #14161a;
+$soft-black: #444446;
+$soft-grey: #777777;
+
+// Padding
+$padding-horizontal: 20vw; // Tablet and up
+$padding-horizontal--medium: 5vw; // Nav
+$padding-horizontal--small: 2em; // Mobile
+
+$padding-vertical--big: 25vh;
+$padding-vertical--medium: 10vh;
+$padding-vertical--small: 5vh;
+
+// Specific colors
+$body--bg: $ghost-white; // Fallback
+
+$light--text: $white;
+$dark--text: $black;
+
+$light--paragraph: $soft-grey;
+$dark--paragraph: $soft-black;
+
+$light--background: $ghost-white;
+$dark--background: $black;
+
+// Misc
+$nav-z-index: 9999;

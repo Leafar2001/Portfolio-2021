@@ -1,0 +1,198 @@
+// Flex items
+%flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+// Default box shadow
+%box-shadow {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.04), 0 6px 6px rgba(0, 0, 0, 0.06);
+}
+
+// Default border radius
+%border-radius {
+  @include border-radius(10px);
+}
+
+// Default transition
+%transition {
+  @include transition(all 0.2s ease);
+}
+
+// Default horizontal padding (container)
+%horizontal-padding {
+  padding-left: $padding-horizontal--small;
+  padding-right: $padding-horizontal--small;
+  @include breakpoint(laptop) {
+    padding-left: $padding-horizontal;
+    padding-right: $padding-horizontal;
+  }
+}
+
+// Card
+%card {
+  @extend %border-radius;
+  @extend %box-shadow;
+  background: $white;
+}
+
+// Images
+img,
+video,
+svg {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+// Cursor
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  opacity: 0.3;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  display: none;
+  @include breakpoint(laptop) {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .cursor {
+    background-color: $black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .cursor {
+    background-color: $white;
+  }
+}
+
+.hover {
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+  display: none;
+  @include breakpoint(laptop) {
+    display: block;
+  }
+}
+
+.cursor-container {
+  @extend %transition;
+  opacity: 0;
+  position: relative;
+  z-index: calc(#{$nav-z-index} + 1);
+}
+
+.visible {
+  opacity: 1;
+}
+
+// Hide cursor on MacOS & touch devices
+body.MAC {
+  .cursor {
+    display: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
+
+// Page transition
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: calc(#{$nav-z-index + 1});
+  pointer-events: none;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  &.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+  }
+  &.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #fader {
+    background-color: $light--background;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #fader {
+    background-color: $dark--background;
+  }
+}

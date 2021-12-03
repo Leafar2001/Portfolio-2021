@@ -1,0 +1,115 @@
+/* Header */
+header {
+  height: 90vh;
+  width: 100vw;
+  padding: 25vh 5vw;
+  @include breakpoint(mobileonly) {
+    height: auto;
+    background: linear-gradient(130deg, rgba(232, 50, 50, 0.65) 35%,rgba(230, 100, 29, 0.65) 60%,rgba(247, 130, 66, 0.65) 75%), url("../img/backgrounds/vlag.jpg");
+    background-size: cover;
+    background-position: center;
+    padding:15vh 5vw;
+  }
+  h1 {
+    font-size: 3.5vw;
+    color: $white;
+    margin-bottom: 0;
+    @include breakpoint(mobileonly) {
+      font-size: 7vw;
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    color: $white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 30px;
+    @include breakpoint(mobileonly) {
+      margin-top: 10px;
+    }
+  }
+  .col-md-6 {
+    padding-left: 0;
+  }
+  .gradient-background {
+    overflow: hidden;
+    transform: skewY(-5deg);
+    transform-origin: 0;
+    background: linear-gradient(130deg, rgba(232, 50, 50, 0.65) 35%,rgba(230, 100, 29, 0.65) 60%,rgba(247, 130, 66, 0.65) 75%), url("../img/backgrounds/vlag.jpg");
+    background-size: cover;
+    background-position:center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    border-bottom: 2px solid $primary-color;
+    @include breakpoint(mobileonly) {
+      display: none;
+    }
+  }
+  .col-md-4 {
+    padding-left: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 30px;
+    @extend %flexbox;
+    @include breakpoint(mobileonly) {
+      display: block;
+      margin-top: 0;
+    }
+
+    li.breedbandhelmond {
+      width: 320px;
+      height: 140px;
+      @include breakpoint(mobileonly) {
+        width: 80vw;
+        margin-top: 10px;
+      }
+    }
+
+    li {
+      background: #f9f9f9;
+      border-radius: 4px;
+      box-shadow: 0 0 10px $lighter-grey;
+      padding: 15px;
+      display: inline;
+      margin-right: 40px;
+      width: 230px;
+      height: 115px;
+      @include opacity(1);
+      @include transition(all 0.3s ease);
+
+      &:hover {
+        box-shadow: 0 0 20px $lighter-grey;
+        transform: translateY(-3px);
+      }
+      @include breakpoint(mobileonly) {
+        display: block;
+        margin-bottom: 40px;
+        width: 80vw;
+      }
+      .breedbandhelmond {
+        width: 261px;
+        height: 101px;
+        margin-top: 10px;
+        @include breakpoint(mobileonly) {
+          width: 183px;
+          height: 83px;
+          margin-top: 20px;
+        }
+      }
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        @include breakpoint(mobileonly) {
+          margin-bottom: 10px;
+        }
+      }
+}
+}
+}

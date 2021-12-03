@@ -1,0 +1,201 @@
+// Case studies
+.case {
+  .case-intro,
+  .case-description,
+  .case-details,
+  .image-full {
+    margin-bottom: $padding-vertical--medium;
+    @include breakpoint(laptop) {
+      margin-bottom: $padding-vertical--big;
+    }
+  }
+
+  .case-intro {
+    @include breakpoint(laptop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    img {
+      width: 100%;
+      @extend %border-radius;
+      @extend %box-shadow;
+      margin-bottom: $padding-vertical--medium;
+      @include breakpoint(laptop) {
+        margin-bottom: 0;
+        max-width: 40%;
+      }
+    }
+    .case-intro-description {
+      @include breakpoint(laptop) {
+        padding-top: 10%;
+        max-width: 50%;
+      }
+      h1 {
+        margin-bottom: 10px;
+        @include breakpoint(laptop) {
+          margin-bottom: $padding-vertical--medium;
+        }
+      }
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+          @include breakpoint(tablet) {
+            margin-bottom: 30px;
+          }
+        }
+        @include breakpoint(laptop) {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+
+  .case-description {
+    @include breakpoint(tablet) {
+      width: 70%;
+      margin-left: 15%;
+    }
+    h4,
+    h5 {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    p:not(:last-of-type) {
+      margin-bottom: $padding-vertical--medium;
+    }
+  }
+
+  .image-full {
+    img,
+    video {
+      @extend %border-radius;
+      @extend %box-shadow;
+      width: 100%;
+    }
+  }
+
+  .case-details {
+    padding: 20px;
+    @include breakpoint(tablet) {
+      display: flex;
+    }
+    @include breakpoint(laptop) {
+      padding: 50px;
+    }
+    .detail-group {
+      @include breakpoint(tablet) {
+        display: flex;
+        flex-direction: column;
+        &:first-of-type {
+          width: 30%;
+        }
+      }
+      &:last-of-type {
+        .detail {
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .detail {
+      width: 100%;
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 20px;
+        @include breakpoint(laptop) {
+          margin-bottom: 0;
+        }
+      }
+      h5,
+      p {
+        font-size: 16px;
+      }
+      h5 {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+  }
+  .next-project {
+    @include breakpoint(laptop) {
+      display: flex;
+      margin-top: $padding-vertical--big;
+    }
+    a {
+      width: 100%;
+      @extend %transition;
+      @include breakpoint(laptop) {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      div {
+        padding: 30px;
+        @include breakpoint(laptop) {
+          padding: 50px;
+        }
+        h3 {
+          word-break: break-word;
+          font-size: calc(15px + 2vw);
+        }
+        h4 {
+          font-size: calc(15px + 0.2vw);
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .case-details {
+    border: 1px solid rgba($soft-black, 0.4);
+    .detail p {
+      a {
+        color: $light--paragraph;
+      }
+    }
+  }
+  .next-project {
+    border: 1px solid rgba($soft-black, 0.4);
+    a {
+      &:hover {
+        background: rgba($soft-black, 0.1);
+      }
+    }
+    .previous {
+      border-bottom: 1px solid rgba($soft-black, 0.4);
+      @include breakpoint(laptop) {
+        border-right: 1px solid rgba($soft-black, 0.4);
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .case-details {
+    border: 1px solid rgba($soft-black, 0.1);
+    .detail p {
+      a {
+        color: $dark--paragraph;
+      }
+    }
+  }
+  .next-project {
+    border: 1px solid rgba($soft-black, 0.1);
+    a {
+      &:hover {
+        background: rgba($soft-black, 0.1);
+      }
+    }
+    .previous {
+      border-bottom: 1px solid rgba($soft-black, 0.1);
+      @include breakpoint(laptop) {
+        border-right: 1px solid rgba($soft-black, 0.1);
+        border-bottom: none;
+      }
+    }
+  }
+}
