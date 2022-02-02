@@ -1,9 +1,8 @@
 // Case studies
 .case {
   .case-intro,
-  .case-description,
-  .case-details,
-  .image-full {
+  .description-group,
+  .case-details {
     margin-bottom: $padding-vertical--medium;
     @include breakpoint(laptop) {
       margin-bottom: $padding-vertical--big;
@@ -51,27 +50,61 @@
     }
   }
 
-  .case-description {
-    @include breakpoint(tablet) {
-      width: 70%;
-      margin-left: 15%;
+  .description-group {
+    p {
+      &:first-of-type {
+        margin-top: 20px;
+      }
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
     }
-    h4,
-    h5 {
-      margin-bottom: 10px;
-      margin-top: 0;
+    @include breakpoint(tablet) {
+      p {
+        width: 80%;
+        margin-left: 5%;
+        &:first-of-type {
+          margin-top: $padding-vertical--medium;
+        }
+        &:last-of-type {
+          margin-bottom: calc(#{$padding-vertical--medium} * 1.5);
+        }
+      }
+    }
+    @include breakpoint(laptop) {
+      p {
+        width: 60%;
+        margin-left: 5%;
+      }
+    }
+    h1 {
+      margin-bottom: 0;
     }
     p:not(:last-of-type) {
-      margin-bottom: $padding-vertical--medium;
+      margin-bottom: 20px;
     }
   }
 
   .image-full {
+    &:not(:first-of-type) {
+      margin-top: $padding-vertical--medium;
+    }
     img,
     video {
       @extend %border-radius;
       @extend %box-shadow;
       width: 100%;
+    }
+    p.image-description {
+      width: 100%;
+      margin-left: 0;
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 0;
+      @include breakpoint(tablet) {
+        margin-top: 15px;
+      }
     }
   }
 
