@@ -117,7 +117,7 @@
   .icon-container {
     @include breakpoint(tablet) {
       display: flex;
-      width: 80%;
+      width: 95%;
       margin-left: 5%;
     }
     .item {
