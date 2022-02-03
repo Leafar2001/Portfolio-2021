@@ -1,8 +1,7 @@
 // Case studies
 .case {
   .case-intro,
-  .description-group,
-  .case-details {
+  .description-group {
     margin-bottom: $padding-vertical--medium;
     @include breakpoint(laptop) {
       margin-bottom: $padding-vertical--big;
@@ -83,66 +82,67 @@
     p:not(:last-of-type) {
       margin-bottom: 20px;
     }
-  }
-
-  .image-full {
-    &:not(:first-of-type) {
-      margin-top: $padding-vertical--medium;
-    }
-    img,
-    video {
-      @extend %border-radius;
-      @extend %box-shadow;
-      width: 100%;
-    }
-    p.image-description {
-      width: 100%;
-      margin-left: 0;
-      font-size: 0.8em;
-      text-align: center;
-      margin-top: 5px;
-      margin-bottom: 0;
-      @include breakpoint(tablet) {
-        margin-top: 15px;
+    .case-images {
+      :not(:first-child) {
+        margin-top: $padding-vertical--medium;
+      }
+      :first-child {
+        margin-top: $padding-vertical--medium;
+        @include breakpoint(tablet) {
+          margin-top: 0;
+        }
+      }
+      .image-full {
+        img,
+        video {
+          @extend %border-radius;
+          @extend %box-shadow;
+          width: 100%;
+        }
+        p.image-description {
+          width: 100%;
+          margin-left: 0;
+          font-size: 0.8em;
+          text-align: center;
+          margin-top: 5px;
+          margin-bottom: 0;
+          @include breakpoint(tablet) {
+            margin-top: 15px;
+          }
+        }
       }
     }
   }
 
-  .case-details {
-    padding: 20px;
+  .icon-container {
     @include breakpoint(tablet) {
       display: flex;
+      width: 80%;
+      margin-left: 5%;
     }
-    @include breakpoint(laptop) {
-      padding: 50px;
-    }
-    .detail-row {
+    .item {
+      margin-top: $padding-vertical--medium;
       @include breakpoint(tablet) {
-        display: flex;
-        &:first-of-type {
-          width: 50%;
-        }
-      }
-    }
-    .detail {
-      width: 100%;
-      margin-bottom: 20px;
-      &:last-of-type {
-        margin-bottom: 20px;
-        @include breakpoint(laptop) {
-          margin-bottom: 0;
-        }
-      }
-      h5,
-      p {
-        font-size: 16px;
-      }
-      h5 {
-        margin-bottom: 0;
         margin-top: 0;
+      }
+      p {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        @include breakpoint(tablet) {
+          width: 80%;
+        }
+      }
+      h6 {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        @include breakpoint(tablet) {
+          margin-bottom: 20px;
+        }
       }
     }
   }
+
   .next-project {
     @include breakpoint(laptop) {
       display: flex;
@@ -174,14 +174,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .case-details {
-    // border: 1px solid rgba($soft-black, 0.4);
-    .detail p {
-      a {
-        color: $light--paragraph;
-      }
-    }
-  }
   .next-project {
     border: 1px solid rgba($soft-black, 0.4);
     a {
@@ -200,14 +192,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .case-details {
-    // border: 1px solid rgba($soft-black, 0.1);
-    .detail p {
-      a {
-        color: $dark--paragraph;
-      }
-    }
-  }
   .next-project {
     border: 1px solid rgba($soft-black, 0.1);
     a {
