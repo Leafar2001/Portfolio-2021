@@ -39,6 +39,9 @@ $black: #14161a;
 $soft-black: #444446;
 $soft-grey: #777777;
 
+// Other colors
+$red: #f32b4c;
+
 // Padding
 $padding-horizontal: 15vw; // Tablet and up
 $padding-horizontal--medium: 4vw; // Nav
@@ -49,6 +52,8 @@ $padding-vertical--medium: 10vh;
 $padding-vertical--small: 5vh;
 
 // Specific colors
+$primary--color: $red;
+
 $body--bg: $ghost-white; // Fallback
 
 $light--text: $white;

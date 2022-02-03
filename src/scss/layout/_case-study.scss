@@ -116,19 +116,11 @@
     @include breakpoint(laptop) {
       padding: 50px;
     }
-    .detail-group {
+    .detail-row {
       @include breakpoint(tablet) {
         display: flex;
-        flex-direction: column;
         &:first-of-type {
-          width: 30%;
-        }
-      }
-      &:last-of-type {
-        .detail {
-          &:last-of-type {
-            margin-bottom: 0;
-          }
+          width: 50%;
         }
       }
     }
@@ -183,7 +175,7 @@
 
 @media (prefers-color-scheme: dark) {
   .case-details {
-    border: 1px solid rgba($soft-black, 0.4);
+    // border: 1px solid rgba($soft-black, 0.4);
     .detail p {
       a {
         color: $light--paragraph;
@@ -209,7 +201,7 @@
 
 @media (prefers-color-scheme: light) {
   .case-details {
-    border: 1px solid rgba($soft-black, 0.1);
+    // border: 1px solid rgba($soft-black, 0.1);
     .detail p {
       a {
         color: $dark--paragraph;

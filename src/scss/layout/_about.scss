@@ -1,9 +1,36 @@
 // About
 .about {
-  p:last-of-type {
-    margin-bottom: 20px;
+}
+.skills,
+.approach {
+  margin-top: $padding-vertical--medium;
+  @include breakpoint(laptop) {
+    margin-top: $padding-vertical--big;
+  }
+  h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+.skills-container,
+.approach-container {
+  @include breakpoint(laptop) {
+    display: flex;
+  }
+  .item {
+    margin-top: $padding-vertical--small;
     @include breakpoint(tablet) {
-      margin-bottom: 30px;
+      margin-top: $padding-vertical--medium;
+    }
+    p {
+      max-width: 100%;
+      @include breakpoint(laptop) {
+        max-width: 90%;
+      }
+      margin-top: 10px;
+    }
+    h6 {
+      margin-top: 5px;
     }
   }
 }

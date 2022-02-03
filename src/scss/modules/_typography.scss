@@ -12,7 +12,7 @@ h1 {
   line-height: 1.4em;
   font-size: calc(20px + 2.2vw);
   @include breakpoint(tablet) {
-    font-size: calc(15px + 4.5vw);
+    font-size: calc(18px + 5vw);
   }
   @include breakpoint(laptop) {
     letter-spacing: 1px;
@@ -38,21 +38,21 @@ h3 {
 h4 {
   font-size: calc(20px + 0.8vw);
   @include breakpoint(tablet) {
-    font-size: calc(30px + 1.2vw);
+    font-size: calc(20px + 1.2vw);
   }
 }
 
 h5 {
-  font-size: calc(20px + 0.8vw);
+  font-size: calc(18px + 0.8vw);
   @include breakpoint(tablet) {
-    font-size: calc(30px + 1.2vw);
+    font-size: calc(20px + 0.8vw);
   }
 }
 
 h6 {
-  font-size: calc(20px + 0.8vw);
+  font-size: calc(16px + 0.4vw);
   @include breakpoint(tablet) {
-    font-size: calc(30px + 1.2vw);
+    font-size: calc(20px + 0.6vw);
   }
 }
 
@@ -76,11 +76,6 @@ a {
   }
 }
 
-span.subtitle {
-  opacity: 0.3;
-  font-family: $font--big;
-}
-
 @media (prefers-color-scheme: light) {
   body {
     background-color: $light--background;
@@ -91,8 +86,7 @@ span.subtitle {
   h4,
   h5,
   h6,
-  a,
-  span.subtitle {
+  a {
     color: $dark--text;
   }
   p {
@@ -113,8 +107,7 @@ span.subtitle {
   h4,
   h5,
   h6,
-  a,
-  span.subtitle {
+  a {
     color: $light--text;
   }
   p {

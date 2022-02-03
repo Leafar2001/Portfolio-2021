@@ -196,3 +196,42 @@ body.MAC {
     background-color: $dark--background;
   }
 }
+
+// Icons
+.circular-icon {
+  @include border-radius(60px);
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint(laptop) {
+    @include border-radius(80px);
+    width: 80px;
+    height: 80px;
+  }
+  i {
+    font-size: 30px;
+    @include breakpoint(laptop) {
+      font-size: 40px;
+    }
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .circular-icon {
+    background: rgba($white, 0.1);
+    i {
+      color: $white;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .circular-icon {
+    background: rgba($black, 0.1);
+    i {
+      color: $black;
+    }
+  }
+}
