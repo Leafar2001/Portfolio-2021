@@ -1,5 +1,6 @@
 // Case studies
-.case {
+.case,
+.internship {
   .case-intro,
   .description-group {
     margin-bottom: $padding-vertical--medium;
@@ -206,5 +207,11 @@
         border-bottom: none;
       }
     }
+  }
+}
+
+.internship {
+  section {
+    margin-bottom: $padding-vertical--big;
   }
 }
