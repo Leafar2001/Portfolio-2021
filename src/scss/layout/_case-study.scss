@@ -1,6 +1,6 @@
 // Case studies
 .case,
-.internship {
+body.internship {
   .case-intro,
   .description-group {
     margin-bottom: $padding-vertical--medium;
@@ -51,7 +51,16 @@
   }
 
   .description-group {
-    p .internship--design-challenge {
+    p {
+      margin-top: 20px;
+      @include breakpoint(tablet) {
+        margin-top: 30px;
+        max-width: 80%;
+      }
+      @include breakpoint(laptop) {
+        max-width: 40%;
+      }
+
       &:first-of-type {
         margin-top: 20px;
       }
@@ -60,8 +69,7 @@
       }
     }
     @include breakpoint(tablet) {
-      p,
-      .internship--design-challenge {
+      p {
         width: 80%;
         margin-left: 5%;
         &:first-of-type {
@@ -73,8 +81,7 @@
       }
     }
     @include breakpoint(laptop) {
-      p,
-      .internship--design-challenge {
+      p {
         width: 60%;
         margin-left: 5%;
       }
@@ -104,11 +111,13 @@
         }
         p.image-description {
           width: 100%;
-          margin-left: 0;
           font-size: 0.8em;
           text-align: center;
           margin-top: 5px;
           margin-bottom: 0;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
           @include breakpoint(tablet) {
             margin-top: 15px;
           }
@@ -133,7 +142,10 @@
         margin-top: 0;
         width: 100%;
         @include breakpoint(tablet) {
-          width: 80%;
+          max-width: 80%;
+        }
+        @include breakpoint(laptop) {
+          max-width: 80%;
         }
       }
       h6 {
