@@ -31,11 +31,18 @@ body.internship {
 
   .side--nav {
     position: fixed;
-    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    overflow-y: scroll;
     display: none;
     align-items: center;
+    top: 0;
+    bottom: 0;
     justify-content: center;
     width: 20vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
     @include breakpoint(tablet) {
       display: flex;
     }
@@ -45,18 +52,20 @@ body.internship {
       margin: 0;
       li {
         margin-top: 10px;
-        margin-bottom: 10px;
         a {
           font-family: $font--small;
-          margin-left: 20px;
-          &.bigger--link {
+          margin-left: 10px;
+        }
+        &.bigger--link {
+          a {
             font-weight: bold;
             font-size: 1.2em;
             margin-left: 0;
           }
+          margin-top: 20px;
         }
         &.back-to-top {
-          margin-top: 50px;
+          margin-top: 80px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -119,6 +128,9 @@ body.internship {
         }
       }
     }
+  }
+  .side--nav::-webkit-scrollbar {
+    display: none;
   }
 
   .internship--design-challenge {
