@@ -102,8 +102,14 @@ svg {
   opacity: 1;
 }
 
-// Hide cursor on MacOS & touch devices
-body.MAC {
+// Hide cursor on Safari & touch devices
+// body.MAC {
+//   .cursor {
+//     display: none;
+//   }
+// }
+
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   .cursor {
     display: none;
   }

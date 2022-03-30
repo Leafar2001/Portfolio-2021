@@ -51,7 +51,7 @@
   }
 
   .description-group {
-    p {
+    p .internship--design-challenge {
       &:first-of-type {
         margin-top: 20px;
       }
@@ -60,7 +60,8 @@
       }
     }
     @include breakpoint(tablet) {
-      p {
+      p,
+      .internship--design-challenge {
         width: 80%;
         margin-left: 5%;
         &:first-of-type {
@@ -72,7 +73,8 @@
       }
     }
     @include breakpoint(laptop) {
-      p {
+      p,
+      .internship--design-challenge {
         width: 60%;
         margin-left: 5%;
       }
@@ -207,11 +209,5 @@
         border-bottom: none;
       }
     }
-  }
-}
-
-.internship {
-  section {
-    margin-bottom: $padding-vertical--big;
   }
 }

@@ -22,11 +22,11 @@ if ("serviceWorker" in navigator) {
   console.log("Browser: I don't support Service Workers :(");
 }
 
-// Check if browser is opened on MacOS
-if (navigator.platform.match("Mac") !== null) {
-  // Add MAC class to body if true
-  document.body.setAttribute("class", document.body.className + " MAC");
-}
+// // Check if browser is opened on MacOS
+// if (navigator.platform.match("Mac") !== null) {
+//   // Add MAC class to body if true
+//   document.body.setAttribute("class", document.body.className + " MAC");
+// }
 
 // Init AOS
 AOS.init();
