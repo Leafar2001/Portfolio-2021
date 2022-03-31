@@ -35,31 +35,38 @@ body.internship {
       &:first-of-type {
         margin-top: 20px;
       }
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+      &.single--paragraph {
+        margin-top: $padding-vertical--medium;
+      }
+      @include breakpoint(tablet) {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .case-images {
+      :first-child {
+        margin-top: $padding-vertical--medium;
+      }
     }
   }
 
   .intro {
     padding-top: $padding-vertical--big;
+    margin-bottom: $padding-vertical--big;
     p {
       margin-top: 20px;
       @include breakpoint(tablet) {
         margin-top: 30px;
-        max-width: 80%;
+        max-width: 60vw;
       }
       @include breakpoint(laptop) {
-        max-width: 40%;
+        max-width: 30vw;
       }
     }
-  }
-
-  .icon-container {
-    margin-left: 0;
-    margin-top: $padding-vertical--medium;
-    width: 100%;
-  }
-
-  section {
-    margin-bottom: $padding-vertical--big;
   }
 
   .side--nav {
@@ -86,6 +93,9 @@ body.internship {
       margin: 0;
       li {
         margin-top: 10px;
+        &:first-of-type {
+          margin-top: 0;
+        }
         a {
           font-family: $font--small;
           margin-left: 10px;
@@ -94,74 +104,15 @@ body.internship {
           @include transition(all 0.2s ease);
         }
         &.bigger--link {
+          &:first-of-type {
+            margin-top: 0;
+          }
           a {
             font-weight: bold;
             font-size: 1.1em;
             margin-left: 0;
           }
-          margin-top: 20px;
-        }
-        &.back-to-top {
-          margin-top: 80px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 60px;
-          height: 60px;
-          a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            width: 60px;
-            height: 60px;
-            margin-left: 0;
-            @include border-radius(50%);
-          }
-        }
-        &.logo {
-          display: flex;
-          align-items: center;
-          margin-bottom: 50px;
-          a {
-            margin-left: 0;
-          }
-          svg {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            overflow: visible;
-            @media (prefers-color-scheme: light) {
-              &.logo-black {
-                display: inline-block;
-              }
-              &.logo-white {
-                display: none;
-              }
-            }
-            @media (prefers-color-scheme: dark) {
-              &.logo-black {
-                display: none;
-              }
-              &.logo-white {
-                display: inline-block;
-              }
-            }
-
-            &:hover {
-              path#Path_3 {
-                transform: translateY(-90px);
-              }
-              path#Path_4 {
-                transform: translateY(-70px);
-              }
-            }
-            path {
-              @extend %transition;
-              position: relative;
-            }
-          }
+          margin-top: 30px;
         }
       }
     }
@@ -171,6 +122,30 @@ body.internship {
   }
 
   .sub-group {
+    margin-top: $padding-vertical--medium;
+  }
+
+  section {
+    margin-bottom: $padding-vertical--big;
+  }
+
+  .back-to-top {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      margin-left: 0;
+      @include border-radius(50%);
+    }
   }
 
   @media (prefers-color-scheme: dark) {
@@ -178,17 +153,17 @@ body.internship {
       border-right: 1px solid rgba($soft-black, 0.4);
       ul {
         li {
-          &.back-to-top {
-            a {
-              border: 2px solid rgba($soft-black, 0.4);
-            }
-          }
           a {
             &.active {
               background: rgba($white, 0.15);
             }
           }
         }
+      }
+    }
+    .back-to-top {
+      a {
+        border: 1px solid rgba($soft-black, 0.4);
       }
     }
   }
@@ -198,17 +173,17 @@ body.internship {
       border-right: 1px solid rgba($soft-black, 0.1);
       ul {
         li {
-          &.back-to-top {
-            a {
-              border: 2px solid rgba($soft-black, 0.1);
-            }
-          }
           a {
             &.active {
               background: rgba($soft-black, 0.1);
             }
           }
         }
+      }
+    }
+    .back-to-top {
+      a {
+        border: 1px solid rgba($soft-black, 0.1);
       }
     }
   }

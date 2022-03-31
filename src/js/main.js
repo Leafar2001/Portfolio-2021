@@ -159,14 +159,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // });
 
 // Internship sidenav current section indicator
-const sections = document.querySelectorAll("section");
-console.log(sections);
+const sections = document.querySelectorAll(".internship section");
 const navLi = document.querySelectorAll(".side--nav ul li a");
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 100) {
+    if (pageYOffset >= sectionTop - 150) {
       current = section.getAttribute("id");
     }
   });
