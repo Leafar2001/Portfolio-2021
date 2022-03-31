@@ -1,21 +1,9 @@
 // About
-.about {
-  p {
-    margin-top: 20px;
-    @include breakpoint(tablet) {
-      margin-top: 30px;
-      max-width: 60vw;
-    }
-    @include breakpoint(laptop) {
-      max-width: 30vw;
-    }
-  }
-}
 .skills,
 .approach {
-  margin-top: $padding-vertical--medium;
+  margin-top: $padding-vertical--md;
   @include breakpoint(laptop) {
-    margin-top: $padding-vertical--big;
+    margin-top: $padding-vertical--lg;
   }
   h6 {
     margin-bottom: 0;
@@ -28,9 +16,9 @@
     display: flex;
   }
   .item {
-    margin-top: $padding-vertical--small;
+    margin-top: $padding-vertical--sm;
     @include breakpoint(tablet) {
-      margin-top: $padding-vertical--medium;
+      margin-top: $padding-vertical--md;
     }
     p {
       max-width: 100%;

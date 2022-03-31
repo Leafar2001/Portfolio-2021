@@ -3,9 +3,9 @@
 body.internship {
   .case-intro,
   .description-group {
-    margin-bottom: $padding-vertical--medium;
+    margin-bottom: $padding-vertical--md;
     @include breakpoint(laptop) {
-      margin-bottom: $padding-vertical--big;
+      margin-bottom: $padding-vertical--lg;
     }
   }
 
@@ -19,7 +19,7 @@ body.internship {
       width: 100%;
       @extend %border-radius;
       @extend %box-shadow;
-      margin-bottom: $padding-vertical--medium;
+      margin-bottom: $padding-vertical--md;
       @include breakpoint(laptop) {
         margin-bottom: 0;
         max-width: 40%;
@@ -33,7 +33,7 @@ body.internship {
       h1 {
         margin-bottom: 10px;
         @include breakpoint(laptop) {
-          margin-bottom: $padding-vertical--medium;
+          margin-bottom: $padding-vertical--md;
         }
       }
       p {
@@ -52,46 +52,25 @@ body.internship {
 
   .description-group {
     p {
-      margin-top: 20px;
-      &:first-of-type {
-        margin-top: 20px;
-      }
       &:last-of-type {
         margin-bottom: 20px;
       }
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
       @include breakpoint(tablet) {
-        margin-top: 30px;
-        max-width: 60vw;
-        margin-left: 5%;
         &:first-of-type {
-          margin-top: $padding-vertical--medium;
+          margin-top: $padding-vertical--md;
         }
         &:last-of-type {
-          margin-bottom: calc(#{$padding-vertical--medium} * 1.5);
+          margin-bottom: calc(#{$padding-vertical--md} * 1.5);
         }
-      }
-      @include breakpoint(laptop) {
-        max-width: 40vw;
       }
     }
     h1 {
       margin-bottom: 0;
     }
-    p:not(:last-of-type) {
-      margin-bottom: 20px;
-    }
     .case-images {
-      margin-top: $padding-vertical--medium;
-      @include breakpoint(tablet) {
-        margin-top: 0;
-      }
-      .image-double-container,
-      .image-full {
-        margin-top: $padding-vertical--medium;
-        &:first-of-type {
-          margin-top: 0;
-        }
-      }
       .image-half,
       .image-full {
         p.image-description {
@@ -125,10 +104,9 @@ body.internship {
             }
           }
           &:nth-of-type(2) {
-            margin-top: $padding-vertical--medium;
+            margin-top: $padding-vertical--md;
             @include breakpoint(laptop) {
               padding-left: 20px;
-              margin-top: 0;
             }
           }
           margin: 0;
@@ -160,7 +138,7 @@ body.internship {
       margin-left: 5%;
     }
     .item {
-      margin-top: $padding-vertical--medium;
+      margin-top: $padding-vertical--md;
       @include breakpoint(tablet) {
         margin-top: 0;
       }
@@ -188,7 +166,7 @@ body.internship {
   .next-project {
     @include breakpoint(laptop) {
       display: flex;
-      margin-top: $padding-vertical--big;
+      margin-top: $padding-vertical--lg;
     }
     a {
       width: 100%;
@@ -246,6 +224,162 @@ body.internship {
       @include breakpoint(laptop) {
         border-right: 1px solid rgba($soft-black, 0.1);
         border-bottom: none;
+      }
+    }
+  }
+}
+
+// Internship
+body.internship {
+  main.internship {
+    padding-top: 0;
+  }
+
+  .intro {
+    padding-top: $padding-vertical--lg;
+  }
+
+  .container {
+    width: 100vw;
+    margin-left: 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    @include breakpoint(tablet) {
+      margin-left: 20vw;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      width: 80vw;
+    }
+  }
+
+  h1 {
+    @include breakpoint(tablet) {
+      font-size: calc(18px + 4vw);
+    }
+  }
+
+  .description-group {
+    p {
+      &:first-of-type {
+        margin-top: 20px;
+      }
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+      @include breakpoint(tablet) {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .side--nav {
+    position: fixed;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    overflow-y: scroll;
+    display: none;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    min-width: 20vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    @include breakpoint(tablet) {
+      display: flex;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin-top: 10px;
+        &:first-of-type {
+          margin-top: 0;
+        }
+        a {
+          font-family: $font--small;
+          margin-left: 10px;
+          padding: 6px 10px;
+          border-radius: 6px;
+          @include transition(all 0.2s ease);
+        }
+        &.bigger--link {
+          &:first-of-type {
+            margin-top: 0;
+          }
+          a {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-left: 0;
+          }
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .side--nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      margin-left: 0;
+      @include border-radius(50%);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .side--nav {
+      border-right: 1px solid rgba($soft-black, 0.4);
+      ul {
+        li {
+          a {
+            &.active {
+              background: rgba($white, 0.15);
+            }
+          }
+        }
+      }
+    }
+    .back-to-top {
+      a {
+        border: 1px solid rgba($soft-black, 0.4);
+      }
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .side--nav {
+      border-right: 1px solid rgba($soft-black, 0.1);
+      ul {
+        li {
+          a {
+            &.active {
+              background: rgba($soft-black, 0.1);
+            }
+          }
+        }
+      }
+    }
+    .back-to-top {
+      a {
+        border: 1px solid rgba($soft-black, 0.1);
       }
     }
   }

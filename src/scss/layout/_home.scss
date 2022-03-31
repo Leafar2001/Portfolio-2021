@@ -1,17 +1,4 @@
 // Home
-.home {
-  p {
-    margin-top: 20px;
-    @include breakpoint(tablet) {
-      margin-top: 30px;
-      max-width: 60vw;
-    }
-    @include breakpoint(laptop) {
-      max-width: 30vw;
-    }
-  }
-}
-
 .scroll-down {
   display: none;
   @include breakpoint(laptop) {

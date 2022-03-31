@@ -1,8 +1,8 @@
 // Projects
 .projects {
-  padding-top: $padding-vertical--medium;
+  padding-top: $padding-vertical--md;
   @include breakpoint(laptop) {
-    padding-top: $padding-vertical--big;
+    padding-top: $padding-vertical--lg;
   }
   .project {
     @include breakpoint(laptop) {
@@ -36,7 +36,7 @@
       }
     }
     &:not(:first-of-type) {
-      margin-top: $padding-vertical--medium;
+      margin-top: $padding-vertical--md;
     }
     a.project-img {
       width: 100%;

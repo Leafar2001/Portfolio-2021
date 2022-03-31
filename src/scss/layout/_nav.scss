@@ -4,20 +4,20 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  // z-index: $nav-z-index;
+  z-index: $nav-z-index;
   @include breakpoint(laptop) {
     position: fixed;
   }
   ul {
     @extend %flexbox;
-    padding-left: $padding-horizontal--small;
-    padding-right: $padding-horizontal--small;
+    padding-left: $padding-horizontal--sm;
+    padding-right: $padding-horizontal--sm;
     @include breakpoint(laptop) {
-      padding-left: $padding-horizontal--medium;
-      padding-right: $padding-horizontal--medium;
+      padding-left: $padding-horizontal--md;
+      padding-right: $padding-horizontal--md;
     }
-    padding-top: $padding-vertical--small;
-    padding-bottom: $padding-vertical--small;
+    padding-top: $padding-vertical--sm;
+    padding-bottom: $padding-vertical--sm;
     align-items: center;
     width: 100vw;
     margin: 0;

@@ -24,11 +24,11 @@
 
 // Default horizontal padding (container)
 %horizontal-padding {
-  padding-left: $padding-horizontal--small;
-  padding-right: $padding-horizontal--small;
+  padding-left: $padding-horizontal--sm;
+  padding-right: $padding-horizontal--sm;
   @include breakpoint(laptop) {
-    padding-left: $padding-horizontal;
-    padding-right: $padding-horizontal;
+    padding-left: $padding-horizontal--lg;
+    padding-right: $padding-horizontal--lg;
   }
 }
 
@@ -205,6 +205,7 @@ svg {
     }
   }
 }
+
 @media (prefers-color-scheme: dark) {
   .circular-icon {
     background: rgba($white, 0.1);
