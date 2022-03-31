@@ -56,7 +56,7 @@ svg {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  opacity: 0.3;
+  opacity: 0.2;
   transition: all 200ms ease-out;
   position: fixed;
   pointer-events: none;
@@ -84,7 +84,7 @@ svg {
 .hover {
   width: 60px;
   height: 60px;
-  opacity: 0.6;
+  opacity: 0.4;
   display: none;
   @include breakpoint(laptop) {
     display: block;
