@@ -178,3 +178,36 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Image lightbox
+let SimpleLightbox = window.SimpleLightbox;
+// Lightbox settings
+SimpleLightbox.defaults = {
+  elementClass: "",
+  elementLoadingClass: "slbLoading",
+  htmlClass: "slbActive",
+  closeBtnClass: "",
+  nextBtnClass: "",
+  prevBtnClass: "",
+  loadingTextClass: "",
+  closeBtnCaption: "Close",
+  nextBtnCaption: "Next",
+  prevBtnCaption: "Previous",
+  loadingCaption: "Loading...",
+  bindToItems: true,
+  closeOnOverlayClick: true,
+  closeOnEscapeKey: true,
+  nextOnImageClick: false,
+  showCaptions: false,
+  captionAttribute: "title",
+  urlAttribute: "href",
+  startAt: 0,
+  loadingTimeout: 100,
+  appendTarget: "body",
+  beforeSetContent: null,
+  beforeClose: null,
+  beforeDestroy: null,
+  videoRegex: new RegExp(/youtube.com|vimeo.com/),
+};
+// Create lightbox
+new SimpleLightbox({ elements: ".case-images a" });
