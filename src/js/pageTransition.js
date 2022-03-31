@@ -13,14 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   var anchors = document.getElementsByTagName("a");
 
-  for (var idx = 0; idx < anchors.length; idx += 1) {
+  for (var i = 0; i < anchors.length; i += 1) {
     if (
-      anchors[idx].hostname !== window.location.hostname ||
-      anchors[idx].pathname === window.location.pathname
+      anchors[i].hostname !== window.location.hostname ||
+      anchors[i].pathname === window.location.pathname ||
+      anchors[i].target === "_blank" ||
+      anchors[i].pathname.includes(".png") ||
+      anchors[i].pathname.includes(".jpg")
     ) {
       continue;
     }
-    anchors[idx].addEventListener("click", function (event) {
+    anchors[i].addEventListener("click", function (event) {
       var fader = document.getElementById("fader"),
         anchor = event.currentTarget;
 
