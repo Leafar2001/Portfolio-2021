@@ -1,0 +1,35 @@
+/* Hide cursor on Safari ONLY */
+/* Safari 13+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (display: flow-root) {
+    .cursor {
+      display: none;
+    }
+  }
+}
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .cursor {
+      display: none;
+    }
+  }
+}
+/* Safari 10.1+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  .cursor {
+    display: none;
+  }
+}
+/* Safari 9+ */
+@supports (-webkit-hyphens: none) {
+  .cursor {
+    display: none;
+  }
+}
+/* Safari 6.1 - 10 */
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+  .cursor {
+    display: none;
+  }
+}

@@ -102,25 +102,6 @@ svg {
   opacity: 1;
 }
 
-// Hide cursor on Safari & touch devices
-// body.MAC {
-//   .cursor {
-//     display: none;
-//   }
-// }
-
-@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
-  .cursor {
-    display: none;
-  }
-}
-
-@media (hover: none) and (pointer: coarse) {
-  .cursor {
-    display: none;
-  }
-}
-
 // Page transition
 @keyframes fade-out {
   from {

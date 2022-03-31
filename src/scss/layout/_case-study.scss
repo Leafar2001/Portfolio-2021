@@ -82,6 +82,9 @@ body.internship {
     }
     .case-images {
       margin-top: $padding-vertical--medium;
+      @include breakpoint(tablet) {
+        margin-top: 0;
+      }
       .image-double-container,
       .image-full {
         margin-top: $padding-vertical--medium;
