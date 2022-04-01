@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
       anchors[i].pathname.includes(".png") ||
       anchors[i].pathname.includes(".jpg") ||
       anchors[i].pathname.includes(".mov") ||
-      anchors[i].pathname.includes(".mp4")
+      anchors[i].pathname.includes(".mp4") ||
+      anchors[i].pathname.includes(".gif")
     ) {
       continue;
     }
