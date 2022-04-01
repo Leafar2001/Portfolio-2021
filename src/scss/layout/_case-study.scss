@@ -1,14 +1,6 @@
 // Case studies
 .case,
 body.internship {
-  .case-intro,
-  .description-group {
-    margin-bottom: $padding-vertical--md;
-    @include breakpoint(laptop) {
-      margin-bottom: $padding-vertical--lg;
-    }
-  }
-
   .case-intro {
     @include breakpoint(laptop) {
       display: flex;
@@ -19,7 +11,6 @@ body.internship {
       width: 100%;
       @extend %border-radius;
       @extend %box-shadow;
-      margin-bottom: $padding-vertical--md;
       @include breakpoint(laptop) {
         margin-bottom: 0;
         max-width: 40%;
@@ -32,9 +23,6 @@ body.internship {
       }
       h1 {
         margin-bottom: 10px;
-        @include breakpoint(laptop) {
-          margin-bottom: $padding-vertical--md;
-        }
       }
       p {
         &:not(:last-of-type) {
@@ -51,25 +39,6 @@ body.internship {
   }
 
   .description-group {
-    p {
-      &:last-of-type {
-        margin-bottom: 20px;
-      }
-      &:not(:last-of-type) {
-        margin-bottom: 20px;
-      }
-      @include breakpoint(tablet) {
-        &:first-of-type {
-          margin-top: $padding-vertical--md;
-        }
-        &:last-of-type {
-          margin-bottom: calc(#{$padding-vertical--md} * 1.5);
-        }
-      }
-    }
-    h1 {
-      margin-bottom: 0;
-    }
     .case-images {
       .image-half,
       .image-full {
@@ -107,6 +76,7 @@ body.internship {
             margin-top: $padding-vertical--md;
             @include breakpoint(laptop) {
               padding-left: 20px;
+              margin-top: 0;
             }
           }
           margin: 0;
@@ -138,7 +108,6 @@ body.internship {
       margin-left: 5%;
     }
     .item {
-      margin-top: $padding-vertical--md;
       @include breakpoint(tablet) {
         margin-top: 0;
       }
@@ -166,7 +135,6 @@ body.internship {
   .next-project {
     @include breakpoint(laptop) {
       display: flex;
-      margin-top: $padding-vertical--lg;
     }
     a {
       width: 100%;
@@ -231,7 +199,7 @@ body.internship {
 
 // Internship
 body.internship {
-  main.internship {
+  main {
     padding-top: 0;
   }
 
@@ -285,6 +253,7 @@ body.internship {
     bottom: 0;
     justify-content: center;
     min-width: 20vw;
+    max-width: 20vw;
     padding-left: 20px;
     padding-right: 20px;
     -ms-overflow-style: none;
@@ -332,6 +301,10 @@ body.internship {
     align-items: center;
     width: 60px;
     height: 60px;
+    margin-top: $padding-vertical--md;
+    @include breakpoint(tablet) {
+      margin-top: $padding-vertical--lg;
+    }
     a {
       display: flex;
       justify-content: center;

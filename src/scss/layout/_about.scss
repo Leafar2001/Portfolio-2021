@@ -1,20 +1,14 @@
 // About
-.skills,
-.approach {
-  h6 {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-}
 .skills-container,
 .approach-container {
   @include breakpoint(laptop) {
     display: flex;
+    margin-top: $padding-vertical--md;
   }
   .item {
-    margin-top: $padding-vertical--sm;
-    @include breakpoint(tablet) {
-      margin-top: $padding-vertical--md;
+    margin-top: $padding-vertical--md;
+    @include breakpoint(laptop) {
+      margin-top: 0;
     }
     p {
       max-width: 100%;
@@ -25,6 +19,10 @@
     }
     h6 {
       margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .circular-icon {
+      margin-bottom: 20px;
     }
   }
 }
