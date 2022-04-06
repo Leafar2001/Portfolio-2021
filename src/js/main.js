@@ -152,8 +152,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 //   ele.addEventListener("mousedown", mouseDownHandler);
 // });
 
-// Internship sidenav current section indicator
-const sections = document.querySelectorAll(".internship section");
+// Case study sidenav current section indicator
+const sections = document.querySelectorAll(".case-study .sidenav--item");
 const navLi = document.querySelectorAll(".side--nav ul li a");
 window.addEventListener("scroll", () => {
   let current = "";

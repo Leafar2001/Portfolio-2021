@@ -1,44 +1,45 @@
 // Case studies
-.case,
-body.internship {
-  .case-intro {
-    @include breakpoint(laptop) {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+.case-study {
+  main {
+    padding-top: 0;
+  }
+
+  .intro {
+    padding-top: $padding-vertical--lg;
+  }
+
+  .container {
+    width: 100vw;
+    margin-left: 0;
+    @extend %horizontal-padding;
+    @include breakpoint(tablet) {
+      margin-left: 20vw;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      width: 80vw;
     }
-    img {
-      width: 100%;
-      @extend %border-radius;
-      @extend %box-shadow;
-      @include breakpoint(laptop) {
-        margin-bottom: 0;
-        max-width: 40%;
-      }
-    }
-    .case-intro-description {
-      @include breakpoint(laptop) {
-        padding-top: 10%;
-        max-width: 50%;
-      }
-      h1 {
-        margin-bottom: 10px;
-      }
-      p {
-        &:not(:last-of-type) {
-          margin-bottom: 20px;
-          @include breakpoint(tablet) {
-            margin-bottom: 30px;
-          }
-        }
-        @include breakpoint(laptop) {
-          max-width: 80%;
-        }
-      }
+  }
+
+  h1 {
+    @include breakpoint(tablet) {
+      font-size: calc(18px + 4vw);
     }
   }
 
   section {
+    p {
+      &:first-of-type {
+        margin-top: 20px;
+      }
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+      @include breakpoint(tablet) {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
     .case-images {
       .image-half,
       .image-full {
@@ -101,147 +102,6 @@ body.internship {
     }
   }
 
-  .icon-container {
-    @include breakpoint(tablet) {
-      display: flex;
-      width: 95%;
-      margin-left: 5%;
-    }
-    .item {
-      @include breakpoint(tablet) {
-        margin-top: 0;
-      }
-      p {
-        margin-left: 0;
-        margin-top: 0;
-        width: 100%;
-        @include breakpoint(tablet) {
-          max-width: 80%;
-        }
-        @include breakpoint(laptop) {
-          max-width: 80%;
-        }
-      }
-      h6 {
-        margin-bottom: 10px;
-        margin-top: 5px;
-        @include breakpoint(tablet) {
-          margin-bottom: 20px;
-        }
-      }
-    }
-  }
-
-  .next-project {
-    @include breakpoint(laptop) {
-      display: flex;
-    }
-    a {
-      width: 100%;
-      @extend %transition;
-      @include breakpoint(laptop) {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-      }
-      div {
-        padding: 30px;
-        @include breakpoint(laptop) {
-          padding: 50px;
-        }
-        h3 {
-          word-break: break-word;
-          font-size: calc(15px + 2vw);
-        }
-        h4 {
-          font-size: calc(15px + 0.2vw);
-        }
-      }
-    }
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .next-project {
-    border: 1px solid rgba($soft-black, 0.4);
-    a {
-      &:hover {
-        background: rgba($soft-black, 0.1);
-      }
-    }
-    .previous {
-      border-bottom: 1px solid rgba($soft-black, 0.4);
-      @include breakpoint(laptop) {
-        border-right: 1px solid rgba($soft-black, 0.4);
-        border-bottom: none;
-      }
-    }
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .next-project {
-    border: 1px solid rgba($soft-black, 0.1);
-    a {
-      &:hover {
-        background: rgba($soft-black, 0.1);
-      }
-    }
-    .previous {
-      border-bottom: 1px solid rgba($soft-black, 0.1);
-      @include breakpoint(laptop) {
-        border-right: 1px solid rgba($soft-black, 0.1);
-        border-bottom: none;
-      }
-    }
-  }
-}
-
-// Internship
-body.internship {
-  main {
-    padding-top: 0;
-  }
-
-  .intro {
-    padding-top: $padding-vertical--lg;
-  }
-
-  .container {
-    width: 100vw;
-    margin-left: 0;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    @include breakpoint(tablet) {
-      margin-left: 20vw;
-      padding-left: 10vw;
-      padding-right: 10vw;
-      width: 80vw;
-    }
-  }
-
-  h1 {
-    @include breakpoint(tablet) {
-      font-size: calc(18px + 4vw);
-    }
-  }
-
-  section {
-    p {
-      &:first-of-type {
-        margin-top: 20px;
-      }
-      &:last-of-type {
-        margin-bottom: 20px;
-      }
-      @include breakpoint(tablet) {
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
   .side--nav {
     position: fixed;
     padding-top: 10vh;
@@ -291,6 +151,7 @@ body.internship {
       }
     }
   }
+
   .side--nav::-webkit-scrollbar {
     display: none;
   }
@@ -317,43 +178,102 @@ body.internship {
     }
   }
 
-  @media (prefers-color-scheme: dark) {
-    .side--nav {
-      border-right: 1px solid rgba($soft-black, 0.4);
-      ul {
-        li {
-          a {
-            &.active {
-              background: rgba($white, 0.15);
-            }
-          }
+  .next-project {
+    @include breakpoint(laptop) {
+      display: flex;
+    }
+    a {
+      width: 100%;
+      @extend %transition;
+      @include breakpoint(laptop) {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      div {
+        padding: 30px;
+        @include breakpoint(laptop) {
+          padding: 50px;
         }
-      }
-    }
-    .back-to-top {
-      a {
-        border: 1px solid rgba($soft-black, 0.4);
-      }
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    .side--nav {
-      border-right: 1px solid rgba($soft-black, 0.1);
-      ul {
-        li {
-          a {
-            &.active {
-              background: rgba($soft-black, 0.1);
-            }
-          }
+        h3 {
+          word-break: break-word;
+          font-size: calc(15px + 2vw);
         }
-      }
-    }
-    .back-to-top {
-      a {
-        border: 1px solid rgba($soft-black, 0.1);
+        h4 {
+          font-size: calc(15px + 0.2vw);
+        }
       }
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .side--nav {
+    border-right: 1px solid rgba($soft-black, 0.4);
+    ul {
+      li {
+        a {
+          &.active {
+            background: rgba($white, 0.15);
+          }
+        }
+      }
+    }
+  }
+  .back-to-top {
+    a {
+      border: 1px solid rgba($soft-black, 0.4);
+    }
+  }
+  .next-project {
+    border: 1px solid rgba($soft-black, 0.4);
+    a {
+      &:hover {
+        background: rgba($soft-black, 0.1);
+      }
+    }
+    .previous {
+      border-bottom: 1px solid rgba($soft-black, 0.4);
+      @include breakpoint(laptop) {
+        border-right: 1px solid rgba($soft-black, 0.4);
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .side--nav {
+    border-right: 1px solid rgba($soft-black, 0.1);
+    ul {
+      li {
+        a {
+          &.active {
+            background: rgba($soft-black, 0.1);
+          }
+        }
+      }
+    }
+  }
+  .back-to-top {
+    a {
+      border: 1px solid rgba($soft-black, 0.1);
+    }
+  }
+  .next-project {
+    border: 1px solid rgba($soft-black, 0.1);
+    a {
+      &:hover {
+        background: rgba($soft-black, 0.1);
+      }
+    }
+    .previous {
+      border-bottom: 1px solid rgba($soft-black, 0.1);
+      @include breakpoint(laptop) {
+        border-right: 1px solid rgba($soft-black, 0.1);
+        border-bottom: none;
+      }
+    }
+  }
+}
+
