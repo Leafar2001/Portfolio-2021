@@ -99,6 +99,22 @@
           width: 100%;
         }
       }
+      .recording {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        .recording-container {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+        img,
+        video {
+          @include breakpoint(tablet) {
+            max-height: 80vh;
+          }
+        }
+      }
     }
   }
 
@@ -179,8 +195,10 @@
   }
 
   .next-project {
+    margin-top: $padding-vertical--md;
     @include breakpoint(laptop) {
       display: flex;
+      margin-top: $padding-vertical--lg;
     }
     a {
       width: 100%;
@@ -276,4 +294,3 @@
     }
   }
 }
-
