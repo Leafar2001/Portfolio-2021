@@ -9,14 +9,12 @@
   }
 
   .container {
+    @extend %horizontal-padding;
     width: 100vw;
     margin-left: 0;
-    @extend %horizontal-padding;
-    @include breakpoint(tablet) {
-      margin-left: 20vw;
-      padding-left: 10vw;
-      padding-right: 10vw;
-      width: 80vw;
+    @include breakpoint(laptop) {
+      padding-left: 10%;
+      padding-right: 10%;
     }
   }
 
@@ -119,37 +117,90 @@
   }
 
   .side--nav {
-    position: fixed;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    overflow-y: scroll;
+    padding-top: $padding-vertical--sm;
+    padding-left: $padding-horizontal--md;
+    padding-right: $padding-horizontal--md;
+    padding-bottom: 0;
     display: none;
-    align-items: center;
+    position: fixed;
     top: 0;
+    left: 0;
     bottom: 0;
-    justify-content: center;
-    min-width: 20vw;
-    max-width: 20vw;
-    padding-left: 20px;
-    padding-right: 20px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    @include breakpoint(tablet) {
+    height: 100vh;
+    overflow-y: auto;
+    .spacer {
+      width: 100%;
+      height: $padding-vertical--sm;
+    }
+    @include breakpoint(laptop) {
       display: flex;
     }
     ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      width: 100%;
+
       li {
-        margin-top: 10px;
+        margin-top: 5px;
+        width: 100%;
         &:first-of-type {
           margin-top: 0;
         }
+        &.logo {
+          margin-bottom: 30px;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          a {
+            padding: 0;
+            margin: 0;
+            &:hover {
+              background: none;
+            }
+          }
+          svg {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            overflow: visible;
+            @media (prefers-color-scheme: light) {
+              &.logo-black {
+                display: inline-block;
+              }
+              &.logo-white {
+                display: none;
+              }
+            }
+            @media (prefers-color-scheme: dark) {
+              &.logo-black {
+                display: none;
+              }
+              &.logo-white {
+                display: inline-block;
+              }
+            }
+
+            &:hover {
+              path#Path_3 {
+                transform: translateY(-90px);
+              }
+              path#Path_4 {
+                transform: translateY(-70px);
+              }
+            }
+            path {
+              @extend %transition;
+              position: relative;
+            }
+          }
+        }
         a {
+          display: block;
           font-family: $font--small;
           margin-left: 10px;
-          padding: 6px 10px;
+          padding: 3px 6px;
           border-radius: 6px;
           @include transition(all 0.2s ease);
         }
@@ -162,14 +213,47 @@
             font-size: 1.1em;
             margin-left: 0;
           }
-          margin-top: 30px;
+          margin-top: 15px;
         }
       }
     }
   }
 
   .side--nav::-webkit-scrollbar {
-    display: none;
+    width: 20px;
+  }
+
+  .side--nav::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    @include border-radius(16px);
+  }
+
+  .side--nav::-webkit-scrollbar-track {
+    width: 4px;
+    background-clip: padding-box;
+    @include border-radius(16px);
+  }
+
+  @media (prefers-color-scheme: light) {
+    .side--nav::-webkit-scrollbar-thumb {
+      border: 8px solid rgba($black, 0);
+      background-color: rgba($black, 0.75);
+    }
+    .side--nav::-webkit-scrollbar-track {
+      background-color: rgba($black, 0.1);
+      border: 8px solid rgba($black, 0);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .side--nav::-webkit-scrollbar-thumb {
+      border: 8px solid rgba($white, 0);
+      background-color: rgba($white, 0.75);
+    }
+    .side--nav::-webkit-scrollbar-track {
+      background-color: rgba($white, 0.1);
+      border: 8px solid rgba($white, 0);
+    }
   }
 
   .back-to-top {
@@ -231,8 +315,9 @@
     ul {
       li {
         a {
-          &.active {
-            background: rgba($white, 0.15);
+          &.active,
+          &:hover {
+            background: rgba($white, 0.1);
           }
         }
       }
@@ -266,8 +351,9 @@
     ul {
       li {
         a {
-          &.active {
-            background: rgba($soft-black, 0.1);
+          &.active,
+          &:hover {
+            background: rgba($soft-black, 0.05);
           }
         }
       }

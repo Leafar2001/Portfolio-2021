@@ -23,7 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   overflow-x: hidden;
-  overflow-y: overlay;
+  overflow-y: overlay; // Transparent scrollbar track
 }
 
 @-moz-document url-prefix() {

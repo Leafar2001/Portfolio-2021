@@ -26,18 +26,18 @@ if ("serviceWorker" in navigator) {
 AOS.init();
 
 // Cursor effect
-// Get elements
+/// Get elements
 var cursor = document.querySelector(".cursor");
 var a = document.querySelectorAll("a");
 
-// Get mouseposition and set cursor div to said position
+/// Get mouseposition and set cursor div to said position
 document.addEventListener("mousemove", function (e) {
   var x = e.clientX;
   var y = e.clientY;
   cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
 });
 
-// On click, add/remove hover class
+/// On click, add/remove hover class
 document.addEventListener("mousedown", function () {
   cursor.classList.add("click");
 });
@@ -45,7 +45,7 @@ document.addEventListener("mouseup", function () {
   cursor.classList.remove("click");
 });
 
-// On link hover, add/remove hover class
+/// On link hover, add/remove hover class
 a.forEach((item) => {
   item.addEventListener("mouseover", () => {
     cursor.classList.add("hover");
@@ -55,7 +55,7 @@ a.forEach((item) => {
   });
 });
 
-// Hide cursor on leaving browser
+/// Hide cursor on leaving browser
 var cursorDiv = document.querySelector(".cursor-container");
 var html = document.querySelector("html");
 
@@ -70,7 +70,7 @@ function hideCursor() {
 html.onmouseover = showCursor;
 html.onmouseleave = hideCursor;
 
-// Magnetic buttons
+/// Magnetic buttons
 var magnets = document.querySelectorAll(".magnetic");
 var strength = 50;
 
@@ -95,7 +95,7 @@ function moveMagnet(event) {
   });
 }
 
-// Smooth scrolling for safari or other browsers that don't support scroll-behavior:smooth
+// Smooth scrolling on anchor links
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener("click", function () {
     smoothScroll.scrollTo(this.getAttribute("href"), 1000);
@@ -106,102 +106,3 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 document.addEventListener("DOMContentLoaded", function (event) {
   fadeInPage(); // Page transitions
 });
-
-// Drag internship sidenav to scroll
-// document.addEventListener("DOMContentLoaded", function () {
-//   const ele = document.getElementById("sidenav");
-//   ele.style.cursor = "grab";
-
-//   let pos = { top: 0, left: 0, x: 0, y: 0 };
-
-//   const mouseDownHandler = function (e) {
-//     ele.style.cursor = "grabbing";
-//     ele.style.userSelect = "none";
-
-//     pos = {
-//       left: ele.scrollLeft,
-//       top: ele.scrollTop,
-//       // Get the current mouse position
-//       x: e.clientX,
-//       y: e.clientY,
-//     };
-
-//     document.addEventListener("mousemove", mouseMoveHandler);
-//     document.addEventListener("mouseup", mouseUpHandler);
-//   };
-
-//   const mouseMoveHandler = function (e) {
-//     // How far the mouse has been moved
-//     const dx = e.clientX - pos.x;
-//     const dy = e.clientY - pos.y;
-
-//     // Scroll the element
-//     ele.scrollTop = pos.top - dy;
-//     ele.scrollLeft = pos.left - dx;
-//   };
-
-//   const mouseUpHandler = function () {
-//     ele.style.cursor = "grab";
-//     ele.style.removeProperty("user-select");
-
-//     document.removeEventListener("mousemove", mouseMoveHandler);
-//     document.removeEventListener("mouseup", mouseUpHandler);
-//   };
-
-//   // Attach the handler
-//   ele.addEventListener("mousedown", mouseDownHandler);
-// });
-
-// Case study sidenav current section indicator
-const sections = document.querySelectorAll(".case-study .sidenav--item");
-const navLi = document.querySelectorAll(".side--nav ul li a");
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 150) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    const href = li.getAttribute("href").substring(1);
-    if (href === current) {
-      li.classList.add("active");
-    }
-  });
-});
-
-// Image lightbox
-let SimpleLightbox = window.SimpleLightbox;
-// Lightbox settings
-SimpleLightbox.defaults = {
-  elementClass: "",
-  elementLoadingClass: "slbLoading",
-  htmlClass: "slbActive",
-  closeBtnClass: "",
-  nextBtnClass: "",
-  prevBtnClass: "",
-  loadingTextClass: "",
-  closeBtnCaption: "Close",
-  nextBtnCaption: "Next",
-  prevBtnCaption: "Previous",
-  loadingCaption: "Loading...",
-  bindToItems: true,
-  closeOnOverlayClick: true,
-  closeOnEscapeKey: true,
-  nextOnImageClick: false,
-  showCaptions: false,
-  captionAttribute: "title",
-  urlAttribute: "href",
-  startAt: 0,
-  loadingTimeout: 100,
-  appendTarget: "body",
-  beforeSetContent: null,
-  beforeClose: null,
-  beforeDestroy: null,
-  videoRegex: new RegExp(/youtube.com|vimeo.com/),
-};
-// Create lightbox
-new SimpleLightbox({ elements: ".case-images a" });
