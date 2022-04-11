@@ -18,6 +18,14 @@
     }
   }
 
+  .project-details {
+    width: 100%;
+    margin-bottom: 50px;
+    span.dot {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
   h1 {
     @include breakpoint(tablet) {
       font-size: calc(18px + 4vw);
@@ -91,10 +99,18 @@
       }
       .image-full {
         img,
-        video {
+        video,
+        iframe {
           @extend %border-radius;
           @extend %box-shadow;
           width: 100%;
+        }
+        iframe {
+          border: 0;
+          min-height: 40vh;
+          @include breakpoint(laptop) {
+            min-height: 70vh;
+          }
         }
       }
       .recording {
@@ -140,7 +156,6 @@
       padding: 0;
       margin: 0;
       width: 100%;
-
       li {
         margin-top: 5px;
         width: 100%;
@@ -181,7 +196,6 @@
                 display: inline-block;
               }
             }
-
             &:hover {
               path#Path_3 {
                 transform: translateY(-90px);
@@ -202,6 +216,7 @@
           margin-left: 10px;
           padding: 3px 6px;
           border-radius: 6px;
+          font-size: 0.9em;
           @include transition(all 0.2s ease);
         }
         &.bigger--link {
@@ -209,7 +224,7 @@
             margin-top: 0;
           }
           a {
-            font-weight: bold;
+            font-family: $font--big;
             font-size: 1.1em;
             margin-left: 0;
           }
@@ -280,6 +295,7 @@
 
   .next-project {
     margin-top: $padding-vertical--md;
+    @extend %border-radius;
     @include breakpoint(laptop) {
       display: flex;
       margin-top: $padding-vertical--lg;
@@ -293,6 +309,9 @@
         flex-direction: column;
       }
       div {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
         padding: 30px;
         @include breakpoint(laptop) {
           padding: 50px;
@@ -310,6 +329,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .project-details {
+    color: $light--text;
+  }
   .side--nav {
     border-right: 1px solid rgba($soft-black, 0.4);
     ul {
@@ -346,6 +368,9 @@
 }
 
 @media (prefers-color-scheme: light) {
+  .project-details {
+    color: $dark--text;
+  }
   .side--nav {
     border-right: 1px solid rgba($soft-black, 0.1);
     ul {

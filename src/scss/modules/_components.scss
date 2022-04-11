@@ -14,7 +14,7 @@
 
 // Default border radius
 %border-radius {
-  @include border-radius(10px);
+  @include border-radius($default-border-radius);
 }
 
 // Default transition

@@ -1,9 +1,9 @@
 // Projects
 .projects {
   padding-top: $padding-vertical--md;
-  @include breakpoint(laptop) {
-    padding-top: $padding-vertical--lg;
-  }
+  // @include breakpoint(laptop) {
+  //   padding-top: $padding-vertical--lg;
+  // }
   .project {
     @include breakpoint(laptop) {
       display: flex;
@@ -36,9 +36,13 @@
       }
     }
     &:not(:first-of-type) {
-      margin-top: $padding-vertical--md;
+      margin-top: $padding-vertical--lg;
     }
     a.project-img {
+      @include breakpoint(laptop) {
+        border-top-left-radius: $default-border-radius;
+        border-bottom-left-radius: $default-border-radius;
+      }
       width: 100%;
       overflow: hidden;
 
@@ -48,6 +52,12 @@
         }
       }
       img {
+        border-top-left-radius: $default-border-radius;
+        border-top-right-radius: $default-border-radius;
+        @include breakpoint(laptop) {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
         max-height: 30vh;
         width: 100%;
         object-fit: cover;
@@ -61,6 +71,15 @@
       }
     }
     .info {
+      border-bottom-left-radius: $default-border-radius;
+      border-bottom-right-radius: $default-border-radius;
+      @include breakpoint(laptop) {
+        border-bottom-left-radius: 0;
+      }
+      @include breakpoint(laptop) {
+        border-top-right-radius: $default-border-radius;
+        border-bottom-right-radius: $default-border-radius;
+      }
       padding: 30px;
       border-top-width: 0px;
       @include breakpoint(laptop) {

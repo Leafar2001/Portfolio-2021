@@ -1,6 +1,7 @@
 // Buttons
 .btn {
   @extend %transition;
+  @extend %border-radius;
   padding: 15px 30px;
   font-size: 16px;
   display: inline-block;
