@@ -328,6 +328,16 @@
   }
 }
 
+.slbOverlay {
+  z-index: calc(#{$nav-z-index} + 1) !important;
+}
+.slbWrapOuter {
+  z-index: calc(#{$nav-z-index} + 10) !important;
+}
+.slbContentOuter {
+  z-index: calc(#{$nav-z-index} + 20) !important;
+}
+
 @media (prefers-color-scheme: dark) {
   .project-details {
     color: $light--text;
