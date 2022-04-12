@@ -28,7 +28,7 @@
   }
   h1 {
     @include breakpoint(tablet) {
-      font-size: calc(18px + 4vw);
+      font-size: calc(20px + 3.5vw);
     }
   }
 
