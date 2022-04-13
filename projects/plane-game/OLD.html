@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Plane Game — Luc Swinkels</title>
+    <!-- SEO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luc Swinkels" />
+    <meta
+      name="description"
+      content="Plane Game — a project by Luc Swinkels."
+    />
+    <meta
+      name="keywords"
+      content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design"
+    />
+    <meta name="robots" content="noodp" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lucswinkels.com" />
+    <meta property="article:section" content="other" />
+    <meta property="og:image" content="../../src/img/favicon/favicon.ico" />
+    <link rel="canonical" href="https://www.lucswinkels.com" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../../src/css/main.min.css" />
+    <link rel="stylesheet" href="../../src/css/safariOnly.css" />
+    <!-- CSS Libraries -->
+    <link href="../../src/css/aos.css" rel="stylesheet" />
+    <!-- JS Libraries -->
+    <script src="../../src/js/aos.js"></script>
+    <script src="../../src/js/TweenMax.min.js"></script>
+    <script src="../../src/js/smoothScroll.min.js"></script>
+    <!-- Main JS File -->
+    <script src="../../src/js/main.js" defer></script>
+    <!-- Page Transition -->
+    <script src="../../src/js/pageTransition.js"></script>
+    <!-- Favicon & App Theme -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../src/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../src/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../src/img/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="../../src/img/icons/safari-pinned-tab.svg"
+      color="#14161a"
+    />
+    <link rel="shortcut icon" href="../../src/img/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#14161a" />
+    <meta
+      name="msapplication-config"
+      content="../../src/img/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#f9faff" />
+    <!-- Manifest -->
+    <link rel="manifest" href="../../manifest.webmanifest" />
+  </head>
+
+  <body id="top">
+    <!-- Page Transition -->
+    <svg id="fader"></svg>
+    <!-- Page Transition -->
+
+    <!-- Cursor -->
+    <div class="cursor-container">
+      <div class="cursor"></div>
+    </div>
+    <!-- /Cursor -->
+
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li class="logo">
+          <div class="magnetic">
+            <a href="../../">
+              <svg
+                class="logo-white"
+                xmlns="http://www.w3.org/2000/svg"
+                width="391.751"
+                height="377.401"
+                viewBox="0 0 391.751 377.401"
+              >
+                <g
+                  id="Layer_2"
+                  data-name="Layer 2"
+                  transform="translate(0.008 226.815) rotate(-60)"
+                >
+                  <g
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    transform="translate(-0.02 -0.003)"
+                  >
+                    <path
+                      id="Path_3"
+                      data-name="Path 3"
+                      d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                      transform="translate(0 -162.798)"
+                      fill="#fff"
+                    />
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                      transform="translate(0.008 0.003)"
+                      fill="#fff"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg
+                class="logo-black"
+                xmlns="http://www.w3.org/2000/svg"
+                width="391.751"
+                height="377.401"
+                viewBox="0 0 391.751 377.401"
+              >
+                <g
+                  id="Layer_2"
+                  data-name="Layer 2"
+                  transform="translate(0.008 226.815) rotate(-60)"
+                >
+                  <g
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    transform="translate(-0.02 -0.003)"
+                  >
+                    <path
+                      id="Path_3"
+                      data-name="Path 3"
+                      d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                      transform="translate(0 -162.798)"
+                      fill="#14161a"
+                    />
+                    <path
+                      id="Path_4"
+                      data-name="Path 4"
+                      d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                      transform="translate(0.008 0.003)"
+                      fill="#14161a"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="magnetic">
+            <a href="../../#projects">Projects</a>
+          </div>
+        </li>
+        <li>
+          <div class="magnetic">
+            <a href="../../about">About</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- /Nav -->
+
+    <!-- Content -->
+    <main class="case">
+      <!-- Container -->
+      <div class="container">
+        <div class="case-intro" data-aos="fade-up">
+          <img
+            src="../../src/img/assets/projects/thumbnails/plane-game-thumb-thin.svg"
+          />
+          <div class="case-intro-description">
+            <h1>Plane Game</h1>
+            <p>
+              Plane Game is a simple browser-based game where a user can use the
+              WASD arrowkeys to fly around, avoiding collisions to gain points.
+              There are multiple plane types to choose from, each of them
+              offering different flying speeds.
+            </p>
+          </div>
+        </div>
+        <div class="case-details" data-aos="fade-up">
+          <div class="detail-group">
+            <div class="detail">
+              <h5>Role</h5>
+              <p>Developer</p>
+            </div>
+            <div class="detail">
+              <h5>Year</h5>
+              <p>2021</p>
+            </div>
+            <div class="detail">
+              <h5>Client</h5>
+              <p>FHICT</p>
+            </div>
+          </div>
+          <div class="detail-group">
+            <div class="detail">
+              <h5>Product</h5>
+              <p>Web App</p>
+            </div>
+            <div class="detail">
+              <h5>Links</h5>
+              <p>
+                <a href="../../demos/plane-game/">Demo</a>,
+                <a href="https://github.com/lucswinkels/plane-game">GitHub</a>
+              </p>
+            </div>
+            <div class="detail">
+              <h5>Technologies</h5>
+              <p>HTML, CSS (SCSS), JavaScript</p>
+            </div>
+          </div>
+        </div>
+        <div class="case-description" data-aos="fade-up">
+          <span class="subtitle">01</span>
+          <h4>Project</h4>
+          <p>
+            Plane Game is a simple browser-based game where a user can use the
+            WASD arrowkeys to fly around, avoiding collisions to gain points.
+            There are multiple plane types to choose from, each of them offering
+            different flying speeds.
+          </p>
+          <span class="subtitle">02</span>
+          <h5>Solution</h5>
+          <p>
+            This project originated as a challenge I got from a school
+            assignment, where we had to show some form of user input to
+            influence this project. I thought it would be a fun idea to make
+            some form of a game, as I had never made a game before. As user
+            input I used WASD keys as it was the most logical option to me,
+            which was later confirmed by some user tests.
+          </p>
+          <span class="subtitle">03</span>
+          <h5>Process</h5>
+          <p>
+            I started off creating the user interface with a subtle background
+            and basic functionality like being able to control a plane with the
+            WASD keys. Later on, I was able to add other planes with different
+            speed limits. Once i had the player controlled planes down, I was
+            able to add a collision system by adding other planes coming from
+            the opposite directions, and comparing the coordinates of these
+            planes to see if they had collided with the player's plane. Points
+            were simply calculated by a timer, where u would also lose points
+            for every collision. Lastly I added some standard background music
+            for extra immersion.
+          </p>
+          <span class="subtitle">04</span>
+          <h5>Result</h5>
+          <p>
+            I'm happy with the result I was able to get within the limited time
+            frame of a week. All the functionality like different plane types
+            and collisions were working and the game felt somewhat "complete"
+            for a short project. Unfortunately the collision system isn't
+            insanely accurate, but regardless the users I tested the end product
+            with liked the game.
+          </p>
+        </div>
+        <div class="image-full" data-aos="fade-up">
+          <video
+            muted=""
+            autoplay=""
+            loop=""
+            playsinline=""
+            src="../../src/img/assets/projects/plane-game/plane-game-wide-demo.mp4"
+          ></video>
+        </div>
+        <div class="image-full" data-aos="fade-up">
+          <img
+            src="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
+          />
+        </div>
+        <div class="image-full" data-aos="fade-up">
+          <img
+            src="../../src/img/assets/projects/plane-game/plane-game-wide-2.png"
+          />
+        </div>
+        <div class="next-project" data-aos="fade-up">
+          <a href="../language-master/">
+            <div class="previous">
+              <h4>Previous Project</h4>
+              <h3>Language Master</h3>
+            </div>
+          </a>
+          <a href="../skatespot/">
+            <div class="next">
+              <h4>Next Project</h4>
+              <h3>SkateSpot</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- /Container -->
+    </main>
+    <!-- /Content -->
+  </body>
+</html>

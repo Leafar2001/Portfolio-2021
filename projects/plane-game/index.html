@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Luc Swinkels" />
-    <meta
-      name="description"
-      content="Plane Game — a project by Luc Swinkels."
-    />
+    <meta name="description" content="Internship 2022 — Luc Swinkels." />
     <meta
       name="keywords"
       content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design"
@@ -20,19 +17,23 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.lucswinkels.com" />
     <meta property="article:section" content="other" />
-    <meta property="og:image" content="../../src/img/favicon/favicon.ico" />
+    <meta property="og:image" content="../../src/img/icons/favicon.ico" />
     <link rel="canonical" href="https://www.lucswinkels.com" />
     <!-- Main CSS File -->
     <link rel="stylesheet" href="../../src/css/main.min.css" />
     <link rel="stylesheet" href="../../src/css/safariOnly.css" />
     <!-- CSS Libraries -->
     <link href="../../src/css/aos.css" rel="stylesheet" />
+    <link href="../../src/css/simpleLightbox.min.css" rel="stylesheet" />
+    <link href="../../src/css/tabler-icons.min.css" rel="stylesheet" />
     <!-- JS Libraries -->
     <script src="../../src/js/aos.js"></script>
     <script src="../../src/js/TweenMax.min.js"></script>
     <script src="../../src/js/smoothScroll.min.js"></script>
+    <script src="../../src/js/simpleLightbox.min.js"></script>
     <!-- Main JS File -->
     <script src="../../src/js/main.js" defer></script>
+    <script src="../../src/js/case-studies.js" defer></script>
     <!-- Page Transition -->
     <script src="../../src/js/pageTransition.js"></script>
     <!-- Favicon & App Theme -->
@@ -69,7 +70,7 @@
     <link rel="manifest" href="../../manifest.webmanifest" />
   </head>
 
-  <body id="top">
+  <body id="top" class="case-study">
     <!-- Page Transition -->
     <svg id="fader"></svg>
     <!-- Page Transition -->
@@ -154,6 +155,7 @@
                   </g>
                 </g>
               </svg>
+              <span>Back Home</span>
             </a>
           </div>
         </li>
@@ -171,120 +173,207 @@
     </nav>
     <!-- /Nav -->
 
+    <!-- Sidebar Nav-->
+    <div class="side--nav" id="sidenav">
+      <ul>
+        <!-- Fake logo for spacing -->
+        <li class="logo"></li>
+        <!-- /Fake logo for spacing -->
+        <li class="bigger--link"><a href="#intro">Intro</a></li>
+        <li class="bigger--link"><a href="#project">The project</a></li>
+        <li>
+          <a href="#project--research">Research</a>
+        </li>
+        <li><a href="#project--design">Design</a></li>
+        <li>
+          <a href="#project--prototyping">Prototyping</a>
+        </li>
+        <li>
+          <a href="#project--testing">Testing</a>
+        </li>
+        <li>
+          <a href="#project--development">Development</a>
+        </li>
+        <li class="bigger--link"><a href="#results">Results</a></li>
+        <li>
+          <a href="#results--prototype">Prototype</a>
+        </li>
+        <li>
+          <a href="#results--app">App</a>
+        </li>
+        <div class="spacer"></div>
+      </ul>
+    </div>
+    <!-- /Sidebar Nav-->
+
     <!-- Content -->
-    <main class="case">
+    <main>
       <!-- Container -->
       <div class="container">
-        <div class="case-intro" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/thumbnails/plane-game-thumb-thin.svg"
-          />
-          <div class="case-intro-description">
-            <h1>Plane Game</h1>
-            <p>
-              Plane Game is a simple browser-based game where a user can use the
-              WASD arrowkeys to fly around, avoiding collisions to gain points.
-              There are multiple plane types to choose from, each of them
-              offering different flying speeds.
+        <!-- Content -->
+        <!-- Intro -->
+        <section class="intro sidenav--item" id="intro">
+          <div class="project-details" data-aos="fade-up">
+            <span>2021</span>
+            <span class="dot">•</span>
+            <span>Webdevelopment</span>
+          </div>
+          <h1 class="large-page-heading" data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+            molestiae.
+          </h1>
+          <div class="scroll-down" data-aos="fade-up"></div>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            suscipit omnis molestiae iusto quod quasi! Earum, quae aut cum in
+            esse rerum non! Veniam at velit perspiciatis alias blanditiis
+            deleniti qui in cupiditate nulla assumenda. Sapiente alias
+            distinctio id atque.
+          </p>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, eum
+            officia quas dolor doloribus eius consequuntur maxime tenetur nobis
+            ipsam minus architecto at quis? Quia facere laborum error, minima
+            odit alias repellendus maiores corporis? Voluptas ipsam deleniti
+            doloremque reprehenderit nemo autem, a cum saepe et amet ullam,
+            tempora maxime exercitationem.
+          </p>
+        </section>
+        <!-- /Intro -->
+        <!-- Project info -->
+        <section class="project sidenav--item" id="project">
+          <h1 data-aos="fade-up">The project</h1>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod at
+            corrupti accusamus, esse harum ipsum nemo magnam amet omnis quas
+            eius facere culpa sequi deleniti incidunt praesentium laboriosam
+            dolores officia distinctio, natus quisquam ad, quo necessitatibus.
+            Impedit ullam magni dolorum, quaerat eaque laborum minus a, quia,
+            temporibus voluptatem sit!
+          </p>
+
+          <div class="case-images">
+            <div class="image-full mv-md" data-aos="fade-up">
+              <a
+                href="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
+              >
+                <img
+                  src="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
+                />
+              </a>
+              <p class="image-description">Plane Game placeholder</p>
+            </div>
+          </div>
+          <div class="mt-md sidenav--item" id="project--research">
+            <h4 data-aos="fade-up">Research</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Assumenda numquam minima est mollitia qui ab facere sapiente
+              veniam hic id illo laboriosam nobis quibusdam quidem, debitis
+              placeat nihil iusto. Quas laudantium dolor aspernatur sint, iste
+              tenetur possimus consectetur voluptate iusto labore excepturi quia
+              quidem assumenda ipsam fugiat veniam dignissimos error.
             </p>
           </div>
-        </div>
-        <div class="case-details" data-aos="fade-up">
-          <div class="detail-group">
-            <div class="detail">
-              <h5>Role</h5>
-              <p>Developer</p>
-            </div>
-            <div class="detail">
-              <h5>Year</h5>
-              <p>2021</p>
-            </div>
-            <div class="detail">
-              <h5>Client</h5>
-              <p>FHICT</p>
-            </div>
-          </div>
-          <div class="detail-group">
-            <div class="detail">
-              <h5>Product</h5>
-              <p>Web App</p>
-            </div>
-            <div class="detail">
-              <h5>Links</h5>
-              <p>
-                <a href="../../demos/plane-game/">Demo</a>,
-                <a href="https://github.com/lucswinkels/plane-game">GitHub</a>
-              </p>
-            </div>
-            <div class="detail">
-              <h5>Technologies</h5>
-              <p>HTML, CSS (SCSS), JavaScript</p>
+          <div class="mt-md sidenav--item" id="project--design">
+            <h4 data-aos="fade-up">Design</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel at
+              dicta id exercitationem similique, pariatur aut quibusdam tempora
+              voluptatum earum repudiandae nulla voluptas, excepturi praesentium
+              placeat neque eveniet sint minus sapiente? Enim voluptatibus
+              commodi libero dolore! Aspernatur, eum maxime, ipsum, aliquam
+              incidunt velit ea ipsa optio facere beatae laborum eaque!
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md" data-aos="fade-up">
+                <a
+                  href="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
+                >
+                  <img
+                    src="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
+                  />
+                </a>
+                <p class="image-description">Plane Game placeholder</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="case-description" data-aos="fade-up">
-          <span class="subtitle">01</span>
-          <h4>Project</h4>
-          <p>
-            Plane Game is a simple browser-based game where a user can use the
-            WASD arrowkeys to fly around, avoiding collisions to gain points.
-            There are multiple plane types to choose from, each of them offering
-            different flying speeds.
-          </p>
-          <span class="subtitle">02</span>
-          <h5>Solution</h5>
-          <p>
-            This project originated as a challenge I got from a school
-            assignment, where we had to show some form of user input to
-            influence this project. I thought it would be a fun idea to make
-            some form of a game, as I had never made a game before. As user
-            input I used WASD keys as it was the most logical option to me,
-            which was later confirmed by some user tests.
-          </p>
-          <span class="subtitle">03</span>
-          <h5>Process</h5>
-          <p>
-            I started off creating the user interface with a subtle background
-            and basic functionality like being able to control a plane with the
-            WASD keys. Later on, I was able to add other planes with different
-            speed limits. Once i had the player controlled planes down, I was
-            able to add a collision system by adding other planes coming from
-            the opposite directions, and comparing the coordinates of these
-            planes to see if they had collided with the player's plane. Points
-            were simply calculated by a timer, where u would also lose points
-            for every collision. Lastly I added some standard background music
-            for extra immersion.
-          </p>
-          <span class="subtitle">04</span>
-          <h5>Result</h5>
-          <p>
-            I'm happy with the result I was able to get within the limited time
-            frame of a week. All the functionality like different plane types
-            and collisions were working and the game felt somewhat "complete"
-            for a short project. Unfortunately the collision system isn't
-            insanely accurate, but regardless the users I tested the end product
-            with liked the game.
-          </p>
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <video
-            muted=""
-            autoplay=""
-            loop=""
-            playsinline=""
-            src="../../src/img/assets/projects/plane-game/plane-game-wide-demo.mp4"
-          ></video>
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/plane-game/plane-game-wide-2.png"
-          />
-        </div>
+          <div class="mt-md sidenav--item" id="project--prototyping">
+            <h4 data-aos="fade-up">Prototyping</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+              suscipit animi molestias laboriosam rerum hic quam magni eos iusto
+              consequuntur minus itaque quidem mollitia aperiam, odit sit quae
+              ea sint. Aliquid vel molestiae sequi corporis assumenda commodi
+              iusto omnis, nobis architecto eum delectus vitae ea earum non ipsa
+              sunt? Autem?
+            </p>
+          </div>
+          <div class="mt-md sidenav--item" id="project--testing">
+            <h4 data-aos="fade-up">Testing</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+              cupiditate, aspernatur in error qui quis explicabo provident
+              reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
+              ratione veritatis distinctio nostrum minima libero quibusdam
+              aliquam, corporis suscipit praesentium incidunt beatae. Et
+              dignissimos placeat nihil suscipit soluta cumque quibusdam
+              voluptates corporis ipsum dicta? app. The users I performed this
+              test on were my colleagues.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md" data-aos="fade-up">
+                <a
+                  href="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
+                >
+                  <img
+                    src="../../src/img/assets/projects/plane-game/plane-game-wide-1.png"
+                  />
+                </a>
+                <p class="image-description">Plane Game placeholder</p>
+              </div>
+            </div>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+              cupiditate, aspernatur in error qui quis explicabo provident
+              reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
+              ratione veritatis distinctio nostrum minima libero quibusdam
+              aliquam, corporis suscipit praesentium incidunt beatae. Et
+              dignissimos placeat nihil suscipit soluta cumque quibusdam
+              voluptates corporis ipsum dicta? app. The users I performed this
+              test on were my colleagues.
+            </p>
+          </div>
+          <div class="mt-md sidenav--item" id="project--development">
+            <h4 data-aos="fade-up">Development</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              ipsum, reprehenderit quasi vitae quas dolores corrupti sit ad
+              eaque quo sint corporis doloribus amet id. Distinctio, obcaecati
+              porro. Voluptates doloribus ipsum incidunt velit, sint temporibus
+              id sapiente ipsam modi necessitatibus suscipit nisi? Ex
+              reprehenderit nisi iste temporibus voluptatem sit earum?
+            </p>
+          </div>
+        </section>
+        <!-- /Project info -->
+        <!-- Results -->
+        <section class="results sidenav--item" id="results">
+          <h1 data-aos="fade-up">Results</h1>
+          <p data-aos="fade-up">[Results]</p>
+          <div class="mt-md sidenav--item" id="results--prototype">
+            <h4 data-aos="fade-up">Prototype</h4>
+            <p data-aos="fade-up">[Prototype results]</p>
+            <p data-aos="fade-up">[Feedback & things learned]</p>
+          </div>
+          <div class="mt-md sidenav--item" id="results--app">
+            <h4 data-aos="fade-up">App</h4>
+            <p data-aos="fade-up">[App results]</p>
+            <p data-aos="fade-up">[Feedback & things learned]</p>
+          </div>
+        </section>
+        <!-- /Results -->
+        <!-- Next project -->
         <div class="next-project" data-aos="fade-up">
           <a href="../language-master/">
             <div class="previous">
@@ -299,6 +388,7 @@
             </div>
           </a>
         </div>
+        <!-- Next project -->
       </div>
       <!-- /Container -->
     </main>

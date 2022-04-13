@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Luc Swinkels" />
-    <meta name="description" content="Skatespot — a project by Luc Swinkels." />
+    <meta name="description" content="Internship 2022 — Luc Swinkels." />
     <meta
       name="keywords"
       content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design"
@@ -17,19 +17,23 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.lucswinkels.com" />
     <meta property="article:section" content="other" />
-    <meta property="og:image" content="../../src/img/favicon/favicon.ico" />
+    <meta property="og:image" content="../../src/img/icons/favicon.ico" />
     <link rel="canonical" href="https://www.lucswinkels.com" />
     <!-- Main CSS File -->
     <link rel="stylesheet" href="../../src/css/main.min.css" />
     <link rel="stylesheet" href="../../src/css/safariOnly.css" />
     <!-- CSS Libraries -->
     <link href="../../src/css/aos.css" rel="stylesheet" />
+    <link href="../../src/css/simpleLightbox.min.css" rel="stylesheet" />
+    <link href="../../src/css/tabler-icons.min.css" rel="stylesheet" />
     <!-- JS Libraries -->
     <script src="../../src/js/aos.js"></script>
     <script src="../../src/js/TweenMax.min.js"></script>
     <script src="../../src/js/smoothScroll.min.js"></script>
+    <script src="../../src/js/simpleLightbox.min.js"></script>
     <!-- Main JS File -->
     <script src="../../src/js/main.js" defer></script>
+    <script src="../../src/js/case-studies.js" defer></script>
     <!-- Page Transition -->
     <script src="../../src/js/pageTransition.js"></script>
     <!-- Favicon & App Theme -->
@@ -66,7 +70,7 @@
     <link rel="manifest" href="../../manifest.webmanifest" />
   </head>
 
-  <body id="top">
+  <body id="top" class="case-study">
     <!-- Page Transition -->
     <svg id="fader"></svg>
     <!-- Page Transition -->
@@ -151,6 +155,7 @@
                   </g>
                 </g>
               </svg>
+              <span>Back Home</span>
             </a>
           </div>
         </li>
@@ -168,166 +173,222 @@
     </nav>
     <!-- /Nav -->
 
+    <!-- Sidebar Nav-->
+    <div class="side--nav" id="sidenav">
+      <ul>
+        <!-- Fake logo for spacing -->
+        <li class="logo"></li>
+        <!-- /Fake logo for spacing -->
+        <li class="bigger--link"><a href="#intro">Intro</a></li>
+        <li class="bigger--link"><a href="#project">The project</a></li>
+        <li>
+          <a href="#project--research">Research</a>
+        </li>
+        <li><a href="#project--design">Design</a></li>
+        <li>
+          <a href="#project--prototyping">Prototyping</a>
+        </li>
+        <li>
+          <a href="#project--testing">Testing</a>
+        </li>
+        <li>
+          <a href="#project--development">Development</a>
+        </li>
+        <li class="bigger--link"><a href="#results">Results</a></li>
+        <li>
+          <a href="#results--prototype">Prototype</a>
+        </li>
+        <li>
+          <a href="#results--app">App</a>
+        </li>
+        <div class="spacer"></div>
+      </ul>
+    </div>
+    <!-- /Sidebar Nav-->
+
     <!-- Content -->
-    <main class="case">
+    <main>
       <!-- Container -->
       <div class="container">
-        <div class="case-intro" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/thumbnails/skatespot-thumb-thin.svg"
-          />
-          <div class="case-intro-description">
-            <h1>SkateSpot</h1>
-            <p>
-              SkateSpot is a web app built with React that allows skaters to
-              find their perfect street skate spots. Users can place their own
-              markers near interesting obstacles to form a community driven
-              database of locations. Users are also able to search for spots -
-              or use a list of nearby locations to explore.
+        <!-- Content -->
+        <!-- Intro -->
+        <section class="intro sidenav--item" id="intro">
+          <div class="project-details" data-aos="fade-up">
+            <span>2021</span>
+            <span class="dot">•</span>
+            <span>Webdevelopment</span>
+          </div>
+          <h1 class="large-page-heading" data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+            molestiae.
+          </h1>
+          <div class="scroll-down" data-aos="fade-up"></div>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            suscipit omnis molestiae iusto quod quasi! Earum, quae aut cum in
+            esse rerum non! Veniam at velit perspiciatis alias blanditiis
+            deleniti qui in cupiditate nulla assumenda. Sapiente alias
+            distinctio id atque.
+          </p>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, eum
+            officia quas dolor doloribus eius consequuntur maxime tenetur nobis
+            ipsam minus architecto at quis? Quia facere laborum error, minima
+            odit alias repellendus maiores corporis? Voluptas ipsam deleniti
+            doloremque reprehenderit nemo autem, a cum saepe et amet ullam,
+            tempora maxime exercitationem.
+          </p>
+        </section>
+        <!-- /Intro -->
+        <!-- Project info -->
+        <section class="project sidenav--item" id="project">
+          <h1 data-aos="fade-up">The project</h1>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod at
+            corrupti accusamus, esse harum ipsum nemo magnam amet omnis quas
+            eius facere culpa sequi deleniti incidunt praesentium laboriosam
+            dolores officia distinctio, natus quisquam ad, quo necessitatibus.
+            Impedit ullam magni dolorum, quaerat eaque laborum minus a, quia,
+            temporibus voluptatem sit!
+          </p>
+
+          <div class="case-images">
+            <div class="image-full mv-md" data-aos="fade-up">
+              <a
+                href="../../src/img/assets/projects/skatespot/skatespot-wide-1.png"
+              >
+                <img
+                  src="../../src/img/assets/projects/skatespot/skatespot-wide-1.png"
+                />
+              </a>
+              <p class="image-description">SkateSpot placeholder</p>
+            </div>
+          </div>
+          <div class="mt-md sidenav--item" id="project--research">
+            <h4 data-aos="fade-up">Research</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Assumenda numquam minima est mollitia qui ab facere sapiente
+              veniam hic id illo laboriosam nobis quibusdam quidem, debitis
+              placeat nihil iusto. Quas laudantium dolor aspernatur sint, iste
+              tenetur possimus consectetur voluptate iusto labore excepturi quia
+              quidem assumenda ipsam fugiat veniam dignissimos error.
             </p>
           </div>
-        </div>
-        <div class="case-details" data-aos="fade-up">
-          <div class="detail-group">
-            <div class="detail">
-              <h5>Role</h5>
-              <p>Developer, Designer</p>
-            </div>
-            <div class="detail">
-              <h5>Year</h5>
-              <p>2021</p>
-            </div>
-            <div class="detail">
-              <h5>Client</h5>
-              <p>FHICT</p>
-            </div>
-          </div>
-          <div class="detail-group">
-            <div class="detail">
-              <h5>Product</h5>
-              <p>Web App, Brand Manual</p>
-            </div>
-            <div class="detail">
-              <h5>Links</h5>
-              <p><a href="https://reactappsm4.herokuapp.com/">Demo</a></p>
-            </div>
-            <div class="detail">
-              <h5>Technologies</h5>
-              <p>HTML, CSS (SCSS), JavaScript, React</p>
+          <div class="mt-md sidenav--item" id="project--design">
+            <h4 data-aos="fade-up">Design</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel at
+              dicta id exercitationem similique, pariatur aut quibusdam tempora
+              voluptatum earum repudiandae nulla voluptas, excepturi praesentium
+              placeat neque eveniet sint minus sapiente? Enim voluptatibus
+              commodi libero dolore! Aspernatur, eum maxime, ipsum, aliquam
+              incidunt velit ea ipsa optio facere beatae laborum eaque!
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md" data-aos="fade-up">
+                <a
+                  href="../../src/img/assets/projects/skatespot/skatespot-wide-1.png"
+                >
+                  <img
+                    src="../../src/img/assets/projects/skatespot/skatespot-wide-1.png"
+                  />
+                </a>
+                <p class="image-description">SkateSpot placeholder</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="case-description" data-aos="fade-up">
-          <span class="subtitle">01</span>
-          <h4>Project</h4>
-          <p>
-            SkateSpot is a web app built with React that allows skaters to find
-            their perfect street skate spots. Users can place their own markers
-            near interesting obstacles to form a community driven database of
-            locations. Users are also able to search for spots - or use a list
-            of nearby locations to explore.
-          </p>
-          <span class="subtitle">02</span>
-          <h5>Solution</h5>
-          <p>
-            Skaters haven't had a community driven app for as long as I can
-            remember. The only way to find out about new street skating
-            locations is to look around, hear about them from someone, or find
-            official parks on Google Maps. Me and my partner for this project
-            wanted to change this by building an easy to use app that had
-            everything skaters needed to know to find their perfect spots.
-          </p>
-          <span class="subtitle">03</span>
-          <h5>Process</h5>
-          <p>
-            SkateSpot started off as a school project. First off I made a Brand
-            Manual, thought of a name and quickly designed a logo (as I only had
-            a couple weeks to start and finish this project), and then started
-            looking up React tutorials to implement API's such as the Google
-            Maps API for React. After getting a grasp of how React worked and
-            how I could implement my own custom map, I added functionality like
-            adding custom markers and linking this to a database to store all
-            locations.
-          </p>
-          <span class="subtitle">04</span>
-          <h5>Result</h5>
-          <p>
-            In the end i was able to build this react app and link it to the
-            database. I also got the Google Maps API to work and display all the
-            spots stored in the database based on their location. I'm happy with
-            the result, however there is still some bugfixing to do and
-            functionality to add. <br /><br />If I had more time for this
-            project I would've implemented functionalities such as searching for
-            spots, deleting spots, having a login/register system with accounts
-            and friends, and being able to filter spots based on these friends.
-            I would also include more parameters when adding a new spot such as
-            obstacle types.
-          </p>
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-wide-1.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-1.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-2.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-3.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-4.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-5.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-6.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-7.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-8.png"
-          />
-        </div>
-        <div class="image-full" data-aos="fade-up">
-          <img
-            src="../../src/img/assets/projects/skatespot/skatespot-brandmanual-9.png"
-          />
-        </div>
+          <div class="mt-md sidenav--item" id="project--prototyping">
+            <h4 data-aos="fade-up">Prototyping</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+              suscipit animi molestias laboriosam rerum hic quam magni eos iusto
+              consequuntur minus itaque quidem mollitia aperiam, odit sit quae
+              ea sint. Aliquid vel molestiae sequi corporis assumenda commodi
+              iusto omnis, nobis architecto eum delectus vitae ea earum non ipsa
+              sunt? Autem?
+            </p>
+          </div>
+          <div class="mt-md sidenav--item" id="project--testing">
+            <h4 data-aos="fade-up">Testing</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+              cupiditate, aspernatur in error qui quis explicabo provident
+              reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
+              ratione veritatis distinctio nostrum minima libero quibusdam
+              aliquam, corporis suscipit praesentium incidunt beatae. Et
+              dignissimos placeat nihil suscipit soluta cumque quibusdam
+              voluptates corporis ipsum dicta? app. The users I performed this
+              test on were my colleagues.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md" data-aos="fade-up">
+                <a
+                  href="../../src/img/assets/projects/skatespot/skatespot-wide-1.png"
+                >
+                  <img
+                    src="../../src/img/assets/projects/skatespot/skatespot-wide-1.png"
+                  />
+                </a>
+                <p class="image-description">SkateSpot placeholder</p>
+              </div>
+            </div>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+              cupiditate, aspernatur in error qui quis explicabo provident
+              reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
+              ratione veritatis distinctio nostrum minima libero quibusdam
+              aliquam, corporis suscipit praesentium incidunt beatae. Et
+              dignissimos placeat nihil suscipit soluta cumque quibusdam
+              voluptates corporis ipsum dicta? app. The users I performed this
+              test on were my colleagues.
+            </p>
+          </div>
+          <div class="mt-md sidenav--item" id="project--development">
+            <h4 data-aos="fade-up">Development</h4>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              ipsum, reprehenderit quasi vitae quas dolores corrupti sit ad
+              eaque quo sint corporis doloribus amet id. Distinctio, obcaecati
+              porro. Voluptates doloribus ipsum incidunt velit, sint temporibus
+              id sapiente ipsam modi necessitatibus suscipit nisi? Ex
+              reprehenderit nisi iste temporibus voluptatem sit earum?
+            </p>
+          </div>
+        </section>
+        <!-- /Project info -->
+        <!-- Results -->
+        <section class="results sidenav--item" id="results">
+          <h1 data-aos="fade-up">Results</h1>
+          <p data-aos="fade-up">[Results]</p>
+          <div class="mt-md sidenav--item" id="results--prototype">
+            <h4 data-aos="fade-up">Prototype</h4>
+            <p data-aos="fade-up">[Prototype results]</p>
+            <p data-aos="fade-up">[Feedback & things learned]</p>
+          </div>
+          <div class="mt-md sidenav--item" id="results--app">
+            <h4 data-aos="fade-up">App</h4>
+            <p data-aos="fade-up">[App results]</p>
+            <p data-aos="fade-up">[Feedback & things learned]</p>
+          </div>
+        </section>
+        <!-- /Results -->
+        <!-- Next project -->
         <div class="next-project" data-aos="fade-up">
-          <a href="../skatrixx/">
+          <a href="../plane-game/">
             <div class="previous">
               <h4>Previous Project</h4>
-              <h3>Skatrixx</h3>
-            </div>
-          </a>
-          <a href="../plane-game/">
-            <div class="next">
-              <h4>Next Project</h4>
               <h3>Plane Game</h3>
             </div>
           </a>
+          <a href="../tix/">
+            <div class="next">
+              <h4>Next Project</h4>
+              <h3>Tix</h3>
+            </div>
+          </a>
         </div>
+        <!-- Next project -->
       </div>
       <!-- /Container -->
     </main>
