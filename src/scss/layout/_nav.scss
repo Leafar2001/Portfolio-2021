@@ -85,9 +85,15 @@ nav {
           &:hover {
             path#Path_3 {
               transform: translateY(-90px);
+              -webkit-transform: translateY(-90px);
+              -moz-transform: translateY(-90px);
+              -o-transform: translateY(-90px);
             }
             path#Path_4 {
               transform: translateY(-70px);
+              -webkit-transform: translateY(-70px);
+              -moz-transform: translateY(-70px);
+              -o-transform: translateY(-70px);
             }
           }
           path {
