@@ -1,4 +1,5 @@
 name: deploy-develop
+on:
   push:
     branches: [ develop ]
 jobs:
