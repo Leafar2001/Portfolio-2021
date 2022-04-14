@@ -125,6 +125,11 @@
 
 @media (prefers-color-scheme: dark) {
   .project {
+    .project-img {
+      @include breakpoint(laptop) {
+        border: 1px solid rgba($soft-black, 0.4);
+      }
+    }
     &:after {
       color: $white;
       @include breakpoint(laptop) {
@@ -150,6 +155,11 @@
 }
 @media (prefers-color-scheme: light) {
   .project {
+    .project-img {
+      @include breakpoint(laptop) {
+        border: 1px solid rgba($soft-black, 0.1);
+      }
+    }
     &:after {
       color: $white;
       @include breakpoint(laptop) {
