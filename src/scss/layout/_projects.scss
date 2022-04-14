@@ -28,8 +28,8 @@
         justify-content: center;
       }
     }
-    @for $i from 1 through 6 {
-      &:nth-child(6n + #{$i}) {
+    @for $i from 1 through 7 {
+      &:nth-child(7n + #{$i}) {
         &:after {
           content: "0" + $i;
         }
@@ -48,7 +48,7 @@
 
       &:hover img {
         @include breakpoint(laptop) {
-          transform: scale(1.03);
+          transform: scale(1.1);
         }
       }
       img {
