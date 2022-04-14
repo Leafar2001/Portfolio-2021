@@ -15,12 +15,14 @@ jobs:
 #         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 #       - name: Deploy with rsync
 #         run: rsync -avz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/dev.lucswinkels.com/public_html/
+
+      - uses: actions/checkout@v1
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.2.11
         env:
          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
          ARGS: "-rltgoDzvO --delete"
-         SOURCE: "."
+         SOURCE: "./"
          REMOTE_HOST: ${{ secrets.SSH_HOST }}
          REMOTE_USER: ${{ secrets.SSH_USER }}
          TARGET: ${{ secrets.SSH_TARGET }}
