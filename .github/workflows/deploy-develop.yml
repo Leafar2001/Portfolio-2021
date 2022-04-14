@@ -23,5 +23,5 @@ jobs:
          SOURCE: ""
          REMOTE_HOST: ${{ secrets.SSH_HOST }}
          REMOTE_USER: ${{ secrets.SSH_USER }}
-         TARGET: /var/www/dev.lucswinkels.com/public_html/
-         EXCLUDE: "/dist/, /node_modules/"
+         TARGET: "/var/www/dev.lucswinkels.com/public_html/"
+         EXCLUDE: ""
