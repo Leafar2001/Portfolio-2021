@@ -1,0 +1,20 @@
+name: deployment
+on:
+  push:
+    branches: [ master ]
+jobs:
+    deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+        - name: ssh deploy
+          uses: easingthemes/ssh-deploy@v2.2.11
+          env:
+           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+           ARGS: "-rltgoDzvO --delete"
+           SOURCE: "./"
+           REMOTE_HOST: ${{ secrets.SSH_HOST }}
+           REMOTE_USER: ${{ secrets.SSH_USER }}
+           TARGET: ${{ secrets.SSH_TARGET_MASTER }}
+           EXCLUDE: "/.git/, /.github/, .gitignore"
+
