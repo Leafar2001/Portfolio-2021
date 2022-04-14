@@ -1,0 +1,11 @@
+name: deploy-develop
+on:
+  push:
+    branches: [ develop ]
+jobs:
+  write-to-console:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Hello world!'
+      
+
