@@ -13,8 +13,8 @@ nav {
     padding-left: $padding-horizontal--sm;
     padding-right: $padding-horizontal--sm;
     @include breakpoint(laptop) {
-      padding-left: $padding-horizontal--md;
-      padding-right: $padding-horizontal--md;
+      padding-left: $padding-horizontal--sm;
+      padding-right: $padding-horizontal--sm;
     }
     padding-top: $padding-vertical--sm;
     padding-bottom: $padding-vertical--sm;
