@@ -66,6 +66,7 @@
       .image-double-container {
         @include breakpoint(laptop) {
           display: flex;
+          align-items: flex-start;
         }
         .image-half {
           justify-content: center;
@@ -75,6 +76,7 @@
           }
           padding: 0;
           &:first-of-type {
+            margin-top: 0;
             @include breakpoint(laptop) {
               padding-right: 20px;
             }
