@@ -22,9 +22,6 @@ if ("serviceWorker" in navigator) {
   console.log("Browser: I don't support Service Workers :(");
 }
 
-// Init AOS
-// AOS.init();
-
 // Cursor effect
 /// Get elements
 var cursor = document.querySelector(".cursor");
