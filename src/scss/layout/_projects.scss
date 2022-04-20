@@ -5,6 +5,7 @@
   //   padding-top: $padding-vertical--lg;
   // }
   .project {
+    position: relative;
     @include breakpoint(laptop) {
       display: flex;
     }
