@@ -23,7 +23,7 @@ if ("serviceWorker" in navigator) {
 }
 
 // Init AOS
-AOS.init();
+// AOS.init();
 
 // Cursor effect
 /// Get elements
