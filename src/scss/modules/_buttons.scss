@@ -31,15 +31,16 @@
 
 @media (prefers-color-scheme: light) {
   .btn {
+    background: $black;
+    border-color: $black;
     span {
-      color: $black;
+      color: $white;
     }
-    border-color: rgba($soft-black, 0.1);
     &:hover {
-      background: $black;
-      border-color: $black;
+      background: none;
+      border-color: rgba($soft-black, 0.1);
       span {
-        color: $white;
+        color: $black;
       }
     }
   }
