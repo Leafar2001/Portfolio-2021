@@ -147,6 +147,7 @@
     height: 100vh;
     z-index: 50;
     overflow-y: auto;
+    min-width: 250px;
     .spacer {
       width: 100%;
       height: $padding-vertical--sm;

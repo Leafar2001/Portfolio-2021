@@ -1,9 +1,6 @@
 // Projects
 .projects {
   padding-top: $padding-vertical--md;
-  // @include breakpoint(laptop) {
-  //   padding-top: $padding-vertical--lg;
-  // }
   .project {
     position: relative;
     @include breakpoint(laptop) {
