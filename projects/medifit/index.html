@@ -1,400 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Medifit — Luc Swinkels</title>
-    <!-- SEO -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Luc Swinkels" />
-    <meta
-      name="description"
-      content="Breathing some much-needed life back into the fitness industry one
-      website at a time."
-    />
-    <meta
-      name="keywords"
-      content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design"
-    />
-    <meta name="robots" content="noodp" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.lucswinkels.com" />
-    <meta property="article:section" content="other" />
-    <meta property="og:image" content="../../src/img/icons/favicon.ico" />
-    <link rel="canonical" href="https://www.lucswinkels.com" />
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="../../src/css/main.min.css" />
-    <link rel="stylesheet" href="../../src/css/safariOnly.css" />
-    <!-- CSS Libraries -->
-    <link href="../../src/css/simpleLightbox.min.css" rel="stylesheet" />
-    <link href="../../src/css/tabler-icons.min.css" rel="stylesheet" />
-    <!-- JS Libraries -->
-    <script src="../../src/js/TweenMax.min.js"></script>
-    <script src="../../src/js/smoothScroll.min.js"></script>
-    <script src="../../src/js/simpleLightbox.min.js"></script>
-    <!-- Main JS File -->
-    <script src="../../src/js/main.js" defer></script>
-    <script src="../../src/js/case-studies.js" defer></script>
-    <!-- Page Transition -->
-    <script src="../../src/js/pageTransition.js"></script>
-    <!-- Favicon & App Theme -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../../src/img/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../../src/img/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../../src/img/icons/favicon-16x16.png"
-    />
-    <link
-      rel="mask-icon"
-      href="../../src/img/icons/safari-pinned-tab.svg"
-      color="#14161a"
-    />
-    <link rel="shortcut icon" href="../../src/img/icons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#14161a" />
-    <meta
-      name="msapplication-config"
-      content="../../src/img/icons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#f9faff" />
-    <!-- Manifest -->
-    <link rel="manifest" href="../../manifest.webmanifest" />
-  </head>
 
-  <body id="top" class="case-study">
-    <!-- Page Transition -->
-    <svg id="fader"></svg>
-    <!-- Page Transition -->
+<head>
+  <title>Medifit — Luc Swinkels</title>
+  <!-- SEO -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Luc Swinkels" />
+  <meta name="description" content="Breathing some much-needed life back into the fitness industry one
+      website at a time." />
+  <meta name="keywords" content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design" />
+  <meta name="robots" content="noodp" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.lucswinkels.com" />
+  <meta property="article:section" content="other" />
+  <meta property="og:image" content="../../src/img/icons/favicon.ico" />
+  <link rel="canonical" href="https://www.lucswinkels.com" />
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="../../src/css/main.min.css" />
+  <link rel="stylesheet" href="../../src/css/safariOnly.css" />
+  <!-- CSS Libraries -->
+  <link href="../../src/css/simpleLightbox.min.css" rel="stylesheet" />
+  <link href="../../src/css/tabler-icons.min.css" rel="stylesheet" />
+  <!-- JS Libraries -->
+  <script src="../../src/js/TweenMax.min.js"></script>
+  <script src="../../src/js/smoothScroll.min.js"></script>
+  <script src="../../src/js/simpleLightbox.min.js"></script>
+  <!-- Main JS File -->
+  <script src="../../src/js/main.js" defer></script>
+  <script src="../../src/js/case-studies.js" defer></script>
+  <!-- Page Transition -->
+  <script src="../../src/js/pageTransition.js"></script>
+  <!-- Favicon & App Theme -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../src/img/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../src/img/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../src/img/icons/favicon-16x16.png" />
+  <link rel="mask-icon" href="../../src/img/icons/safari-pinned-tab.svg" color="#14161a" />
+  <link rel="shortcut icon" href="../../src/img/icons/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#14161a" />
+  <meta name="msapplication-config" content="../../src/img/icons/browserconfig.xml" />
+  <meta name="theme-color" content="#f9faff" />
+  <!-- Manifest -->
+  <link rel="manifest" href="../../manifest.webmanifest" />
+</head>
 
-    <!-- Cursor -->
-    <div class="cursor-container">
-      <div class="cursor"></div>
-    </div>
-    <!-- /Cursor -->
+<body id="top" class="case-study">
+  <!-- Page Transition -->
+  <svg id="fader"></svg>
+  <!-- Page Transition -->
 
-    <!-- Nav -->
-    <nav>
-      <ul>
-        <li class="logo">
-          <div class="magnetic">
-            <a href="../../">
-              <svg
-                class="logo-white"
-                xmlns="http://www.w3.org/2000/svg"
-                width="391.751"
-                height="377.401"
-                viewBox="0 0 391.751 377.401"
-              >
-                <g
-                  id="Layer_2"
-                  data-name="Layer 2"
-                  transform="translate(0.008 226.815) rotate(-60)"
-                >
-                  <g
-                    id="Layer_1"
-                    data-name="Layer 1"
-                    transform="translate(-0.02 -0.003)"
-                  >
-                    <path
-                      id="Path_3"
-                      data-name="Path 3"
-                      d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
-                      transform="translate(0 -162.798)"
-                      fill="#fff"
-                    />
-                    <path
-                      id="Path_4"
-                      data-name="Path 4"
-                      d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
-                      transform="translate(0.008 0.003)"
-                      fill="#fff"
-                    />
-                  </g>
+  <!-- Cursor -->
+  <div class="cursor-container">
+    <div class="cursor"></div>
+  </div>
+  <!-- /Cursor -->
+
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li class="logo">
+        <div class="magnetic">
+          <a href="../../">
+            <svg class="logo-white" xmlns="http://www.w3.org/2000/svg" width="391.751" height="377.401"
+              viewBox="0 0 391.751 377.401">
+              <g id="Layer_2" data-name="Layer 2" transform="translate(0.008 226.815) rotate(-60)">
+                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.02 -0.003)">
+                  <path id="Path_3" data-name="Path 3"
+                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                    transform="translate(0 -162.798)" fill="#fff" />
+                  <path id="Path_4" data-name="Path 4"
+                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                    transform="translate(0.008 0.003)" fill="#fff" />
                 </g>
-              </svg>
-              <svg
-                class="logo-black"
-                xmlns="http://www.w3.org/2000/svg"
-                width="391.751"
-                height="377.401"
-                viewBox="0 0 391.751 377.401"
-              >
-                <g
-                  id="Layer_2"
-                  data-name="Layer 2"
-                  transform="translate(0.008 226.815) rotate(-60)"
-                >
-                  <g
-                    id="Layer_1"
-                    data-name="Layer 1"
-                    transform="translate(-0.02 -0.003)"
-                  >
-                    <path
-                      id="Path_3"
-                      data-name="Path 3"
-                      d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
-                      transform="translate(0 -162.798)"
-                      fill="#14161a"
-                    />
-                    <path
-                      id="Path_4"
-                      data-name="Path 4"
-                      d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
-                      transform="translate(0.008 0.003)"
-                      fill="#14161a"
-                    />
-                  </g>
+              </g>
+            </svg>
+            <svg class="logo-black" xmlns="http://www.w3.org/2000/svg" width="391.751" height="377.401"
+              viewBox="0 0 391.751 377.401">
+              <g id="Layer_2" data-name="Layer 2" transform="translate(0.008 226.815) rotate(-60)">
+                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.02 -0.003)">
+                  <path id="Path_3" data-name="Path 3"
+                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                    transform="translate(0 -162.798)" fill="#14161a" />
+                  <path id="Path_4" data-name="Path 4"
+                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                    transform="translate(0.008 0.003)" fill="#14161a" />
                 </g>
-              </svg>
-              <span>Back Home</span>
+              </g>
+            </svg>
+            <span>Back Home</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="magnetic">
+          <a href="../../#projects">Projects</a>
+        </div>
+      </li>
+      <li>
+        <div class="magnetic">
+          <a href="../../about">About</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /Nav -->
+
+  <!-- Sidebar Nav-->
+  <div class="side--nav" id="sidenav">
+    <ul>
+      <!-- Fake logo for spacing -->
+      <li class="logo"></li>
+      <!-- /Fake logo for spacing -->
+      <li class="bigger--link"><a href="#intro">Intro</a></li>
+      <li class="bigger--link"><a href="#project">The project</a></li>
+      <li>
+        <a href="#project--research">Research</a>
+      </li>
+      <li><a href="#project--design">Design</a></li>
+      <li>
+        <a href="#project--prototyping">Prototyping</a>
+      </li>
+      <li>
+        <a href="#project--testing">Testing</a>
+      </li>
+      <li>
+        <a href="#project--development">Development</a>
+      </li>
+      <li class="bigger--link"><a href="#results">Results</a></li>
+      <li>
+        <a href="#results--prototype">Prototype</a>
+      </li>
+      <li>
+        <a href="#results--app">App</a>
+      </li>
+      <div class="spacer"></div>
+    </ul>
+  </div>
+  <!-- /Sidebar Nav-->
+
+  <!-- Content -->
+  <main>
+    <!-- Container -->
+    <div class="container">
+      <!-- Content -->
+      <!-- Intro -->
+      <section class="intro sidenav--item" id="intro">
+        <div class="project-details">
+          <span>2019</span>
+          <span class="dot">•</span>
+          <span>Web</span>
+          <span class="dot">•</span>
+          <span>CMS</span>
+        </div>
+        <h1 class="large-page-heading">
+          Breathing some much-needed life back into the fitness industry one
+          website at a time.
+        </h1>
+        <div class="scroll-down"></div>
+        <div class="case-images">
+          <div class="image-full mt-sm mb-md">
+            <a href="../../src/img/assets/projects/medifit/medifit-wide-1.png">
+              <img src="../../src/img/assets/projects/medifit/medifit-wide-1.png" />
             </a>
           </div>
-        </li>
-        <li>
-          <div class="magnetic">
-            <a href="../../#projects">Projects</a>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          suscipit omnis molestiae iusto quod quasi! Earum, quae aut cum in
+          esse rerum non! Veniam at velit perspiciatis alias blanditiis
+          deleniti qui in cupiditate nulla assumenda. Sapiente alias
+          distinctio id atque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, eum
+          officia quas dolor doloribus eius consequuntur maxime tenetur nobis
+          ipsam minus architecto at quis? Quia facere laborum error, minima
+          odit alias repellendus maiores corporis? Voluptas ipsam deleniti
+          doloremque reprehenderit nemo autem, a cum saepe et amet ullam,
+          tempora maxime exercitationem.
+        </p>
+      </section>
+      <!-- /Intro -->
+      <!-- Project info -->
+      <section class="project sidenav--item" id="project">
+        <h1>The project</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod at
+          corrupti accusamus, esse harum ipsum nemo magnam amet omnis quas
+          eius facere culpa sequi deleniti incidunt praesentium laboriosam
+          dolores officia distinctio, natus quisquam ad, quo necessitatibus.
+          Impedit ullam magni dolorum, quaerat eaque laborum minus a, quia,
+          temporibus voluptatem sit!
+        </p>
+        <div class="case-images">
+          <div class="image-full mv-md">
+            <a href="../../src/img/assets/projects/medifit/medifit-wide-1.png">
+              <img src="../../src/img/assets/projects/medifit/medifit-wide-1.png" />
+            </a>
+            <p class="image-description">Medifit placeholder</p>
           </div>
-        </li>
-        <li>
-          <div class="magnetic">
-            <a href="../../about">About</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <!-- /Nav -->
-
-    <!-- Sidebar Nav-->
-    <div class="side--nav" id="sidenav">
-      <ul>
-        <!-- Fake logo for spacing -->
-        <li class="logo"></li>
-        <!-- /Fake logo for spacing -->
-        <li class="bigger--link"><a href="#intro">Intro</a></li>
-        <li class="bigger--link"><a href="#project">The project</a></li>
-        <li>
-          <a href="#project--research">Research</a>
-        </li>
-        <li><a href="#project--design">Design</a></li>
-        <li>
-          <a href="#project--prototyping">Prototyping</a>
-        </li>
-        <li>
-          <a href="#project--testing">Testing</a>
-        </li>
-        <li>
-          <a href="#project--development">Development</a>
-        </li>
-        <li class="bigger--link"><a href="#results">Results</a></li>
-        <li>
-          <a href="#results--prototype">Prototype</a>
-        </li>
-        <li>
-          <a href="#results--app">App</a>
-        </li>
-        <div class="spacer"></div>
-      </ul>
-    </div>
-    <!-- /Sidebar Nav-->
-
-    <!-- Content -->
-    <main>
-      <!-- Container -->
-      <div class="container">
-        <!-- Content -->
-        <!-- Intro -->
-        <section class="intro sidenav--item" id="intro">
-          <div class="project-details">
-            <span>2019</span>
-            <span class="dot">•</span>
-            <span>Web</span>
-            <span class="dot">•</span>
-            <span>CMS</span>
-          </div>
-          <h1 class="large-page-heading">
-            Breathing some much-needed life back into the fitness industry one
-            website at a time.
-          </h1>
-          <div class="scroll-down"></div>
+        </div>
+        <div class="mt-md sidenav--item" id="project--research">
+          <h4>Research</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            suscipit omnis molestiae iusto quod quasi! Earum, quae aut cum in
-            esse rerum non! Veniam at velit perspiciatis alias blanditiis
-            deleniti qui in cupiditate nulla assumenda. Sapiente alias
-            distinctio id atque.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Assumenda numquam minima est mollitia qui ab facere sapiente
+            veniam hic id illo laboriosam nobis quibusdam quidem, debitis
+            placeat nihil iusto. Quas laudantium dolor aspernatur sint, iste
+            tenetur possimus consectetur voluptate iusto labore excepturi quia
+            quidem assumenda ipsam fugiat veniam dignissimos error.
           </p>
+        </div>
+        <div class="mt-md sidenav--item" id="project--design">
+          <h4>Design</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, eum
-            officia quas dolor doloribus eius consequuntur maxime tenetur nobis
-            ipsam minus architecto at quis? Quia facere laborum error, minima
-            odit alias repellendus maiores corporis? Voluptas ipsam deleniti
-            doloremque reprehenderit nemo autem, a cum saepe et amet ullam,
-            tempora maxime exercitationem.
-          </p>
-        </section>
-        <!-- /Intro -->
-        <!-- Project info -->
-        <section class="project sidenav--item" id="project">
-          <h1>The project</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod at
-            corrupti accusamus, esse harum ipsum nemo magnam amet omnis quas
-            eius facere culpa sequi deleniti incidunt praesentium laboriosam
-            dolores officia distinctio, natus quisquam ad, quo necessitatibus.
-            Impedit ullam magni dolorum, quaerat eaque laborum minus a, quia,
-            temporibus voluptatem sit!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel at
+            dicta id exercitationem similique, pariatur aut quibusdam tempora
+            voluptatum earum repudiandae nulla voluptas, excepturi praesentium
+            placeat neque eveniet sint minus sapiente? Enim voluptatibus
+            commodi libero dolore! Aspernatur, eum maxime, ipsum, aliquam
+            incidunt velit ea ipsa optio facere beatae laborum eaque!
           </p>
           <div class="case-images">
             <div class="image-full mv-md">
-              <a
-                href="../../src/img/assets/projects/medifit/medifit-wide-1.png"
-              >
-                <img
-                  src="../../src/img/assets/projects/medifit/medifit-wide-1.png"
-                />
+              <a href="../../src/img/assets/projects/medifit/medifit-wide-1.png">
+                <img src="../../src/img/assets/projects/medifit/medifit-wide-1.png" />
               </a>
               <p class="image-description">Medifit placeholder</p>
             </div>
           </div>
-          <div class="mt-md sidenav--item" id="project--research">
-            <h4>Research</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Assumenda numquam minima est mollitia qui ab facere sapiente
-              veniam hic id illo laboriosam nobis quibusdam quidem, debitis
-              placeat nihil iusto. Quas laudantium dolor aspernatur sint, iste
-              tenetur possimus consectetur voluptate iusto labore excepturi quia
-              quidem assumenda ipsam fugiat veniam dignissimos error.
-            </p>
-          </div>
-          <div class="mt-md sidenav--item" id="project--design">
-            <h4>Design</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel at
-              dicta id exercitationem similique, pariatur aut quibusdam tempora
-              voluptatum earum repudiandae nulla voluptas, excepturi praesentium
-              placeat neque eveniet sint minus sapiente? Enim voluptatibus
-              commodi libero dolore! Aspernatur, eum maxime, ipsum, aliquam
-              incidunt velit ea ipsa optio facere beatae laborum eaque!
-            </p>
-            <div class="case-images">
-              <div class="image-full mv-md">
-                <a
-                  href="../../src/img/assets/projects/medifit/medifit-wide-1.png"
-                >
-                  <img
-                    src="../../src/img/assets/projects/medifit/medifit-wide-1.png"
-                  />
-                </a>
-                <p class="image-description">Medifit placeholder</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-md sidenav--item" id="project--prototyping">
-            <h4>Prototyping</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-              suscipit animi molestias laboriosam rerum hic quam magni eos iusto
-              consequuntur minus itaque quidem mollitia aperiam, odit sit quae
-              ea sint. Aliquid vel molestiae sequi corporis assumenda commodi
-              iusto omnis, nobis architecto eum delectus vitae ea earum non ipsa
-              sunt? Autem?
-            </p>
-          </div>
-          <div class="mt-md sidenav--item" id="project--testing">
-            <h4>Testing</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-              cupiditate, aspernatur in error qui quis explicabo provident
-              reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
-              ratione veritatis distinctio nostrum minima libero quibusdam
-              aliquam, corporis suscipit praesentium incidunt beatae. Et
-              dignissimos placeat nihil suscipit soluta cumque quibusdam
-              voluptates corporis ipsum dicta? app. The users I performed this
-              test on were my colleagues.
-            </p>
-            <div class="case-images">
-              <div class="image-full mv-md">
-                <a
-                  href="../../src/img/assets/projects/medifit/medifit-wide-1.png"
-                >
-                  <img
-                    src="../../src/img/assets/projects/medifit/medifit-wide-1.png"
-                  />
-                </a>
-                <p class="image-description">Medifit placeholder</p>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-              cupiditate, aspernatur in error qui quis explicabo provident
-              reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
-              ratione veritatis distinctio nostrum minima libero quibusdam
-              aliquam, corporis suscipit praesentium incidunt beatae. Et
-              dignissimos placeat nihil suscipit soluta cumque quibusdam
-              voluptates corporis ipsum dicta? app. The users I performed this
-              test on were my colleagues.
-            </p>
-          </div>
-          <div class="mt-md sidenav--item" id="project--development">
-            <h4>Development</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              ipsum, reprehenderit quasi vitae quas dolores corrupti sit ad
-              eaque quo sint corporis doloribus amet id. Distinctio, obcaecati
-              porro. Voluptates doloribus ipsum incidunt velit, sint temporibus
-              id sapiente ipsam modi necessitatibus suscipit nisi? Ex
-              reprehenderit nisi iste temporibus voluptatem sit earum?
-            </p>
-          </div>
-        </section>
-        <!-- /Project info -->
-        <!-- Results -->
-        <section class="results sidenav--item" id="results">
-          <h1>Results</h1>
-          <p>[Results]</p>
-          <div class="mt-md sidenav--item" id="results--prototype">
-            <h4>Prototype</h4>
-            <p>[Prototype results]</p>
-            <p>[Feedback & things learned]</p>
-          </div>
-          <div class="mt-md sidenav--item" id="results--app">
-            <h4>App</h4>
-            <p>[App results]</p>
-            <p>[Feedback & things learned]</p>
-          </div>
-        </section>
-        <!-- /Results -->
-        <!-- Next project -->
-        <div class="next-project">
-          <a href="../tix/">
-            <div class="previous">
-              <h4>Previous Project</h4>
-              <h3>Tix</h3>
-            </div>
-          </a>
-          <a href="../happygreen/">
-            <div class="next">
-              <h4>Next Project</h4>
-              <h3>HappyGreen</h3>
-            </div>
-          </a>
         </div>
-        <!-- Next project -->
+        <div class="mt-md sidenav--item" id="project--prototyping">
+          <h4>Prototyping</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+            suscipit animi molestias laboriosam rerum hic quam magni eos iusto
+            consequuntur minus itaque quidem mollitia aperiam, odit sit quae
+            ea sint. Aliquid vel molestiae sequi corporis assumenda commodi
+            iusto omnis, nobis architecto eum delectus vitae ea earum non ipsa
+            sunt? Autem?
+          </p>
+        </div>
+        <div class="mt-md sidenav--item" id="project--testing">
+          <h4>Testing</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            cupiditate, aspernatur in error qui quis explicabo provident
+            reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
+            ratione veritatis distinctio nostrum minima libero quibusdam
+            aliquam, corporis suscipit praesentium incidunt beatae. Et
+            dignissimos placeat nihil suscipit soluta cumque quibusdam
+            voluptates corporis ipsum dicta? app. The users I performed this
+            test on were my colleagues.
+          </p>
+          <div class="case-images">
+            <div class="image-full mv-md">
+              <a href="../../src/img/assets/projects/medifit/medifit-wide-1.png">
+                <img src="../../src/img/assets/projects/medifit/medifit-wide-1.png" />
+              </a>
+              <p class="image-description">Medifit placeholder</p>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            cupiditate, aspernatur in error qui quis explicabo provident
+            reiciendis? Aperiam a repellendus aliquid ipsum impedit facilis
+            ratione veritatis distinctio nostrum minima libero quibusdam
+            aliquam, corporis suscipit praesentium incidunt beatae. Et
+            dignissimos placeat nihil suscipit soluta cumque quibusdam
+            voluptates corporis ipsum dicta? app. The users I performed this
+            test on were my colleagues.
+          </p>
+        </div>
+        <div class="mt-md sidenav--item" id="project--development">
+          <h4>Development</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            ipsum, reprehenderit quasi vitae quas dolores corrupti sit ad
+            eaque quo sint corporis doloribus amet id. Distinctio, obcaecati
+            porro. Voluptates doloribus ipsum incidunt velit, sint temporibus
+            id sapiente ipsam modi necessitatibus suscipit nisi? Ex
+            reprehenderit nisi iste temporibus voluptatem sit earum?
+          </p>
+        </div>
+      </section>
+      <!-- /Project info -->
+      <!-- Results -->
+      <section class="results sidenav--item" id="results">
+        <h1>Results</h1>
+        <p>[Results]</p>
+        <div class="mt-md sidenav--item" id="results--prototype">
+          <h4>Prototype</h4>
+          <p>[Prototype results]</p>
+          <p>[Feedback & things learned]</p>
+        </div>
+        <div class="mt-md sidenav--item" id="results--app">
+          <h4>App</h4>
+          <p>[App results]</p>
+          <p>[Feedback & things learned]</p>
+        </div>
+      </section>
+      <!-- /Results -->
+      <!-- Next project -->
+      <div class="next-project">
+        <a href="../tix/">
+          <div class="previous">
+            <h4>Previous Project</h4>
+            <h3>Tix</h3>
+          </div>
+        </a>
+        <a href="../happygreen/">
+          <div class="next">
+            <h4>Next Project</h4>
+            <h3>HappyGreen</h3>
+          </div>
+        </a>
       </div>
-      <!-- /Container -->
-    </main>
-    <!-- /Content -->
-  </body>
+      <!-- Next project -->
+    </div>
+    <!-- /Container -->
+  </main>
+  <!-- /Content -->
+</body>
+
 </html>

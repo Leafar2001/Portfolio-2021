@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
       anchors[i].pathname.includes(".jpeg") ||
       anchors[i].pathname.includes(".mov") ||
       anchors[i].pathname.includes(".mp4") ||
-      anchors[i].pathname.includes(".gif")
+      anchors[i].pathname.includes(".gif") ||
+      anchors[i].pathname.includes(".svg")
     ) {
       continue;
     }
