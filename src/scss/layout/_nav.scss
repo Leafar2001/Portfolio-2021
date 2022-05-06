@@ -15,8 +15,8 @@ nav {
     @include breakpoint(laptop) {
       padding-left: $padding-horizontal--sm;
       padding-right: calc(
-        #{$padding-horizontal--sm} + 1em
-      ); // 1em extra offset for scrollbar
+        #{$padding-horizontal--sm} + 20px
+      ); // 20px extra offset for scrollbar
     }
     padding-top: $padding-vertical--sm;
     padding-bottom: $padding-vertical--sm;
