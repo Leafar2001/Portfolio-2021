@@ -254,7 +254,7 @@ svg {
     width: 250vh;
     z-index: -1;
     display: none;
-    opacity: 0.02;
+    opacity: 0.015;
     @include breakpoint(laptop) {
       display: block;
     }
