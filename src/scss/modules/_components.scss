@@ -243,3 +243,89 @@ svg {
     }
   }
 }
+
+// Background logo
+.logo-background {
+  svg {
+    height: 250vh;
+    position: fixed;
+    right: -30vw;
+    top: -50vh;
+    width: 250vh;
+    z-index: -1;
+    display: none;
+    opacity: 0.02;
+    @include breakpoint(laptop) {
+      display: block;
+    }
+    @media (prefers-color-scheme: light) {
+      &.logo-black {
+        display: inline-block;
+      }
+      &.logo-white {
+        display: none;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      &.logo-black {
+        display: none;
+      }
+      &.logo-white {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// Scroll down indicator
+.scroll-down {
+  display: none;
+  @include breakpoint(laptop) {
+    display: block;
+  }
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  position: relative;
+  @include border-radius(50%);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-50px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-5px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .scroll-down {
+    background: $black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .scroll-down {
+    background: $ghost-white;
+  }
+}
