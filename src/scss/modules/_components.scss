@@ -228,7 +228,7 @@ svg {
 
 @media (prefers-color-scheme: dark) {
   .circular-icon {
-    background: rgba($white, 0.1);
+    background: rgba($white, 0.05);
     i {
       color: $white;
     }
@@ -237,7 +237,7 @@ svg {
 
 @media (prefers-color-scheme: light) {
   .circular-icon {
-    background: rgba($black, 0.1);
+    background: rgba($black, 0.05);
     i {
       color: $black;
     }
