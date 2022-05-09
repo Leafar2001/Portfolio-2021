@@ -366,6 +366,7 @@
   }
   .next-project {
     border: 1px solid rgba($soft-black, 0.4);
+    background: $dark--background;
     a {
       &:hover {
         background: rgba($soft-black, 0.1);
@@ -405,6 +406,7 @@
   }
   .next-project {
     border: 1px solid rgba($soft-black, 0.1);
+    background: $light--background;
     a {
       &:hover {
         background: rgba($soft-black, 0.1);

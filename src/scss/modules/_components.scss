@@ -249,7 +249,7 @@ svg {
   svg {
     position: fixed;
     z-index: -1;
-    opacity: 0.015;
+    opacity: 0.025;
     height: 150vh;
     width: 150vh;
     right: -100vh;
@@ -257,7 +257,7 @@ svg {
     @include breakpoint(laptop) {
       height: 250vh;
       width: 250vh;
-      right: -30vw;
+      right: -60vw;
       top: -50vh;
     }
     // opacity: 0.015;
