@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
       anchors[i].pathname.includes(".mov") ||
       anchors[i].pathname.includes(".mp4") ||
       anchors[i].pathname.includes(".gif") ||
-      anchors[i].pathname.includes(".svg")
+      anchors[i].pathname.includes(".svg") ||
+      anchors[i].pathname.includes(".webp")
     ) {
       continue;
     }
