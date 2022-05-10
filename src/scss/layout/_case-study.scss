@@ -1,5 +1,12 @@
 // Case studies
 .case-study {
+  // nav {
+  //   display: block;
+  //   @include breakpoint(tablet) {
+  //     display: none;
+  //   }
+  // }
+
   main {
     padding-top: 0;
   }
@@ -229,7 +236,7 @@
           }
           a {
             font-family: $font--big;
-            font-size: 1.1em;
+            font-size: 1em;
             margin-left: 0;
           }
           margin-top: 15px;
@@ -254,6 +261,9 @@
   }
 
   @media (prefers-color-scheme: light) {
+    .side--nav {
+      background-color: $light--background;
+    }
     .side--nav::-webkit-scrollbar-thumb {
       border: 8px solid rgba($black, 0);
       background-color: rgba($black, 0.75);
@@ -265,6 +275,9 @@
   }
 
   @media (prefers-color-scheme: dark) {
+    .side--nav {
+      background-color: $dark--background;
+    }
     .side--nav::-webkit-scrollbar-thumb {
       border: 8px solid rgba($white, 0);
       background-color: rgba($white, 0.75);
@@ -272,28 +285,6 @@
     .side--nav::-webkit-scrollbar-track {
       background-color: rgba($white, 0.1);
       border: 8px solid rgba($white, 0);
-    }
-  }
-
-  .back-to-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    margin-top: $padding-vertical--md;
-    @include breakpoint(tablet) {
-      margin-top: $padding-vertical--lg;
-    }
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 30px;
-      width: 60px;
-      height: 60px;
-      margin-left: 0;
-      @include border-radius(50%);
     }
   }
 
