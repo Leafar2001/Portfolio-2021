@@ -1,11 +1,11 @@
 // Case studies
 .case-study {
-  // nav {
-  //   display: block;
-  //   @include breakpoint(tablet) {
-  //     display: none;
-  //   }
-  // }
+  nav {
+    display: block;
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
 
   main {
     padding-top: 0;
@@ -172,22 +172,39 @@
         width: 100%;
         &:first-of-type {
           margin-top: 0;
+          width: auto;
         }
         &.logo {
-          margin-bottom: 30px;
-          display: inline-block;
-          width: 50px;
-          height: 50px;
+          margin-bottom: 40px;
+          display: flex;
+          pointer-events: none;
           a {
-            padding: 0;
-            margin: 0;
-            &:hover {
-              background: none;
+            display: flex;
+            align-items: center;
+          }
+          span {
+            margin-left: 30px;
+            font-size: 0.9em;
+            font-family: $font--small;
+            font-weight: normal;
+            opacity: 0;
+            @extend %transition;
+            display: none;
+            pointer-events: none;
+            @include breakpoint(laptop) {
+              display: block;
+            }
+          }
+          &:hover {
+            span {
+              opacity: 1;
+              margin-left: 20px;
             }
           }
           svg {
             width: 50px;
             height: 50px;
+            pointer-events: auto;
             display: flex;
             align-items: center;
             overflow: visible;
@@ -210,9 +227,15 @@
             &:hover {
               path#Path_3 {
                 transform: translateY(-90px);
+                -webkit-transform: translateY(-90px);
+                -moz-transform: translateY(-90px);
+                -o-transform: translateY(-90px);
               }
               path#Path_4 {
                 transform: translateY(-70px);
+                -webkit-transform: translateY(-70px);
+                -moz-transform: translateY(-70px);
+                -o-transform: translateY(-70px);
               }
             }
             path {
@@ -221,7 +244,7 @@
             }
           }
         }
-        a {
+        a:not(.logo-link) {
           display: block;
           font-family: $font--small;
           margin-left: 10px;
@@ -341,7 +364,7 @@
     border-right: 1px solid rgba($soft-black, 0.4);
     ul {
       li {
-        a {
+        a:not(.logo-link) {
           &.active,
           &:hover {
             background: rgba($white, 0.1);
@@ -381,7 +404,7 @@
     border-right: 1px solid rgba($soft-black, 0.1);
     ul {
       li {
-        a {
+        a:not(.logo-link) {
           &.active,
           &:hover {
             background: rgba($soft-black, 0.05);
