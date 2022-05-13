@@ -350,10 +350,10 @@
       }
     }
   }
-  .back-to-top {
-    a {
-      border: 1px solid rgba($soft-black, 0.4);
-    }
+  .image-full iframe {
+    background: $light--background
+      url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23222222" x="50%" y="50%" font-family="\'Poppins\', sans-serif" font-size="24" text-anchor="middle">Loading...</text></svg>')
+      0px 0px no-repeat;
   }
   .next-project {
     border: 1px solid rgba($soft-black, 0.4);
@@ -390,10 +390,10 @@
       }
     }
   }
-  .back-to-top {
-    a {
-      border: 1px solid rgba($soft-black, 0.1);
-    }
+  .image-full iframe {
+    background: $dark--background
+      url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23FFFFFF" x="50%" y="50%" font-family="\'Poppins\', sans-serif" font-size="24" text-anchor="middle">Loading...</text></svg>')
+      0px 0px no-repeat;
   }
   .next-project {
     border: 1px solid rgba($soft-black, 0.1);
