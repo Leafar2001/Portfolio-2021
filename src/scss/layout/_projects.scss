@@ -1,10 +1,8 @@
 // Projects
 .projects {
   padding-top: $padding-vertical--md;
-  // @include breakpoint(laptop) {
-  //   padding-top: $padding-vertical--lg;
-  // }
   .project {
+    position: relative;
     @include breakpoint(laptop) {
       display: flex;
     }
@@ -28,8 +26,8 @@
         justify-content: center;
       }
     }
-    @for $i from 1 through 6 {
-      &:nth-child(6n + #{$i}) {
+    @for $i from 1 through 7 {
+      &:nth-child(7n + #{$i}) {
         &:after {
           content: "0" + $i;
         }
@@ -48,7 +46,7 @@
 
       &:hover img {
         @include breakpoint(laptop) {
-          transform: scale(1.03);
+          transform: scale(1.1);
         }
       }
       img {
@@ -125,6 +123,11 @@
 
 @media (prefers-color-scheme: dark) {
   .project {
+    .project-img {
+      @include breakpoint(laptop) {
+        border: 1px solid rgba($soft-black, 0.4);
+      }
+    }
     &:after {
       color: $white;
       @include breakpoint(laptop) {
@@ -150,6 +153,11 @@
 }
 @media (prefers-color-scheme: light) {
   .project {
+    .project-img {
+      @include breakpoint(laptop) {
+        border: 1px solid rgba($soft-black, 0.1);
+      }
+    }
     &:after {
       color: $white;
       @include breakpoint(laptop) {

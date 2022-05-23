@@ -1,320 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Luc Swinkels — Front-end developer</title>
+    <!-- SEO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luc Swinkels" />
+    <meta
+      name="description"
+      content="Hi! I'm Luc — a front-end developer that doesn't forget the little things."
+    />
+    <meta
+      name="keywords"
+      content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design"
+    />
+    <meta name="robots" content="noodp" />
+    <link rel="canonical" href="https://www.lucswinkels.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lucswinkels.com" />
+    <meta property="twitter:url" content="https://www.lucswinkels.com" />
+    <meta property="og:title" content="Luc Swinkels — Front-end developer" />
+    <meta
+      property="twitter:title"
+      content="Luc Swinkels — Front-end developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Hi! I'm Luc — a front-end developer that doesn't forget the little things."
+    />
+    <meta
+      property="og:description"
+      content="Hi! I'm Luc — a front-end developer that doesn't forget the little things."
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://www.lucswinkels.com/src/img/icons/favicon.ico"
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.lucswinkels.com/src/img/icons/favicon.ico"
+    />
+    <meta
+      name="twitter:card"
+      content="https://www.lucswinkels.com/src/img/icons/favicon.ico"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="src/css/main.min.css" />
+    <link rel="stylesheet" href="src/css/safariOnly.css" />
+    <!-- JS Libraries -->
+    <script src="src/js/smoothScroll.min.js"></script>
+    <script src="src/js/lazysizes.min.js"></script>
+    <!-- Main JS File -->
+    <script src="src/js/main.js" defer></script>
+    <!-- Page Transition -->
+    <script src="src/js/pageTransition.js"></script>
+    <!-- Favicon & App Theme -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/img/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="src/img/icons/safari-pinned-tab.svg"
+      color="#14161a"
+    />
+    <link rel="shortcut icon" href="src/img/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#14161a" />
+    <meta
+      name="msapplication-config"
+      content="src/img/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#f9faff" />
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
 
-<head>
-  <title>Luc Swinkels — Front-end webdeveloper</title>
-  <!-- SEO -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Luc Swinkels" />
-  <meta name="description" content="Hi! I'm Luc — a front-end webdeveloper that doesn't forget the little things." />
-  <meta name="keywords" content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design" />
-  <meta name="robots" content="noodp" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.lucswinkels.com" />
-  <meta property="article:section" content="other" />
-  <meta property="og:image" content="src/img/icons/favicon.ico" />
-  <link rel="canonical" href="https://www.lucswinkels.com" />
-  <!-- Main CSS File -->
-  <link rel="stylesheet" href="src/css/main.min.css" />
-  <link rel="stylesheet" href="src/css/safariOnly.css" />
-  <!-- CSS Libraries -->
-  <link href="src/css/aos.css" rel="stylesheet" />
-  <!-- JS Libraries -->
-  <script src="src/js/aos.js"></script>
-  <script src="src/js/TweenMax.min.js"></script>
-  <script src="src/js/smoothScroll.min.js"></script>
-  <!-- Main JS File -->
-  <script src="src/js/main.js" defer></script>
-  <!-- Page Transition -->
-  <script src="src/js/pageTransition.js"></script>
-  <!-- Favicon & App Theme -->
-  <link rel="apple-touch-icon" sizes="180x180" href="src/img/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="src/img/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="src/img/icons/favicon-16x16.png" />
-  <link rel="mask-icon" href="src/img/icons/safari-pinned-tab.svg" color="#14161a" />
-  <link rel="shortcut icon" href="src/img/icons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#14161a" />
-  <meta name="msapplication-config" content="src/img/icons/browserconfig.xml" />
-  <meta name="theme-color" content="#f9faff" />
-  <!-- Manifest -->
-  <link rel="manifest" href="manifest.webmanifest" />
-</head>
+  <body id="top">
+    <!-- Page Transition -->
+    <svg id="fader"></svg>
+    <!-- Page Transition -->
 
-<body id="top">
-  <!-- Page Transition -->
-  <svg id="fader"></svg>
-  <!-- Page Transition -->
-
-  <!-- Cursor -->
-  <div class="cursor-container">
-    <div class="cursor"></div>
-  </div>
-  <!-- /Cursor -->
-
-  <!-- Nav -->
-  <nav>
-    <ul>
-      <li class="logo">
-        <div class="magnetic">
-          <a href="#top">
-            <svg class="logo-white" xmlns="http://www.w3.org/2000/svg" width="391.751" height="377.401"
-              viewBox="0 0 391.751 377.401">
-              <g id="Layer_2" data-name="Layer 2" transform="translate(0.008 226.815) rotate(-60)">
-                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.02 -0.003)">
-                  <path id="Path_3" data-name="Path 3"
-                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
-                    transform="translate(0 -162.798)" fill="#fff" />
-                  <path id="Path_4" data-name="Path 4"
-                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
-                    transform="translate(0.008 0.003)" fill="#fff" />
-                </g>
-              </g>
-            </svg>
-            <svg class="logo-black" xmlns="http://www.w3.org/2000/svg" width="391.751" height="377.401"
-              viewBox="0 0 391.751 377.401">
-              <g id="Layer_2" data-name="Layer 2" transform="translate(0.008 226.815) rotate(-60)">
-                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.02 -0.003)">
-                  <path id="Path_3" data-name="Path 3"
-                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
-                    transform="translate(0 -162.798)" fill="#14161a" />
-                  <path id="Path_4" data-name="Path 4"
-                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
-                    transform="translate(0.008 0.003)" fill="#14161a" />
-                </g>
-              </g>
-            </svg>
-            <span>Back Home</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="magnetic">
-          <a href="#projects">Projects</a>
-        </div>
-      </li>
-      <li>
-        <div class="magnetic">
-          <a href="./about">About</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <!-- /Nav -->
-
-  <!-- Home -->
-  <main>
-    <!-- Container -->
-    <div class="container">
-      <!-- Content -->
-      <section class="home" id="home">
-        <h1 class="large-page-heading" data-aos="fade-up">
-          Hi, I'm Luc, a developer that doesn't forget about the little things
-        </h1>
-        <div class="scroll-down" data-aos="fade-up"></div>
-        <p data-aos="fade-up">
-          I build stuff on the web using modern technologies, currently
-          focusing on front-end web applications using React & mobile apps
-          using React Native.
-        </p>
-        <p data-aos="fade-up">
-          You can find me on
-          <a href="https://www.linkedin.com/in/luc-swinkels-42a775157/">LinkedIn</a>, <a
-            href="https://github.com/lucswinkels">GitHub</a> or e-mail me
-          <a href="mailto://lucswinkelsweb@gmail.com">directly</a>.
-        </p>
-        <p data-aos="fade-up">
-          Scroll down to see recent projects I worked on, or learn more about
-          me <a href="./about/">here</a>.
-        </p>
-      </section>
-      <section class="projects" id="projects">
-        <div class="project" data-aos="fade-up">
-          <a href="./projects/happygreen/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/happygreen-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>HappyGreen</h2>
-            <div class="project-details">
-              <ul>
-                <li>2022</li>
-                <li class="dot">•</li>
-                <li>Mobile development</li>
-                <li class="dot">•</li>
-                <li>UX / UI</li>
-              </ul>
-            </div>
-            <p>5-month internship designing & developing a native mobile app with React Native.</p>
-            <div class="button-container">
-              <a href="./projects/happygreen/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project" data-aos="fade-up">
-          <a href="./projects/skatrixx/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/skatrixx-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>Skatrixx</h2>
-            <div class="project-details">
-              <ul>
-                <li>2021</li>
-                <li class="dot">•</li>
-                <li>Webdevelopment</li>
-                <li class="dot">•</li>
-                <li>UX / UI</li>
-              </ul>
-            </div>
-            <p>React web app to learn skateboarding in a fun way.</p>
-            <div class="button-container">
-              <a href="./projects/skatrixx/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project" data-aos="fade-up">
-          <a href="./projects/language-master/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/language-master-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>Language Master</h2>
-            <div class="project-details">
-              <ul>
-                <li>2021</li>
-                <li class="dot">•</li>
-                <li>Webdevelopment</li>
-                <li class="dot">•</li>
-                <li>UX / UI</li>
-              </ul>
-            </div>
-            <p>Mobile web app to learn new languages.</p>
-            <div class="button-container">
-              <a href="./projects/language-master/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project" data-aos="fade-up">
-          <a href="./projects/plane-game/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/plane-game-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>Plane Game</h2>
-            <div class="project-details">
-              <ul>
-                <li>2021</li>
-                <li class="dot">•</li>
-                <li>Webdevelopment</li>
-              </ul>
-            </div>
-            <p>Web-based flying simulation game.</p>
-            <div class="button-container">
-              <a href="./projects/plane-game/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project" data-aos="fade-up">
-          <a href="./projects/skatespot/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/skatespot-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>SkateSpot</h2>
-            <div class="project-details">
-              <ul>
-                <li>2021</li>
-                <li class="dot">•</li>
-                <li>Webdevelopment</li>
-                <li class="dot">•</li>
-                <li>Branding</li>
-              </ul>
-            </div>
-            <p>React web app to find the best street skating locations.</p>
-            <div class="button-container">
-              <a href="./projects/skatespot/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project" data-aos="fade-up">
-          <a href="./projects/tix/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/tix-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>Tix</h2>
-            <div class="project-details">
-              <ul>
-                <li>2017</li>
-                <li class="dot">•</li>
-                <li>Webdevelopment</li>
-              </ul>
-            </div>
-            <p>Interactive support ticketing system.</p>
-            <div class="button-container">
-              <a href="./projects/tix/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project" data-aos="fade-up">
-          <a href="./projects/medifit/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/medifit-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>Medifit</h2>
-            <div class="project-details">
-              <ul>
-                <li>2019</li>
-                <li class="dot">•</li>
-                <li>Webdevelopment</li>
-                <li class="dot">•</li>
-                <li>WordPress</li>
-              </ul>
-            </div>
-            <p>Informative WordPress website for my local gym.</p>
-            <div class="button-container">
-              <a href="./projects/medifit/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="project" data-aos="fade-up">
-          <a href="./projects/kingsday/" class="project-img">
-            <img src="./src/img/assets/projects/thumbnails/kingsday-thumb-thin.svg" />
-          </a>
-          <div class="info">
-            <h2>Kingsday</h2>
-            <div class="project-details">
-              <ul>
-                <li>2018</li>
-                <li class="dot">•</li>
-                <li>Webdevelopment</li>
-              </ul>
-            </div>
-            <p>Informative website for a local kingsday event.</p>
-            <div class="button-container">
-              <a href="./projects/kingsday/" class="btn">
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-        </div> -->
-      </section>
-      <!-- /Content -->
+    <!-- Cursor -->
+    <div class="cursor-container">
+      <div class="cursor"></div>
     </div>
-    <!-- /Container -->
-  </main>
-  <!-- /Home -->
-</body>
+    <!-- /Cursor -->
 
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li class="logo">
+          <a href="#top">
+            <svg
+              class="logo-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="391.751"
+              height="377.401"
+              viewBox="0 0 391.751 377.401"
+            >
+              <g
+                id="Layer_2"
+                data-name="Layer 2"
+                transform="translate(0.008 226.815) rotate(-60)"
+              >
+                <g
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  transform="translate(-0.02 -0.003)"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                    transform="translate(0 -162.798)"
+                    fill="#fff"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                    transform="translate(0.008 0.003)"
+                    fill="#fff"
+                  />
+                </g>
+              </g>
+            </svg>
+            <svg
+              class="logo-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="391.751"
+              height="377.401"
+              viewBox="0 0 391.751 377.401"
+            >
+              <g
+                id="Layer_2"
+                data-name="Layer 2"
+                transform="translate(0.008 226.815) rotate(-60)"
+              >
+                <g
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  transform="translate(-0.02 -0.003)"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                    transform="translate(0 -162.798)"
+                    fill="#14161a"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                    transform="translate(0.008 0.003)"
+                    fill="#14161a"
+                  />
+                </g>
+              </g>
+            </svg>
+            <span>Back To Top</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="./about">About</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /Nav -->
+
+    <!-- Logo background -->
+    <div class="logo-background">
+      <svg
+        class="logo-white"
+        xmlns="http://www.w3.org/2000/svg"
+        width="391.751"
+        height="377.401"
+        viewBox="0 0 391.751 377.401"
+      >
+        <g
+          id="Layer_2"
+          data-name="Layer 2"
+          transform="translate(0.008 226.815) rotate(-60)"
+        >
+          <g
+            id="Layer_1"
+            data-name="Layer 1"
+            transform="translate(-0.02 -0.003)"
+          >
+            <path
+              id="Path_3"
+              data-name="Path 3"
+              d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+              transform="translate(0 -162.798)"
+              fill="#fff"
+            />
+            <path
+              id="Path_4"
+              data-name="Path 4"
+              d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+              transform="translate(0.008 0.003)"
+              fill="#fff"
+            />
+          </g>
+        </g>
+      </svg>
+      <svg
+        class="logo-black"
+        xmlns="http://www.w3.org/2000/svg"
+        width="391.751"
+        height="377.401"
+        viewBox="0 0 391.751 377.401"
+      >
+        <g
+          id="Layer_2"
+          data-name="Layer 2"
+          transform="translate(0.008 226.815) rotate(-60)"
+        >
+          <g
+            id="Layer_1"
+            data-name="Layer 1"
+            transform="translate(-0.02 -0.003)"
+          >
+            <path
+              id="Path_3"
+              data-name="Path 3"
+              d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+              transform="translate(0 -162.798)"
+              fill="#14161a"
+            />
+            <path
+              id="Path_4"
+              data-name="Path 4"
+              d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+              transform="translate(0.008 0.003)"
+              fill="#14161a"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!-- /Logo background -->
+
+    <!-- Home -->
+    <main>
+      <!-- Container -->
+      <div class="container">
+        <!-- Content -->
+        <section class="home" id="home">
+          <h1 class="large-page-heading">
+            Hi, I'm Luc, a developer that doesn't forget about the little things
+          </h1>
+          <div class="scroll-down"></div>
+          <p>
+            I build stuff on the web using modern technologies, currently
+            focusing on front-end web applications using React & mobile apps
+            using React Native.
+          </p>
+          <p>
+            You can find me on
+            <a href="https://www.linkedin.com/in/luc-swinkels-42a775157/"
+              >LinkedIn</a
+            >, <a href="https://github.com/lucswinkels">GitHub</a> or e-mail me
+            <a href="mailto://lucswinkelsweb@gmail.com">directly</a>.
+          </p>
+          <p>
+            Scroll down to see recent projects I worked on, or learn more about
+            me <a href="./about/">here</a>.
+          </p>
+        </section>
+        <section class="projects" id="projects">
+          <div class="project">
+            <a href="./projects/happygreen/" class="project-img">
+              <img
+                class="lazyload"
+                data-src="./src/img/assets/projects/thumbnails/happygreen-thumb-thin.webp"
+              />
+            </a>
+            <div class="info">
+              <h2>HappyGreen</h2>
+              <div class="project-details">
+                <ul>
+                  <li>2022</li>
+                  <li class="dot">•</li>
+                  <li>Mobile</li>
+                  <li class="dot">•</li>
+                  <li>UX / UI</li>
+                </ul>
+              </div>
+              <p>
+                5-month internship designing & developing a native mobile app
+                with React Native.
+              </p>
+              <div class="button-container">
+                <a href="./projects/happygreen/" class="btn">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a href="./projects/skatrixx/" class="project-img">
+              <img
+                class="lazyload"
+                data-src="./src/img/assets/projects/thumbnails/skatrixx-thumb-thin.webp"
+              />
+            </a>
+            <div class="info">
+              <h2>Skatrixx</h2>
+              <div class="project-details">
+                <ul>
+                  <li>2021</li>
+                  <li class="dot">•</li>
+                  <li>Web</li>
+                  <li class="dot">•</li>
+                  <li>UX / UI</li>
+                </ul>
+              </div>
+              <p>React web app to learn skateboarding in a fun way.</p>
+              <div class="button-container">
+                <a href="./projects/skatrixx/" class="btn">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a href="./projects/language-master/" class="project-img">
+              <img
+                class="lazyload"
+                data-src="./src/img/assets/projects/thumbnails/language-master-thumb-thin.webp"
+              />
+            </a>
+            <div class="info">
+              <h2>Language Master</h2>
+              <div class="project-details">
+                <ul>
+                  <li>2021</li>
+                  <li class="dot">•</li>
+                  <li>Web</li>
+                  <li class="dot">•</li>
+                  <li>UX / UI</li>
+                </ul>
+              </div>
+              <p>Mobile web app to learn new languages.</p>
+              <div class="button-container">
+                <a href="./projects/language-master/" class="btn">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a href="./projects/plane-game/" class="project-img">
+              <img
+                class="lazyload"
+                data-src="./src/img/assets/projects/thumbnails/plane-game-thumb-thin.webp"
+              />
+            </a>
+            <div class="info">
+              <h2>Plane Game</h2>
+              <div class="project-details">
+                <ul>
+                  <li>2021</li>
+                  <li class="dot">•</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+              <p>Web-based flying simulation game.</p>
+              <div class="button-container">
+                <a href="./projects/plane-game/" class="btn">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a href="./projects/skatespot/" class="project-img">
+              <img
+                class="lazyload"
+                data-src="./src/img/assets/projects/thumbnails/skatespot-thumb-thin.webp"
+              />
+            </a>
+            <div class="info">
+              <h2>SkateSpot</h2>
+              <div class="project-details">
+                <ul>
+                  <li>2021</li>
+                  <li class="dot">•</li>
+                  <li>Web</li>
+                  <li class="dot">•</li>
+                  <li>Branding</li>
+                </ul>
+              </div>
+              <p>React web app to find the best street skating locations.</p>
+              <div class="button-container">
+                <a href="./projects/skatespot/" class="btn">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a href="./projects/tix/" class="project-img">
+              <img
+                class="lazyload"
+                data-src="./src/img/assets/projects/thumbnails/tix-thumb-thin.webp"
+              />
+            </a>
+            <div class="info">
+              <h2>Tix</h2>
+              <div class="project-details">
+                <ul>
+                  <li>2017</li>
+                  <li class="dot">•</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+              <p>Interactive support ticketing system.</p>
+              <div class="button-container">
+                <a href="./projects/tix/" class="btn">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <a href="./projects/medifit/" class="project-img">
+              <img
+                class="lazyload"
+                data-src="./src/img/assets/projects/thumbnails/medifit-thumb-thin.webp"
+              />
+            </a>
+            <div class="info">
+              <h2>Medifit</h2>
+              <div class="project-details">
+                <ul>
+                  <li>2019</li>
+                  <li class="dot">•</li>
+                  <li>Web</li>
+                  <li class="dot">•</li>
+                  <li>CMS</li>
+                </ul>
+              </div>
+              <p>Informative WordPress website for my local gym.</p>
+              <div class="button-container">
+                <a href="./projects/medifit/" class="btn">
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Content -->
+      </div>
+      <!-- /Container -->
+    </main>
+    <!-- /Home -->
+  </body>
 </html>

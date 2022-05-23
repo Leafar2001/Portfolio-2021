@@ -80,6 +80,14 @@ a {
   }
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: $light--background;

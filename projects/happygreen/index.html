@@ -1,643 +1,1399 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>HappyGreen — Luc Swinkels</title>
+    <!-- SEO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luc Swinkels" />
+    <meta
+      name="description"
+      content="A detailed look at what I did for 5 months as an intern @ HappyGreen."
+    />
+    <meta
+      name="keywords"
+      content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design"
+    />
+    <meta name="robots" content="noodp" />
+    <link
+      rel="canonical"
+      href="https://www.lucswinkels.com/projects/happygreen/"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.lucswinkels.com/projects/happygreen/"
+    />
+    <meta
+      property="twitter:url"
+      content="https://www.lucswinkels.com/projects/happygreen/"
+    />
+    <meta property="og:title" content="HappyGreen — Luc Swinkels" />
+    <meta property="twitter:title" content="HappyGreen — Luc Swinkels" />
+    <meta
+      property="twitter:description"
+      content="A detailed look at what I did for 5 months as an intern @ HappyGreen."
+    />
+    <meta
+      property="og:description"
+      content="A detailed look at what I did for 5 months as an intern @ HappyGreen."
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://www.lucswinkels.com/src/img/assets/projects/happygreen/happygreen-wide-2.webp"
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.lucswinkels.com/src/img/assets/projects/happygreen/happygreen-wide-2.webp"
+    />
+    <meta
+      name="twitter:card"
+      content="https://www.lucswinkels.com/src/img/assets/projects/happygreen/happygreen-wide-2.webp"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../../src/css/main.min.css" />
+    <link rel="stylesheet" href="../../src/css/safariOnly.css" />
+    <!-- CSS Libraries -->
+    <link href="../../src/css/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- JS Libraries -->
+    <script src="../../src/js/smoothScroll.min.js"></script>
+    <script src="../../src/js/simpleLightbox.min.js"></script>
+    <script src="../../src/js/lazysizes.min.js"></script>
+    <!-- Main JS File -->
+    <script src="../../src/js/main.js" defer></script>
+    <script src="../../src/js/case-studies.js" defer></script>
+    <!-- Page Transition -->
+    <script src="../../src/js/pageTransition.js"></script>
+    <!-- Favicon & App Theme -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../src/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../src/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../src/img/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="../../src/img/icons/safari-pinned-tab.svg"
+      color="#14161a"
+    />
+    <link rel="shortcut icon" href="../../src/img/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#14161a" />
+    <meta
+      name="msapplication-config"
+      content="../../src/img/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#f9faff" />
+    <!-- Manifest -->
+    <link rel="manifest" href="../../manifest.webmanifest" />
+  </head>
 
-<head>
-  <title>HappyGreen — Luc Swinkels</title>
-  <!-- SEO -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Luc Swinkels" />
-  <meta name="description" content="Internship 2022 — Luc Swinkels." />
-  <meta name="keywords" content="Luc, Swinkels, Portfolio, Web, Luc Swinkels, Development, Design" />
-  <meta name="robots" content="noodp" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.lucswinkels.com" />
-  <meta property="article:section" content="other" />
-  <meta property="og:image" content="../../src/img/icons/favicon.ico" />
-  <link rel="canonical" href="https://www.lucswinkels.com" />
-  <!-- Main CSS File -->
-  <link rel="stylesheet" href="../../src/css/main.min.css" />
-  <link rel="stylesheet" href="../../src/css/safariOnly.css" />
-  <!-- CSS Libraries -->
-  <link href="../../src/css/aos.css" rel="stylesheet" />
-  <link href="../../src/css/simpleLightbox.min.css" rel="stylesheet" />
-  <link href="../../src/css/tabler-icons.min.css" rel="stylesheet" />
-  <!-- JS Libraries -->
-  <script src="../../src/js/aos.js"></script>
-  <script src="../../src/js/TweenMax.min.js"></script>
-  <script src="../../src/js/smoothScroll.min.js"></script>
-  <script src="../../src/js/simpleLightbox.min.js"></script>
-  <!-- Main JS File -->
-  <script src="../../src/js/main.js" defer></script>
-  <script src="../../src/js/case-studies.js" defer></script>
-  <!-- Page Transition -->
-  <script src="../../src/js/pageTransition.js"></script>
-  <!-- Favicon & App Theme -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../src/img/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../../src/img/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="../../src/img/icons/favicon-16x16.png" />
-  <link rel="mask-icon" href="../../src/img/icons/safari-pinned-tab.svg" color="#14161a" />
-  <link rel="shortcut icon" href="../../src/img/icons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#14161a" />
-  <meta name="msapplication-config" content="../../src/img/icons/browserconfig.xml" />
-  <meta name="theme-color" content="#f9faff" />
-  <!-- Manifest -->
-  <link rel="manifest" href="../../manifest.webmanifest" />
-</head>
+  <body id="top" class="case-study">
+    <!-- Page Transition -->
+    <svg id="fader"></svg>
+    <!-- Page Transition -->
 
-<body id="top" class="case-study">
-  <!-- Page Transition -->
-  <svg id="fader"></svg>
-  <!-- Page Transition -->
+    <!-- Cursor -->
+    <div class="cursor-container">
+      <div class="cursor"></div>
+    </div>
+    <!-- /Cursor -->
 
-  <!-- Cursor -->
-  <div class="cursor-container">
-    <div class="cursor"></div>
-  </div>
-  <!-- /Cursor -->
-
-  <!-- Nav -->
-  <nav>
-    <ul>
-      <li class="logo">
-        <div class="magnetic">
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li class="logo">
           <a href="../../">
-            <svg class="logo-white" xmlns="http://www.w3.org/2000/svg" width="391.751" height="377.401"
-              viewBox="0 0 391.751 377.401">
-              <g id="Layer_2" data-name="Layer 2" transform="translate(0.008 226.815) rotate(-60)">
-                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.02 -0.003)">
-                  <path id="Path_3" data-name="Path 3"
+            <svg
+              class="logo-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="391.751"
+              height="377.401"
+              viewBox="0 0 391.751 377.401"
+            >
+              <g
+                id="Layer_2"
+                data-name="Layer 2"
+                transform="translate(0.008 226.815) rotate(-60)"
+              >
+                <g
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  transform="translate(-0.02 -0.003)"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
                     d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
-                    transform="translate(0 -162.798)" fill="#fff" />
-                  <path id="Path_4" data-name="Path 4"
+                    transform="translate(0 -162.798)"
+                    fill="#fff"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
                     d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
-                    transform="translate(0.008 0.003)" fill="#fff" />
+                    transform="translate(0.008 0.003)"
+                    fill="#fff"
+                  />
                 </g>
               </g>
             </svg>
-            <svg class="logo-black" xmlns="http://www.w3.org/2000/svg" width="391.751" height="377.401"
-              viewBox="0 0 391.751 377.401">
-              <g id="Layer_2" data-name="Layer 2" transform="translate(0.008 226.815) rotate(-60)">
-                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.02 -0.003)">
-                  <path id="Path_3" data-name="Path 3"
+            <svg
+              class="logo-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="391.751"
+              height="377.401"
+              viewBox="0 0 391.751 377.401"
+            >
+              <g
+                id="Layer_2"
+                data-name="Layer 2"
+                transform="translate(0.008 226.815) rotate(-60)"
+              >
+                <g
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  transform="translate(-0.02 -0.003)"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
                     d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
-                    transform="translate(0 -162.798)" fill="#14161a" />
-                  <path id="Path_4" data-name="Path 4"
+                    transform="translate(0 -162.798)"
+                    fill="#14161a"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
                     d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
-                    transform="translate(0.008 0.003)" fill="#14161a" />
+                    transform="translate(0.008 0.003)"
+                    fill="#14161a"
+                  />
                 </g>
               </g>
             </svg>
             <span>Back Home</span>
           </a>
-        </div>
-      </li>
-      <li>
-        <div class="magnetic">
+        </li>
+        <li>
           <a href="../../#projects">Projects</a>
-        </div>
-      </li>
-      <li>
-        <div class="magnetic">
+        </li>
+        <li>
           <a href="../../about">About</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <!-- /Nav -->
+        </li>
+      </ul>
+    </nav>
+    <!-- /Nav -->
 
-  <!-- Sidebar Nav-->
-  <div class="side--nav" id="sidenav">
-    <ul>
-      <!-- Fake logo for spacing -->
-      <li class="logo"></li>
-      <!-- /Fake logo for spacing -->
-      <li class="bigger--link"><a href="#intro">Intro</a></li>
-      <li class="bigger--link">
-        <a href="#internship-info">Internship info</a>
-      </li>
-      <li class="bigger--link">
-        <a href="#company-info">The company</a>
-      </li>
-      <li class="bigger--link"><a href="#project">The project</a></li>
-      <li>
-        <a href="#project--research">Research</a>
-      </li>
-      <li><a href="#project--design">Design</a></li>
-      <li>
-        <a href="#project--prototyping">Prototyping</a>
-      </li>
-      <li>
-        <a href="#project--testing">Testing</a>
-      </li>
-      <li>
-        <a href="#project--development">Development</a>
-      </li>
-      <li class="bigger--link"><a href="#results">Results</a></li>
-      <li>
-        <a href="#results--prototype">Prototype</a>
-      </li>
-      <li>
-        <a href="#results--app">App</a>
-      </li>
-      <li class="bigger--link"><a href="#other">Other</a></li>
-      <li>
-        <a href="#wear-app-clone">WEAR app clone</a>
-      </li>
-      <li>
-        <a href="#redux-pokemon-project">Redux Pokemon project</a>
-      </li>
-      <li><a href="#wear-login-design">WEAR login design</a></li>
-      <li class="bigger--link"><a href="#reflection">Reflection</a></li>
-      <div class="spacer"></div>
-    </ul>
-  </div>
-  <!-- /Sidebar Nav-->
+    <!-- Logo background -->
+    <div class="logo-background">
+      <svg
+        class="logo-white"
+        xmlns="http://www.w3.org/2000/svg"
+        width="391.751"
+        height="377.401"
+        viewBox="0 0 391.751 377.401"
+      >
+        <g
+          id="Layer_2"
+          data-name="Layer 2"
+          transform="translate(0.008 226.815) rotate(-60)"
+        >
+          <g
+            id="Layer_1"
+            data-name="Layer 1"
+            transform="translate(-0.02 -0.003)"
+          >
+            <path
+              id="Path_3"
+              data-name="Path 3"
+              d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+              transform="translate(0 -162.798)"
+              fill="#fff"
+            />
+            <path
+              id="Path_4"
+              data-name="Path 4"
+              d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+              transform="translate(0.008 0.003)"
+              fill="#fff"
+            />
+          </g>
+        </g>
+      </svg>
+      <svg
+        class="logo-black"
+        xmlns="http://www.w3.org/2000/svg"
+        width="391.751"
+        height="377.401"
+        viewBox="0 0 391.751 377.401"
+      >
+        <g
+          id="Layer_2"
+          data-name="Layer 2"
+          transform="translate(0.008 226.815) rotate(-60)"
+        >
+          <g
+            id="Layer_1"
+            data-name="Layer 1"
+            transform="translate(-0.02 -0.003)"
+          >
+            <path
+              id="Path_3"
+              data-name="Path 3"
+              d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+              transform="translate(0 -162.798)"
+              fill="#14161a"
+            />
+            <path
+              id="Path_4"
+              data-name="Path 4"
+              d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+              transform="translate(0.008 0.003)"
+              fill="#14161a"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!-- /Logo background -->
 
-  <!-- Content -->
-  <main>
-    <!-- Container -->
-    <div class="container">
-      <!-- Content -->
-      <!-- Intro -->
-      <section class="intro sidenav--item" id="intro">
-        <div class="project-details" data-aos="fade-up">
-          <span>2022</span>
-          <span class="dot">•</span>
-          <span>Mobile development</span>
-          <span class="dot">•</span>
-          <span>UX / UI</span>
-        </div>
-        <h1 class="large-page-heading" data-aos="fade-up">
-          A detailed look at what I did for 5 months as an intern @ HappyGreen
-        </h1>
-        <div class="scroll-down" data-aos="fade-up"></div>
-        <p data-aos="fade-up">
-          From February 2022 to June 2022, I worked as an intern at HappyGreen
-          in Eindhoven as a part of my IT & Media Design bachelor's degree at
-          the Fontys University of Applied Sciences in Eindhoven.
-        </p>
-        <p data-aos="fade-up">
-          This page will show you more about what I did, how I did it, and
-          what the results were. Most sections have supporting imagery. These
-          images can be clicked on to be enlarged. For the best reading
-          experience, please visit this portfolio on a laptop or desktop as
-          most of these images are taken in a desktop scenario.
-        </p>
-      </section>
-      <!-- /Intro -->
-      <!-- General info -->
-      <section class="internship-info sidenav--item" id="internship-info">
-        <h1 data-aos="fade-up">Internship info</h1>
-        <p data-aos="fade-up">
-          As previously stated, I worked as an intern at HappyGreen for 5
-          months. I found HappyGreen with the Fontys internship tool and they
-          immediately sparked my interest. After a brief e-mail exchange I
-          went to their office for a quick meet & greet and to assess if I was
-          the right fit for them.
-        </p>
-        <p data-aos="fade-up">
-          I quickly noticed HappyGreen was a small team consisting of young,
-          tech-savvy people that wanted to use modern technologies to improve
-          the world, which really interested me.
-        </p>
-        <p data-aos="fade-up">
-          During my internship I adopted the already existing Agile methods
-          used like Scrum. Working in 2-week sprints and a couple of
-          daily/weekly stand-ups, I used Jira, as it had a good integration
-          with Git and the existing codebase.
-        </p>
-        <p data-aos="fade-up">
-          As for Git, this is also what was used throughout this internship
-          for code version control. I achieved this by cloning the existing
-          repository and then using pull requests and reviews from colleagues
-          and superiors to merge my code with the existing code.
-        </p>
-        <p data-aos="fade-up">
-          The team I worked with consisted of a couple of people.
-          <a href="https://github.com/Frankisgek">Frank Keulen</a> (owner,
-          supervisor, back-end developer, API manager, resident
-          jack-of-all-trades) was my go-to problem solver for all kinds of
-          questions during my internship. Besides Frank I also had a lot of
-          contact with
-          <a href="https://github.com/DaveyvdBogaard">Davey van den Bogaard</a>
-          (lead developer working on WEAR) when it came to developing the WEAR
-          app. Ofcourse I also talked with others at HappyGreen, however most
-          of those talks weren't directly impacting my internship or project.
-        </p>
-      </section>
-      <!-- /General info -->
-      <!-- Company info -->
-      <section class="company-info sidenav--item" id="company-info">
-        <h1 data-aos="fade-up">The company</h1>
-        <p data-aos="fade-up">
-          <a href="https://happy.green/">HappyGreen</a> is a fast-growing
-          start-up that designs and creates innovative and eco-friendly
-          products & services from the ground up. HappyGreen is currently
-          expanding into the latin-american market. A couple of HappyGreen's
-          products are: a high-tech mobile hotel room, a personal eco retreat
-          that can be controlled with a mobile app, innovative electric
-          transport, new ways to recycle, forestation and educational
-          projects.
-        </p>
-        <p data-aos="fade-up">
-          HappyGreen is based in The Netherlands and Panama. There are roughly
-          ~20 people working for HappyGreen fulltime and these people collab
-          with over 180 others through collaborations and partnerships with
-          local companies.
-        </p>
-        <p data-aos="fade-up">
-          As the intern, HappyGreen will provide me with capable mentors and
-          colleagues that can guide me during this process. There are many
-          areas of expertise covered by HappyGreen employees that i can
-          receive guidance in, such as UX/UI design, front- & back-end
-          development, Marketing, Concepting, and research.
-        </p>
-      </section>
-      <!-- /Company info -->
-      <!-- Project info -->
-      <section class="project sidenav--item" id="project">
-        <h1 data-aos="fade-up">The project</h1>
-        <p data-aos="fade-up">
-          The main internship assignment will be based around HappyGreen's
-          WEAR app. This is a mobile app thats connected to HappyGreen's NFC
-          wearables (wooden accessories like bracelets, sunglasses, watches)
-          to control their NFC chip, such as opening Instagram and Spotify or
-          unlocking / controlling your Tesla through the app. These actions
-          can then be automatically ran by scanning your wearable with your
-          phone. The current prototypes for these wearables are mainly focused
-          on the consumer side of things. HappyGreen's goal in this is to also
-          make WEAR available and attractive from a business perspective.
-        </p>
-        <p data-aos="fade-up">Attached below is the official project plan.</p>
-        <br /><br />
-        <div class="button-container" data-aos="fade-up">
-          <a href="../../src/files/happygreen/projectplan/projectplan.pdf" class="btn" target="_blank">
-            <span>Projectplan</span>
+    <!-- Sidebar Nav-->
+    <div class="side--nav" id="sidenav">
+      <ul>
+        <li class="logo">
+          <a class="logo-link" href="../../">
+            <svg
+              class="logo-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="391.751"
+              height="377.401"
+              viewBox="0 0 391.751 377.401"
+            >
+              <g
+                id="Layer_2"
+                data-name="Layer 2"
+                transform="translate(0.008 226.815) rotate(-60)"
+              >
+                <g
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  transform="translate(-0.02 -0.003)"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                    transform="translate(0 -162.798)"
+                    fill="#fff"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                    transform="translate(0.008 0.003)"
+                    fill="#fff"
+                  />
+                </g>
+              </g>
+            </svg>
+            <svg
+              class="logo-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="391.751"
+              height="377.401"
+              viewBox="0 0 391.751 377.401"
+            >
+              <g
+                id="Layer_2"
+                data-name="Layer 2"
+                transform="translate(0.008 226.815) rotate(-60)"
+              >
+                <g
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  transform="translate(-0.02 -0.003)"
+                >
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M167.625,336.263l6.981,4.031,6.985,4.031,29.687,17.139c3.841,2.217,3.841,5.845,0,8.062l-29.687,17.143-6.985,4.031-6.981,4.031L137.938,411.87a15.488,15.488,0,0,1-13.963,0l-29.69-17.14L87.3,390.7l-6.981-4.031L50.635,369.525a15.485,15.485,0,0,1-6.981-12.092V323.151c0-4.434-3.144-6.248-6.981-4.031L6.981,336.263A15.485,15.485,0,0,0,0,348.356v34.282A15.485,15.485,0,0,0,6.981,394.73l29.7,17.139,13.963,8.062L80.33,437.074l6.981,4.031,6.981,4.031,29.691,17.139a15.488,15.488,0,0,0,13.963,0l29.687-17.139,6.981-4.031h0l6.985-4.031,29.687-17.143,13.963-8.062L254.94,394.73a15.5,15.5,0,0,0,6.981-12.092V348.356a15.5,15.5,0,0,0-6.981-12.092l-29.7-17.143-13.963-8.062L181.59,293.92l-6.985-4.031-6.981-4.031-11.1-6.409c-3.837-2.217-6.981-.4-6.981,4.031v34.262a15.5,15.5,0,0,0,6.981,12.092Z"
+                    transform="translate(0 -162.798)"
+                    fill="#14161a"
+                  />
+                  <path
+                    id="Path_4"
+                    data-name="Path 4"
+                    d="M254.933,127.675a15.5,15.5,0,0,0,6.981-12.092V81.3a15.5,15.5,0,0,0-6.981-12.092L225.242,52.065,211.279,44,181.592,26.864l-6.981-4.031L167.625,18.8,137.938,1.663a15.463,15.463,0,0,0-13.963,0L94.285,18.8,87.3,22.833h0l-6.981,4.031L50.635,44,36.68,52.065,6.981,69.208A15.485,15.485,0,0,0,0,81.3v34.282a15.485,15.485,0,0,0,6.981,12.092l29.7,17.139,13.963,8.062L80.33,170.018l6.981,4.031,6.981,4.031,11.1,6.409c3.837,2.217,6.981.4,6.981-4.031V146.176a15.5,15.5,0,0,0-6.981-12.092l-11.1-6.409-6.981-4.031-6.981-4.031L50.643,102.47c-3.841-2.217-3.841-5.845,0-8.062L80.33,77.269l6.981-4.031,6.981-4.031,29.691-17.143a15.488,15.488,0,0,1,13.963,0l29.687,17.143,6.985,4.031,6.981,4.031,29.687,17.139a15.485,15.485,0,0,1,6.981,12.092v34.262c0,4.434,3.144,6.248,6.981,4.031Z"
+                    transform="translate(0.008 0.003)"
+                    fill="#14161a"
+                  />
+                </g>
+              </g>
+            </svg>
+            <span>Back Home</span>
           </a>
-        </div>
-        <br />
-        <p data-aos="fade-up">
-          The current WEAR app includes a bunch of functionality for the
-          wearables. My goal is to find the best ways to integrate
-          functionality that can be used by businesses or people in a working
-          environment. Some of the current WEAR features include:
-        </p>
-        <p data-aos="fade-up">
-          - Opening apps like Spotify, Instagram, Snapchat, WhatsApp. <br />-
-          Shuffling or opening Spotify / Sonos playlists<br />- Controlling
-          smarthome accessories like Phillips Hue lights and Nuki smartlocks.
-          <br />- Unlocking and controlling a Tesla car.
-        </p>
-        <div class="case-images">
-          <div class="image-full mv-md" data-aos="fade-up">
-            <a href="../../src/img/assets/projects/happygreen/designs/wear-app-flow-existing.png">
-              <img src="../../src/img/assets/projects/happygreen/designs/wear-app-flow-existing.png" />
+        </li>
+        <li class="bigger--link">
+          <a href="#intro"> <i class="ti ti-frame"></i>Intro</a>
+        </li>
+        <li class="bigger--link">
+          <a href="#internship-info">Internship info</a>
+        </li>
+        <li class="bigger--link">
+          <a href="#company-info">The company</a>
+        </li>
+        <li class="bigger--link"><a href="#project">The project</a></li>
+        <li>
+          <a href="#project--research">Research</a>
+        </li>
+        <li><a href="#project--design">Design</a></li>
+        <li>
+          <a href="#project--prototyping">Prototyping</a>
+        </li>
+        <li>
+          <a href="#project--testing">Testing</a>
+        </li>
+        <li>
+          <a href="#project--development">Development</a>
+        </li>
+        <li class="bigger--link"><a href="#results">Results</a></li>
+        <li>
+          <a href="#results--prototype">Prototype</a>
+        </li>
+        <li>
+          <a href="#results--app">App</a>
+        </li>
+        <li class="bigger--link">
+          <a href="#learning-outcomes">Learning outcomes</a>
+        </li>
+        <li class="bigger--link"><a href="#other">Other</a></li>
+        <li class="bigger--link"><a href="#reflection">Reflection</a></li>
+        <div class="spacer"></div>
+      </ul>
+    </div>
+    <!-- /Sidebar Nav-->
+
+    <!-- Content -->
+    <main>
+      <!-- Container -->
+      <div class="container">
+        <!-- Content -->
+        <!-- Intro -->
+        <section class="intro sidenav--item" id="intro">
+          <div class="project-details">
+            <span>2022</span>
+            <span class="dot">•</span>
+            <span>Mobile</span>
+            <span class="dot">•</span>
+            <span>UX / UI</span>
+          </div>
+          <h1 class="large-page-heading">
+            A detailed look at what I did for 5 months as an intern @
+            HappyGreen.
+          </h1>
+          <div class="scroll-down"></div>
+          <div class="case-images">
+            <div class="image-full mt-sm mb-md">
+              <a
+                href="../../src/img/assets/projects/happygreen/happygreen-wide-2.webp"
+              >
+                <img
+                  src="../../src/img/assets/projects/happygreen/happygreen-wide-2.webp"
+                />
+              </a>
+            </div>
+          </div>
+          <p>
+            From February 2022 to June 2022, I worked as an intern at HappyGreen
+            in Eindhoven as a part of my IT & Media Design bachelor's degree at
+            the Fontys University of Applied Sciences in Eindhoven.
+          </p>
+          <p>
+            This page will show you more about what I did, how I did it, and
+            what the results were. Most sections have supporting imagery. These
+            images can be clicked on to be enlarged. For the best reading
+            experience, please visit this portfolio on a laptop or desktop as
+            most of these images are taken in a desktop scenario.
+          </p>
+        </section>
+        <!-- /Intro -->
+        <!-- General info -->
+        <section class="internship-info sidenav--item" id="internship-info">
+          <h1>Internship info</h1>
+          <p>
+            As previously stated, I worked as an intern at HappyGreen for 5
+            months. I found HappyGreen with the Fontys internship tool and they
+            immediately sparked my interest. After a brief e-mail exchange I
+            went to their office for a quick meet & greet and to assess if I was
+            the right fit for them.
+          </p>
+          <p>
+            I quickly noticed HappyGreen was a small team consisting of young,
+            tech-savvy people that wanted to use modern technologies to improve
+            the world, which really interested me.
+          </p>
+          <p>
+            During my internship I adopted the already existing Agile methods
+            used like Scrum. Working in 2-week sprints and a couple of
+            daily/weekly stand-ups, I used Jira, as it had a good integration
+            with Git and the existing codebase.
+          </p>
+          <p>
+            As for Git, this is also what was used throughout this internship
+            for code version control. I achieved this by cloning the existing
+            repository and then using pull requests and reviews from colleagues
+            and superiors to merge my code with the existing code.
+          </p>
+          <p>
+            The team I worked with consisted of a couple of people.
+            <a href="https://github.com/Frankisgek">Frank Keulen</a> (owner,
+            supervisor, back-end developer, API manager, resident
+            jack-of-all-trades) was my go-to problem solver for all kinds of
+            questions during my internship. Besides Frank I also had a lot of
+            contact with
+            <a href="https://github.com/DaveyvdBogaard"
+              >Davey van den Bogaard</a
+            >
+            (lead developer working on WEAR) when it came to developing the WEAR
+            app. Ofcourse I also talked with others at HappyGreen, however most
+            of those talks weren't directly impacting my internship or project.
+          </p>
+        </section>
+        <!-- /General info -->
+        <!-- Company info -->
+        <section class="company-info sidenav--item" id="company-info">
+          <h1>The company</h1>
+          <p>
+            <a href="https://happy.green/">HappyGreen</a> is a fast-growing
+            start-up that designs and creates innovative and eco-friendly
+            products & services from the ground up. HappyGreen is currently
+            expanding into the latin-american market. A couple of HappyGreen's
+            products are: a high-tech mobile hotel room, a personal eco retreat
+            that can be controlled with a mobile app, innovative electric
+            transport, new ways to recycle, forestation and educational
+            projects.
+          </p>
+          <p>
+            HappyGreen is based in The Netherlands and Panama. There are roughly
+            ~20 people working for HappyGreen fulltime and these people collab
+            with over 180 others through collaborations and partnerships with
+            local companies.
+          </p>
+          <p>
+            As the intern, HappyGreen will provide me with capable mentors and
+            colleagues that can guide me during this process. There are many
+            areas of expertise covered by HappyGreen employees that i can
+            receive guidance in, such as UX/UI design, front- & back-end
+            development, Marketing, Concepting, and research.
+          </p>
+        </section>
+        <!-- /Company info -->
+        <!-- Project info -->
+        <section class="project sidenav--item" id="project">
+          <h1>The project</h1>
+          <p>
+            The main internship assignment will be based around HappyGreen's
+            WEAR app. This is a mobile app thats connected to HappyGreen's NFC
+            wearables (wooden accessories like bracelets, sunglasses, watches)
+            to control their NFC chip, such as opening Instagram and Spotify or
+            unlocking / controlling your Tesla through the app. These actions
+            can then be automatically ran by scanning your wearable with your
+            phone. The current prototypes for these wearables are mainly focused
+            on the consumer side of things. HappyGreen's goal in this is to also
+            make WEAR available and attractive from a business perspective.
+          </p>
+          <p>Attached below is the official project plan.</p>
+          <br /><br />
+          <div class="button-container">
+            <a
+              href="../../src/files/happygreen/projectplan/projectplan.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Projectplan</span>
             </a>
-            <p class="image-description">Existing WEAR app designs</p>
           </div>
-        </div>
-        <p data-aos="fade-up">
-          Ofcourse these aren't all the features of the WEAR app and as the
-          WEAR app is still in development more features will be added in due
-          time, but they should give you a general idea of what's possible.
-        </p>
-        <p data-aos="fade-up">
-          To start off the project and give myself and HappyGreen a rough idea
-          of how I would spend my time during this internship, I made a
-          planning for each sprint (2 weeks). Attached below is the sprint
-          planning.
-        </p>
-        <br /><br />
-        <div class="button-container" data-aos="fade-up">
-          <a href="../../src/files/happygreen/planning/sprintplanning.pdf" class="btn" target="_blank">
-            <span>Sprint planning</span>
-          </a>
-        </div>
-        <br />
-        <p data-aos="fade-up">
-          The project is split up into 5 stages: research, design,
-          prototyping, testing and development. For each of these stages i
-          will go more in-depth on what I wanted to achieve during that stage,
-          and how I achieved it.
-        </p>
-        <div class="mt-md sidenav--item" id="project--research">
-          <h4 data-aos="fade-up">Research</h4>
-          <p data-aos="fade-up">
-            Starting off my project was research. The goal for this phase was
-            to get a better understanding of sustainability and how it could
-            be used to improve businesses in any way. It was also the phase
-            where I tried to think out of the box to find innovative ideas by
-            doing lots of library research and organizing brainstorms.
+          <br />
+          <p>
+            The current WEAR app includes a bunch of functionality for the
+            wearables. My goal is to find the best ways to integrate
+            functionality that can be used by businesses or people in a working
+            environment. Some of the current WEAR features include:
           </p>
-          <p data-aos="fade-up">
-            To have a good baseline, me and my supervisor were able to ask
-            ourselves the following research questions to base all research
-            on:
+          <p>
+            - Opening apps like Spotify, Instagram, Snapchat, WhatsApp. <br />-
+            Shuffling or opening Spotify / Sonos playlists<br />- Controlling
+            smarthome accessories like Phillips Hue lights and Nuki smartlocks.
+            <br />- Unlocking and controlling a Tesla car.
           </p>
-          <p data-aos="fade-up">
-            - How can the WEAR app and its functionality be used from a
-            business perspective?
+          <div class="case-images">
+            <div class="image-full mv-md">
+              <a
+                href="../../src/img/assets/projects/happygreen/designs/wear-app-flow-existing.webp"
+              >
+                <img
+                  class="lazyload"
+                  src="../../src/img/assets/projects/happygreen/designs/wear-app-flow-existing-LOWQUALITY.webp"
+                  data-src="../../src/img/assets/projects/happygreen/designs/wear-app-flow-existing.webp"
+                />
+              </a>
+              <p class="image-description">Existing WEAR app designs</p>
+            </div>
+          </div>
+          <p>
+            Ofcourse these aren't all the features of the WEAR app and as the
+            WEAR app is still in development more features will be added in due
+            time, but they should give you a general idea of what's possible.
+          </p>
+          <p>
+            To start off the project and give myself and HappyGreen a rough idea
+            of how I would spend my time during this internship, I made a
+            planning for each sprint (2 weeks). Attached below is the sprint
+            planning.
+          </p>
+          <br /><br />
+          <div class="button-container">
+            <a
+              href="../../src/files/happygreen/planning/sprintplanning.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Sprint planning</span>
+            </a>
+          </div>
+          <br />
+          <p>
+            The project is split up into 5 stages: research, design,
+            prototyping, testing and development. For each of these stages i
+            will go more in-depth on what I wanted to achieve during that stage,
+            and how I achieved it.
+          </p>
+          <div class="mt-md sidenav--item" id="project--research">
+            <h4>Research</h4>
+            <p>
+              Starting off my project was research. The goal for this phase was
+              to get a better understanding of sustainability and how it could
+              be used to improve businesses in any way. It was also the phase
+              where I tried to think out of the box to find innovative ideas by
+              doing lots of library research and organizing brainstorms.
+            </p>
+            <p>
+              To have a good baseline, me and my supervisor were able to ask
+              ourselves the following research questions to base all research
+              on:
+            </p>
+            <p>
+              - How can the WEAR app and its functionality be used from a
+              business perspective?
+              <br />
+              --- Which markets are interesting for HappyGreen?<br />
+              --- What type of functionality is interesting for each market?
+              (WEAR)<br />
+              --- What kind of adjustments are needed within the existing WEAR
+              app?
+            </p>
+            <p>
+              To find out more about the NFC technology used for WEAR and
+              existing concepts using this technology, I made a small library
+              research document:
+            </p>
+            <br /><br />
+            <div class="button-container">
+              <a
+                href="../../src/files/happygreen/research/General NFC research.pdf"
+                class="btn"
+                target="_blank"
+              >
+                <span>General NFC research</span>
+              </a>
+            </div>
             <br />
-            --- Which markets are interesting for HappyGreen?<br />
-            --- What type of functionality is interesting for each market?
-            (WEAR)<br />
-            --- What kind of adjustments are needed within the existing WEAR
-            app?
-          </p>
-          <p data-aos="fade-up">
-            To see which ideas my colleagues associate with certain topics, I
-            organized a brainstorm in <a href="https://miro.com">Miro</a>.
-            This brainstorm consisted of 3 sessions. These were all timed
-            sessions, being timed at 1, 3 and 5 minutes respectively. The idea
-            of timed sessions created a sense of urgency, which would
-            sometimes help creativity. Because we weren't sure about which
-            direction we wanted the business WEAR concept to go, I split the
-            ideas into 3 categories: ideas for sustainability & CO2 footprint,
-            ideas with NFC, and user incentives.
-          </p>
-          <div class="case-images">
-            <div class="image-full mt-md" data-aos="fade-up">
-              <a href="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-1.png">
-                <img src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-1.png" />
-              </a>
-              <p class="image-description">Brainstorm session 1 in Miro</p>
-            </div>
-            <div class="image-full mt-md" data-aos="fade-up">
-              <a href="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-2.png">
-                <img src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-2.png" />
-              </a>
-              <p class="image-description">
-                Brainstorm sessions 2 & 3 in Miro
-              </p>
-            </div>
-          </div>
-          <p class="mt-md" data-aos="fade-up">
-            Once all sessions were done, I filtered & categorised every idea
-            alongside removing duplicates. This helped me get a better
-            understanding of which markets have alot of attractive ideas. It
-            also served as a building block for the rest of the ideas.
-          </p>
-          <div class="case-images">
-            <div class="image-full mt-md" data-aos="fade-up">
-              <a href="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-3.png">
-                <img src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-3.png" />
-              </a>
-              <p class="image-description">Categorised ideas in Miro</p>
-            </div>
-          </div>
-          <p class="mt-md" data-aos="fade-up">[Research documents]</p>
-          <p data-aos="fade-up">[Research results]</p>
-          <p data-aos="fade-up">[Feedback]</p>
-        </div>
-        <div class="mt-md sidenav--item" id="project--design">
-          <h4 data-aos="fade-up">Design</h4>
-          <p data-aos="fade-up">[Design phase goal]</p>
-          <p data-aos="fade-up">
-            For the entire design process, I used the popular UX / UI design
-            tool <a href="https://figma.com">Figma</a>. I did not have any
-            previous experience with Figma as my UI design tool of choice used
-            to be Adobe XD. However, since some of the existing designs were
-            already implemented into Figma, me and the company both felt it
-            was a good idea to use Figma throughout this process.
-          </p>
-          <p data-aos="fade-up">
-            There were multiple things I designed while i was at HappyGreen.
-            The main project was to design the UI and user flow for the new
-            business implementation in the WEAR app, however I also
-            experimented with designing other things such as a new login
-            screen, a design for the new multi-action (run multiple actions at
-            once) for the WEAR app, and other small stuff.
-          </p>
-          <div class="case-images">
-            <div class="image-full mv-md" data-aos="fade-up">
-              <iframe
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FgJe1jcC1Z9N1ZeDSkUy6Kq%2FHappyGreen-Luc"
-                allowfullscreen></iframe>
-              <p class="image-description">WEAR Figma design file</p>
-            </div>
-          </div>
-          <p data-aos="fade-up">[WEAR business designs]</p>
-          <p data-aos="fade-up">[Feedback]</p>
-        </div>
-        <div class="mt-md sidenav--item" id="project--prototyping">
-          <h4 data-aos="fade-up">Prototyping</h4>
-          <p data-aos="fade-up">[Prototyping phase goal]</p>
-          <p data-aos="fade-up">
-            Since the design was made in Figma, the obvious choice was to use
-            Figma for the prototyping aswell. Because my supervisor wasn't
-            sure about which navigation type (tab-based, stack-based,
-            conditional rendering) to use yet, I made 3 different navigation
-            flows that led to the same user flow afterwards. We ended up
-            choosing tab-based as it had the best user experience according to
-            me and my supervisor.
-          </p>
-          <p data-aos="fade-up">
-            The prototyping phase mainly consisted of connecting the screens
-            to eachother and making sure all screens were linked to the
-            corresponding action. After getting feedback from my supervisor on
-            usability and UX of the prototype, I moved on to the next phase
-            where I started performing user tests on the prototype.
-          </p>
-          <p data-aos="fade-up">[Feedback]</p>
-          <div class="case-images">
-            <div class="image-full mt-md" data-aos="fade-up">
-              <a href="../../src/img/assets/projects/happygreen/designs/figma-v3-prototype-flows.png">
-                <img src="../../src/img/assets/projects/happygreen/designs/figma-v3-prototype-flows.png" />
-              </a>
-              <p class="image-description">Prototype connections in Figma</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-md sidenav--item" id="project--testing">
-          <h4 data-aos="fade-up">Testing</h4>
-          <p data-aos="fade-up">[Testing phase goal]</p>
-          <p data-aos="fade-up">
-            Prototype testing started with myself and my supervisor. To
-            further test the UX of my design / prototype I used a prototyping
-            tool called
-            <a href="https://maze.co/">Maze</a>. This app has seamless
-            integration with a bunch of design tools including Figma, and I
-            used this to give users a series of questions and steps to walk
-            through in the app. The users I performed this test on were my
-            colleagues.
-          </p>
-          <p data-aos="fade-up">
-            Maze allows the creator of the "maze" (in this case, me) to have
-            insights such as how long it took a user to complete a task, and
-            helps better understand UX problems within the prototype.
-          </p>
-          <p data-aos="fade-up">
-            As I am currently still testing the prototype, I do not yet have
-            the results gathered from this experiment.
-          </p>
-          <div class="case-images">
-            <div class="image-full mt-md" data-aos="fade-up">
-              <a href="../../src/img/assets/projects/happygreen/designs/maze-mission-overview.png">
-                <img src="../../src/img/assets/projects/happygreen/designs/maze-mission-overview.png" />
-              </a>
-              <p class="image-description">Mission overview in Maze</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-md sidenav--item" id="project--development">
-          <h4 data-aos="fade-up">Development</h4>
-          <p data-aos="fade-up">[Development phase goal]</p>
-          <p data-aos="fade-up">
-            [Version control (Git & Jira) / code readability]
-          </p>
-          <p data-aos="fade-up">[Development process]</p>
-          <p data-aos="fade-up">[Feedback & things learned]</p>
-        </div>
-      </section>
-      <!-- /Project info -->
-      <!-- Results -->
-      <section class="results sidenav--item" id="results">
-        <h1 data-aos="fade-up">Results</h1>
-        <p data-aos="fade-up">[Results]</p>
-        <div class="mt-md sidenav--item" id="results--prototype">
-          <h4 data-aos="fade-up">Prototype</h4>
-          <p data-aos="fade-up">[Prototype results]</p>
-          <p data-aos="fade-up">[Feedback & things learned]</p>
-        </div>
-        <div class="mt-md sidenav--item" id="results--app">
-          <h4 data-aos="fade-up">App</h4>
-          <p data-aos="fade-up">[App results]</p>
-          <p data-aos="fade-up">[Feedback & things learned]</p>
-        </div>
-      </section>
-      <!-- /Results -->
-      <!-- Other -->
-      <section class="other sidenav--item" id="other">
-        <h1 data-aos="fade-up">Other</h1>
-        <p data-aos="fade-up">
-          During my internship I didn't only work on the main assignment, but
-          also some things that can be placed into the "other" category. Think
-          of these as side-projects I worked on that weren't directly
-          affecting my main assignment, but helped in other ways such as
-          gaining experience with a certain technology used within HappyGreen.
-        </p>
-        <div class="mt-md sidenav--item" id="wear-app-clone">
-          <h4 data-aos="fade-up">WEAR app clone</h4>
-          <p data-aos="fade-up">
-            To hone my skills and get more familiar with technologies used to
-            develop the WEAR app, I made a "fake" WEAR app made from scratch.
-            I developed this to get a better understanding of React Native
-            (the framework used to develop the WEAR app) and the WEAR API
-            (where all data regarding products and the WEAR app is stored).
-            This took me a couple of days and I was able to build a pretty
-            good prototype version of the WEAR app from scratch.
-          </p>
-          <p data-aos="fade-up">
-            It has functionality to showcase products, filter products, add a
-            product to a user, login as a user (using an API token), add an
-            action to a product, change a product's name, and more.
-          </p>
-          <div class="case-images">
-            <div class="image-full mv-md recording" data-aos="fade-up">
-              <div class="recording-container">
-                <video muted autoplay loop playsinline controls
-                  src="../../src/img/assets/projects/happygreen/designs/testproject-recording.mp4"></video>
-                <p class="image-description">"Fake" WEAR app project</p>
+            <p>
+              This document gave me a couple of ideas and topics that could
+              possible be used for the WEAR business app.
+            </p>
+            <p>
+              To see which ideas my colleagues associate with certain topics, I
+              organized a brainstorm in <a href="https://miro.com">Miro</a>.
+              This brainstorm consisted of 3 sessions. These were all timed
+              sessions, being timed at 1, 3 and 5 minutes respectively. The idea
+              of timed sessions created a sense of urgency, which would
+              sometimes help creativity. Because we weren't sure about which
+              direction we wanted the business WEAR concept to go, I split the
+              ideas into 3 categories: ideas for sustainability & CO2 footprint,
+              ideas with NFC, and user incentives.
+            </p>
+            <div class="case-images">
+              <div class="image-full mt-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-1.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-1-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-1.webp"
+                  />
+                </a>
+                <p class="image-description">Brainstorm session 1 in Miro</p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="sidenav--item" id="redux-pokemon-project">
-          <h4 data-aos="fade-up">Redux Pokemon project</h4>
-          <p data-aos="fade-up">
-            Because I didn't have any experience with
-            <a href="https://redux.js.org/">Redux</a>, which is the technology
-            used in the WEAR app to manage states, I made another prototype in
-            React Native. This time, I based it off of the existing WEAR app
-            by forking the repository and adding a feature to it. The feature
-            I worked on was displaying certain Pokemon (with data gathered
-            through the <a href="https://pokeapi.co/">PokeAPI</a>) and
-            managing their state with Redux, like changing the name
-            (client-side) of a Pokemon and storing it in the Redux state,
-            aswell as adding a loading indicator when the Pokemon is in a
-            "loading" state.
-          </p>
-          <div class="case-images">
-            <div class="image-full mv-md recording" data-aos="fade-up">
-              <div class="recording-container">
-                <video muted autoplay loop playsinline controls
-                  src="../../src/img/assets/projects/happygreen/designs/reduxopdracht-recording.mp4"></video>
+              <div class="image-full mt-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-2.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-2-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-2.webp"
+                  />
+                </a>
                 <p class="image-description">
-                  Redux project - Pokemon prototype
+                  Brainstorm sessions 2 & 3 in Miro
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="sidenav--item" id="wear-login-design">
-          <h4 data-aos="fade-up">WEAR login design</h4>
-          <p data-aos="fade-up">
-            Besides working on the business designs of WEAR, I was also able
-            to redesign some very old login screens. The goal for this
-            redesign was to approach a more modern UI style and inspire the
-            user to login using a service such as Apple, Google or Facebook.
-            Ofcourse keeping in mind the cleanliness and style of the existing
-            WEAR app, I went for a clean and modern login screen focusing on
-            the social login buttons.
-          </p>
-          <div class="case-images">
-            <div class="image-full mv-md" data-aos="fade-up">
-              <a href="../../src/img/assets/projects/happygreen/designs/wear-login-screens-figma.png">
-                <img src="../../src/img/assets/projects/happygreen/designs/wear-login-screens-figma.png" />
-              </a>
-              <p class="image-description">WEAR - Login screen redesign</p>
+            <p class="mt-md">
+              Once all sessions were done, I filtered & categorised every idea
+              alongside removing duplicates. This helped me get a better
+              understanding of which markets have alot of attractive ideas. It
+              also served as a building block for the rest of the ideas.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-3.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-3-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/designs/miro-brainstorm-3.webp"
+                  />
+                </a>
+                <p class="image-description">Categorised ideas in Miro</p>
+              </div>
             </div>
+            <p>
+              With a bunch of ideas and categories, I started applying these to
+              think of a couple concepts for WEAR, accompanied by some design
+              inspiration and a list of possible functionalities. They can be
+              found in the WEAR concept document linked below.
+            </p>
+            <br /><br />
+            <div class="button-container">
+              <a
+                href="../../src/files/happygreen/research/WEAR concepts.pdf"
+                class="btn"
+                target="_blank"
+              >
+                <span>WEAR concepts</span>
+              </a>
+            </div>
+            <br />
+            <p>
+              Because HappyGreen stands for a greener & better world, we wanted
+              to see how we could implement sustainability into the WEAR
+              business app. To find out which kind of data was available to us,
+              I made a list of modern carbon footprint API's that could aid us
+              in the future to process and show different types of
+              sustainability data.
+            </p>
+            <br /><br />
+            <div class="button-container">
+              <a
+                href="../../src/files/happygreen/research/Carbon footprint index APIs.pdf"
+                class="btn"
+                target="_blank"
+              >
+                <span>Carbon footprint index APIs</span>
+              </a>
+            </div>
+            <br />
+            <p>
+              While most of this research was simple library research, I was
+              able to bounce off my colleagues about ideas and concepts to see
+              which inspired them the most. Ofcourse my supervisor also had a
+              lot of say in this as it is a feature that HappyGreen has been
+              thinking about for a while.
+            </p>
           </div>
-          <p data-aos="fade-up">
-            After designing the new login screen, I also implemented it by
-            rewriting the old React Native code to apply the new styles and
-            have cleaner code. The feedback I received on the implementation
-            of this login screen was positive, as it was mostly revamping old
-            code. There were a couple bugs my colleagues pointed out, such as
-            the keyboard not moving with the input fields when focused,
-            however I was able to fix all of these small bugs quite fast.
-          </p>
-          <div class="case-images">
-            <div class="image-full mt-md recording" data-aos="fade-up">
-              <div class="recording-container">
-                <video muted autoplay loop playsinline controls
-                  src="../../src/img/assets/projects/happygreen/designs/login-recording.mp4"></video>
-                <p class="image-description">New WEAR login screen</p>
+          <div class="mt-md sidenav--item" id="project--design">
+            <h4>Design</h4>
+            <p>
+              The goal for the design phase was to create a new subset of user
+              interfaces for the WEAR business app that adhere to the current
+              WEAR designs.
+            </p>
+            <p>
+              For the entire design process, I used the popular UX / UI design
+              tool <a href="https://figma.com">Figma</a>. I did not have any
+              previous experience with Figma as my UI design tool of choice used
+              to be Adobe XD. However, since some of the existing designs were
+              already implemented into Figma, me and the company both felt it
+              was a good idea to use Figma throughout this process.
+            </p>
+            <p>
+              There were multiple things I designed while i was at HappyGreen.
+              The main project was to design the UI and user flow for the new
+              business implementation in the WEAR app, however I also
+              experimented with designing other things such as a new login
+              screen, a design for the new multi-action (run multiple actions at
+              once) for the WEAR app, and other small stuff.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md">
+                <iframe
+                  class="lazyload"
+                  data-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FgJe1jcC1Z9N1ZeDSkUy6Kq%2FHappyGreen-Luc"
+                  allowfullscreen
+                ></iframe>
+                <p class="image-description">WEAR Figma design file</p>
+              </div>
+            </div>
+            <p>
+              Above you can see part of the Figma file with my designs from this
+              internship. Feel free to look around. The file contains elements I
+              worked on such as WEAR business manager flows, business actions, a
+              new login screen, multi-actions, and more.
+            </p>
+            <p>
+              During the design process I received a bunch of feedback from my
+              supervisor Frank. He left comments on specific elements that could
+              use an improvement or weren't intuitive. Based on this feedback I
+              created different versions and iterations to end up with a
+              functional and well-designed end product.
+            </p>
+            <div class="case-images">
+              <div class="image-double-container mt-md">
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/figma-design-feedback-1.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/figma-design-feedback-1-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/figma-design-feedback-1.webp"
+                    />
+                  </a>
+                  <p class="image-description">
+                    WEAR - Figma design feedback 1
+                  </p>
+                </div>
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/figma-design-feedback-2.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/figma-design-feedback-2-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/figma-design-feedback-2.webp"
+                    />
+                  </a>
+                  <p class="image-description">
+                    WEAR - Figma design feedback 2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p>
+              After multiple iterations based on feedback and user testing I
+              ended up with a collage of UI screens that went on to make a
+              prototype.
+            </p>
+            <div class="case-images">
+              <div class="image-full mt-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/happygreen-wide-2.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/happygreen-wide-2-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/happygreen-wide-2.webp"
+                  />
+                </a>
+                <p class="image-description">WEAR final UI screens</p>
               </div>
             </div>
           </div>
+          <div class="mt-md sidenav--item" id="project--prototyping">
+            <h4>Prototyping</h4>
+            <p>
+              With the design done it was time to move onto prototyping. Here I
+              wanted to visualize the flows and create a clickable version of
+              the design.
+            </p>
+            <p>
+              Since the design was made in Figma, the obvious choice was to use
+              Figma for the prototyping aswell. Because my supervisor wasn't
+              sure about which navigation type (tab-based, stack-based,
+              conditional rendering) to use yet, I made 3 different navigation
+              flows that led to the same user flow afterwards. We ended up
+              choosing tab-based as it had the best user experience according to
+              me and my supervisor, aswell as being used for a large amount of
+              similar mobile apps.
+            </p>
+            <p>
+              The prototyping phase mainly consisted of connecting the screens
+              to eachother and making sure all screens were linked to the
+              corresponding action. After getting feedback from my supervisor on
+              usability and UX of the prototype, I moved on to the next phase
+              where I started performing user tests on the prototype.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/designs/figma-v3-prototype-flows.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/figma-v3-prototype-flows-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/designs/figma-v3-prototype-flows.webp"
+                  />
+                </a>
+                <p class="image-description">Prototype connections in Figma</p>
+              </div>
+            </div>
+            <p>
+              Just like in the design phase, my supervisor Frank left me with a
+              bunch of comments to improve the prototype. This time the comments
+              were less design-focused, but moreso showing me ways to improve
+              the user flow or fixing bugs / bad UX in the prototype.
+            </p>
+            <div class="case-images">
+              <div class="image-double-container mt-md">
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/figma-prototype-feedback-1.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/figma-prototype-feedback-1-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/figma-prototype-feedback-1.webp"
+                    />
+                  </a>
+                  <p class="image-description">
+                    WEAR - Figma prototype feedback 1
+                  </p>
+                </div>
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/figma-prototype-feedback-2.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/figma-prototype-feedback-2-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/figma-prototype-feedback-2.webp"
+                    />
+                  </a>
+                  <p class="image-description">
+                    WEAR - Figma prototype feedback 2
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-md sidenav--item" id="project--testing">
+            <h4>Testing</h4>
+            <p>
+              Once the prototype was complete and all flows were connected to
+              the right UI elements, I wanted to perform user tests on it to
+              improve the UX.
+            </p>
+            <p>
+              Prototype testing started with myself and my supervisor. To
+              further test the UX of my design / prototype I used a prototyping
+              tool called
+              <a href="https://maze.co/">Maze</a>. This app has seamless
+              integration with a bunch of design tools including Figma, and I
+              used this to give users a series of questions and steps to walk
+              through in the app. The users I performed this test on were my
+              colleagues.
+            </p>
+            <p>
+              Maze allows the creator of the "maze" (in this case, me) to have
+              insights such as how long it took a user to complete a task, and
+              helps better understand UX problems within the prototype.
+            </p>
+            <p>
+              For more info on this testing phase, I documented this into a
+              file:
+            </p>
+            <br /><br />
+            <div class="button-container">
+              <a
+                href="../../src/files/happygreen/research/Maze prototype testing.pdf"
+                class="btn"
+                target="_blank"
+              >
+                <span>Maze prototype testing</span>
+              </a>
+            </div>
+            <br />
+            <p>
+              I'm glad I used Maze as it was a very useful tool that gave me a
+              bunch of insight on how users behaved throughout the prototype. It
+              allowed me to answer questions like "which flows need to be
+              improved?" and "do people need to be tech-savvy to understand the
+              UI?" which ultimately lead to a succesful testing phase.
+            </p>
+            <div class="case-images">
+              <div class="image-full mt-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/designs/maze-mission-overview.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/maze-mission-overview-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/designs/maze-mission-overview.webp"
+                  />
+                </a>
+                <p class="image-description">Mission overview in Maze</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-md sidenav--item" id="project--development">
+            <h4>Development</h4>
+            <p>
+              In between the design & prototyping phases I've also already done
+              some developing. The goal for this phase was to get familiar with
+              all the technologies used within the WEAR app, then start by
+              developing smaller components and receiving feedback. Once I was a
+              little more familiar with the technology and architecture used to
+              build the WEAR app, I was able to start working on the business
+              implementation I designed.
+            </p>
+            <p>
+              In the coming weeks I will be working on this phase the most and
+              continuing my progress on the WEAR business implementation.
+            </p>
+            <p>
+              All code is hosted on <a href="https://github.com/">GitHub</a> and
+              is updated through pull requests from collaborators (me & my
+              colleagues). By using
+              <a href="https://www.atlassian.com/software/jira">Jira</a>
+              software we can automatically link these pull requests to Jira
+              issues, giving a nice structural way of working through issues and
+              new features for the app.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/designs/development-flow-visualisation.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/development-flow-visualisation-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/designs/development-flow-visualisation.webp"
+                  />
+                </a>
+                <p class="image-description">
+                  Development - flow visualisation
+                </p>
+              </div>
+            </div>
+            <p>
+              The code is written in
+              <a href="https://www.typescriptlang.org/">TypeScript</a> and built
+              with the
+              <a href="https://reactnative.dev/">React Native</a> JavaScript
+              framework. TypeScript is used over JavaScript to ensure better
+              code readability within a team.
+              <a href="https://redux.js.org/">Redux</a> is used for state
+              management, and smaller packages such as styled components are
+              used for styling.
+            </p>
+            <p>
+              It took a bit of time for me to become familiar with all these new
+              packages and technologies, but once I got the hang of it I was
+              able to solve most problems myself, with the occasional help from
+              my development colleague Davey.
+            </p>
+            <p>
+              Feedback is given by my development colleagues through pull
+              requests on GitHub. They can leave comments and request changes to
+              be made, or simply ask a question about a certain block of code.
+              This feedback really helped me understand what I was doing wrong
+              and in which areas I could improve my mobile development skills.
+            </p>
+            <div class="case-images">
+              <div class="image-double-container mt-md">
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/development-tab-feedback.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/development-tab-feedback-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/development-tab-feedback.webp"
+                    />
+                  </a>
+                  <p class="image-description">
+                    Development - WEAR business tab-navigation feedback
+                  </p>
+                </div>
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/development-login-feedback.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/development-login-feedback-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/development-login-feedback.webp"
+                    />
+                  </a>
+                  <p class="image-description">
+                    Development - Login screen feedback
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p>
+              The first thing I worked on was the navigation. As there was
+              already an existing app that had to coexist with the new business
+              app, I had to rearrange the way navigation worked. This was tough
+              but with some tips from my colleagues I was able to render
+              different screens and ways of navigation based on a users role
+              (for example, non-managers dont need to see the business
+              management side of things).
+            </p>
+            <p>
+              Once the navigation worked, I started creating the core components
+              and UI of the main screens. In the beginning I used dummy data,
+              but after the new back-end was sorted and the database was
+              configured for the business WEAR app, I started making calls to
+              the WEAR API that were then stored in the state through Redux.
+              This helped alot to make the app feel like a real thing.
+            </p>
+            <p>
+              Once I had a presentable MVP I started working on UI and
+              functionality throughout the app, adding one small feature at a
+              time, such as connecting a product to a user.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md recording">
+                <div class="recording-container">
+                  <video
+                    muted
+                    autoplay
+                    loop
+                    playsinline
+                    controls
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/early-stage-mvp-recording-LOWQUALITY.mp4"
+                    data-src="../../src/img/assets/projects/happygreen/designs/early-stage-mvp-recording.mp4"
+                  ></video>
+                  <p class="image-description">Early stages app MVP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Project info -->
+        <!-- Results -->
+        <section class="results sidenav--item" id="results">
+          <h1>Results</h1>
+          <p>
+            As a summary, here are the results of this internship and the
+            deliverables I was able to create.
+          </p>
+          <div class="mt-md sidenav--item" id="results--prototype">
+            <h4>Prototype</h4>
+            <p>
+              The result for the prototype phase is a working & clickable Figma
+              prototype. This prototype has had multiple iterations and designs
+              based on <a href="#project--design">design feedback</a> and
+              usertests (see <a href="#project--prototyping">prototyping</a> &
+              <a href="#project--testing">testing</a>)
+            </p>
+            <!-- Prototype result images / videos -->
+            <p>[Prototype result images & videos coming soon]</p>
+            <p>
+              I learned alot from the design & prototyping phase such as working
+              with new UI design tools such as Figma, and testing the prototypes
+              with Maze. Other than these tools, I also learned alot from my
+              supervisor Frank in terms of design thinking and how to really put
+              myself in the user's shoes.
+            </p>
+          </div>
+          <div class="mt-md sidenav--item" id="results--app">
+            <h4>App</h4>
+            <p>[App results coming once project is done]</p>
+            <!-- App result images / videos -->
+            <p>[App result images & videos coming soon]</p>
+            <p>
+              I learned alot while building and contributing to this app. Not
+              only did I learn how to use new programming languages or
+              techniques such as React Native, Redux and Styled Components, I
+              also learned what it was like to work alongside a team of
+              developers and using proper version control systems such as
+              combining Jira issues with GitHub pull requests, and automation
+              with GitHub actions / workflows (I even added some Git workflows
+              to this portfolio website during my internship by having automatic
+              deployment based on Git pushes).
+            </p>
+          </div>
+        </section>
+        <!-- /Results -->
+        <!-- Learning outcomes -->
+        <section class="learning-outcomes sidenav--item" id="learning-outcomes">
+          <h1>Learning outcomes</h1>
+          <p>
+            Below are the official FHICT internship learning outcomes and what I
+            did to achieve them.
+          </p>
+          <h4 class="mt-md">Learning outcome 1:</h4>
+          <p class="text-bold text-italic">
+            "Autonomously find and acquire an internship assignment which builds
+            upon previously acquired knowledge and skills."
+          </p>
+          <p>
+            By using the FHICT internship tool and looking for interesting
+            companies that operate in the media or software market, I was able
+            to inquire for an internship at HappyGreen which included tasks that
+            build upon my previously acquired knowledge.
+          </p>
+          <h4 class="mt-md">Learning outcome 2:</h4>
+          <p class="text-bold text-italic">
+            "Perform a problem analysis resulting in a clearly defined
+            assignment covering the core aspects and intended results."
+          </p>
+          <p>
+            By analyzing the wants and needs of the company I was able to come
+            up with a project plan that defined a problem and came with a
+            fitting solution.
+          </p>
+          <h4 class="mt-md">Learning outcome 3:</h4>
+          <p class="text-bold text-italic">
+            "Work independently, according to plan, and methodically correct in
+            a realistic practice situation, and work with a research attitude to
+            collect, organise and select the appropriate information, resulting
+            in professional products."
+          </p>
+          <p>
+            By being involved in the entire process, going from research ->
+            design -> prototyping -> testing -> developing, I showed that I was
+            able to create professional products based on information gathered.
+          </p>
+          <h4 class="mt-md">Learning outcome 4:</h4>
+          <p class="text-bold text-italic">
+            "Reflect on your own qualities and preferences in relation to your
+            functioning in the working environment now and in the future."
+          </p>
+          <p>
+            By regularly conversing with my colleagues and supervisor about how
+            the internship felt to me and define which tasks went well and felt
+            more fun than others, and then writing this down in a reflection, I
+            was able to reflect upon my own qualities and preferences that I
+            realized during this internship.
+          </p>
+          <h4 class="mt-md">Learning outcome 5:</h4>
+          <p class="text-bold text-italic">
+            "Communicate and collaborate efficiently and functionally with
+            colleagues and other (external) stakeholders in a realistic
+            practical situation."
+          </p>
+          <p>
+            By being a part of weekly stand-ups and using version control &
+            scrum tools such as Jira and Git, I was able to work in a team and
+            collaborate with colleagues. I also kept my supervisor and
+            colleagues informed on the status of Jira issues and requested code
+            reviews when needed.
+          </p>
+        </section>
+        <!-- /Learning outcomes -->
+        <!-- Other -->
+        <section class="other sidenav--item" id="other">
+          <h1>Other</h1>
+          <p>
+            During my internship I didn't only work on the main assignment, but
+            also some things that can be placed into the "other" category. Think
+            of these as side-projects I worked on that weren't directly
+            affecting my main assignment, but helped in other ways such as
+            gaining experience with a certain technology used within HappyGreen.
+          </p>
+          <div class="mt-md" id="wear-app-clone">
+            <h4>WEAR app clone</h4>
+            <p>
+              To hone my skills and get more familiar with technologies used to
+              develop the WEAR app, I made a "fake" WEAR app made from scratch.
+              I developed this to get a better understanding of React Native
+              (the framework used to develop the WEAR app) and the WEAR API
+              (where all data regarding products and the WEAR app is stored).
+              This took me a couple of days and I was able to build a pretty
+              good prototype version of the WEAR app from scratch.
+            </p>
+            <p>
+              It has functionality to showcase products, filter products, add a
+              product to a user, login as a user (using an API token), add an
+              action to a product, change a product's name, and more.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md recording">
+                <div class="recording-container">
+                  <video
+                    muted
+                    autoplay
+                    loop
+                    playsinline
+                    controls
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/testproject-recording-LOWQUALITY.av1.mp4"
+                    data-src="../../src/img/assets/projects/happygreen/designs/testproject-recording.av1.mp4"
+                  ></video>
+                  <p class="image-description">"Fake" WEAR app project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="redux-pokemon-project">
+            <h4>Redux Pokemon project</h4>
+            <p>
+              Because I didn't have any experience with
+              <a href="https://redux.js.org/">Redux</a>, which is the technology
+              used in the WEAR app to manage states, I made another prototype in
+              React Native. This time, I based it off of the existing WEAR app
+              by forking the repository and adding a feature to it. The feature
+              I worked on was displaying certain Pokemon (with data gathered
+              through the <a href="https://pokeapi.co/">PokeAPI</a>) and
+              managing their state with Redux, like changing the name
+              (client-side) of a Pokemon and storing it in the Redux state,
+              aswell as adding a loading indicator when the Pokemon is in a
+              "loading" state.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md recording">
+                <div class="recording-container">
+                  <video
+                    muted
+                    autoplay
+                    loop
+                    playsinline
+                    controls
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/reduxopdracht-recording-LOWQUALITY.mp4"
+                    data-src="../../src/img/assets/projects/happygreen/designs/reduxopdracht-recording.mp4"
+                  ></video>
+                  <p class="image-description">
+                    Redux project - Pokemon prototype
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="wear-login-design">
+            <h4>WEAR login design</h4>
+            <p>
+              Besides working on the business designs of WEAR, I was also able
+              to redesign some very old login screens. The goal for this
+              redesign was to approach a more modern UI style and inspire the
+              user to login using a service such as Apple, Google or Facebook.
+              Ofcourse keeping in mind the cleanliness and style of the existing
+              WEAR app, I went for a clean and modern login screen focusing on
+              the social login buttons.
+            </p>
+            <div class="case-images">
+              <div class="image-full mv-md">
+                <a
+                  href="../../src/img/assets/projects/happygreen/designs/wear-login-screens-figma.webp"
+                >
+                  <img
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/wear-login-screens-figma-LOWQUALITY.webp"
+                    data-src="../../src/img/assets/projects/happygreen/designs/wear-login-screens-figma.webp"
+                  />
+                </a>
+                <p class="image-description">WEAR - Login screen redesign</p>
+              </div>
+            </div>
+            <p>
+              After designing the new login screen, I also implemented it by
+              rewriting the old React Native code to apply the new styles and
+              have cleaner code. The feedback I received on the implementation
+              of this login screen was positive, as it was mostly revamping old
+              code. There were a couple bugs my colleagues pointed out, such as
+              the keyboard not moving with the input fields when focused,
+              however I was able to fix all of these small bugs quite fast.
+            </p>
+            <div class="case-images">
+              <div class="image-full mt-md recording">
+                <div class="recording-container">
+                  <video
+                    muted
+                    autoplay
+                    loop
+                    playsinline
+                    controls
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/login-recording-LOWQUALITY.mp4"
+                    data-src="../../src/img/assets/projects/happygreen/designs/login-recording.mp4"
+                  ></video>
+                  <p class="image-description">New WEAR login screen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Other -->
+        <!-- Reflection -->
+        <section class="reflection sidenav--item" id="reflection">
+          <h1>Reflection</h1>
+          <p>
+            This internship has been a great learning experience for me. I
+            really got to feel what it was like working in a team of developers
+            and contributing to a real product.
+          </p>
+          <p>
+            Overall I think the internship period went well and I learned what I
+            wanted to learn. I'm satisfied with the end products and the steps
+            it took me to get there. Being able to be involved every step of the
+            way isn't always how it goes for interns, so I'm glad HappyGreen
+            gave me the opportunity to learn in alot of areas.
+          </p>
+          <p>
+            This internship also showed me how the worlds of design &
+            development combine into a whole in the real world. It's been great
+            to see how I can be involved in a project from start to finish, and
+            this process has also helped me realize what I want to keep on doing
+            once I have my degree, which is continuing on to be a front-end
+            developer that dabbles in design.
+          </p>
+          <p>
+            I'm thankful for all the feedback my colleagues and supervisors gave
+            me throughout this internship. Luckily it was all positive and I
+            believe HappyGreen was happy to have me as an intern.
+          </p>
+        </section>
+        <!-- /Reflection -->
+        <!-- Next project -->
+        <div class="next-project">
+          <a href="../medifit/">
+            <div class="previous">
+              <h4>Previous Project</h4>
+              <h3>Medifit</h3>
+            </div>
+          </a>
+          <a href="../skatrixx/">
+            <div class="next">
+              <h4>Next Project</h4>
+              <h3>Skatrixx</h3>
+            </div>
+          </a>
         </div>
-      </section>
-      <!-- /Other -->
-      <!-- Reflection -->
-      <section class="reflection sidenav--item" id="reflection">
-        <h1 data-aos="fade-up">Reflection</h1>
-        <p data-aos="fade-up">[Reflection & final words]</p>
-      </section>
-      <!-- /Reflection -->
-      <!-- Next project -->
-      <div class="next-project" data-aos="fade-up">
-        <a href="../medifit/">
-          <div class="previous">
-            <h4>Previous Project</h4>
-            <h3>Medifit</h3>
-          </div>
-        </a>
-        <a href="../skatrixx/">
-          <div class="next">
-            <h4>Next Project</h4>
-            <h3>Skatrixx</h3>
-          </div>
-        </a>
+        <!-- /Next project -->
       </div>
-      <!-- /Next project -->
-    </div>
-    <!-- /Container -->
-  </main>
-  <!-- /Content -->
-</body>
-
+      <!-- /Container -->
+    </main>
+    <!-- /Content -->
+  </body>
 </html>

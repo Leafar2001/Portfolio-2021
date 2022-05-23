@@ -13,8 +13,10 @@ nav {
     padding-left: $padding-horizontal--sm;
     padding-right: $padding-horizontal--sm;
     @include breakpoint(laptop) {
-      padding-left: $padding-horizontal--md;
-      padding-right: $padding-horizontal--md;
+      padding-left: $padding-horizontal--sm;
+      padding-right: calc(
+        #{$padding-horizontal--sm} + 20px
+      ); // 20px extra offset for scrollbar
     }
     padding-top: $padding-vertical--sm;
     padding-bottom: $padding-vertical--sm;
@@ -24,7 +26,7 @@ nav {
     li {
       margin-left: 30px;
       @include breakpoint(tablet) {
-        margin-left: 50px;
+        margin-left: 40px;
       }
       a {
         font-family: $font--small;
@@ -85,9 +87,15 @@ nav {
           &:hover {
             path#Path_3 {
               transform: translateY(-90px);
+              -webkit-transform: translateY(-90px);
+              -moz-transform: translateY(-90px);
+              -o-transform: translateY(-90px);
             }
             path#Path_4 {
               transform: translateY(-70px);
+              -webkit-transform: translateY(-70px);
+              -moz-transform: translateY(-70px);
+              -o-transform: translateY(-70px);
             }
           }
           path {
