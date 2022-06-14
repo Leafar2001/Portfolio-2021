@@ -379,8 +379,7 @@
         <li class="bigger--link">
           <a href="#learning-outcomes">Learning outcomes</a>
         </li>
-        <li class="bigger--link"><a href="#other">Other</a></li>
-        <li class="bigger--link"><a href="#reflection">Reflection</a></li>
+        <li class="bigger--link"><a href="#extras">Extras</a></li>
         <div class="spacer"></div>
       </ul>
     </div>
@@ -591,6 +590,49 @@
               doing lots of library research and organizing brainstorms.
             </p>
             <p>
+              In order to get a better understanding of the target audience, I
+              made some user personas.
+            </p>
+            <div class="case-images">
+              <div class="image-double-container mt-md">
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/persona-manager.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/persona-manager-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/persona-manager.webp"
+                    />
+                  </a>
+                  <p class="image-description">Persona - Manager</p>
+                </div>
+                <div class="image-half">
+                  <a
+                    href="../../src/img/assets/projects/happygreen/designs/persona-user.webp"
+                  >
+                    <img
+                      class="lazyload"
+                      src="../../src/img/assets/projects/happygreen/designs/persona-user-LOWQUALITY.webp"
+                      data-src="../../src/img/assets/projects/happygreen/designs/persona-user.webp"
+                    />
+                  </a>
+                  <p class="image-description">Persona - User</p>
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <div class="button-container">
+              <a
+                href="../../src/files/happygreen/research/personas.pdf"
+                class="btn"
+                target="_blank"
+              >
+                <span>User personas</span>
+              </a>
+            </div>
+            <br />
+            <p>
               To have a good baseline, me and my supervisor were able to ask
               ourselves the following research questions to base all research
               on:
@@ -606,9 +648,9 @@
               app?
             </p>
             <p>
-              To find out more about the NFC technology used for WEAR and
-              existing concepts using this technology, I made a small library
-              research document:
+              To answer the questions asked above, I made a library research
+              document containing research about NFC and possible interesting
+              markets:
             </p>
             <br /><br />
             <div class="button-container">
@@ -974,12 +1016,23 @@
               implementation I designed.
             </p>
             <p>
-              In the coming weeks I will be working on this phase the most and
-              continuing my progress on the WEAR business implementation.
+              To have a good list of priorities while developing this MVP, I
+              made a MoSCoW overview of all functionalities.
             </p>
+            <br /><br />
+            <div class="button-container">
+              <a
+                href="../../src/files/happygreen/other/WEAR Organization MVP MoSCoW model.pdf"
+                class="btn"
+                target="_blank"
+              >
+                <span>MoSCoW overview MVP</span>
+              </a>
+            </div>
+            <br />
             <p>
-              All code is hosted on <a href="https://github.com/">GitHub</a> and
-              is updated through pull requests from collaborators (me & my
+              All code is hosted on GitHub (in a private repository) and is
+              updated through pull requests from collaborators (me & my
               colleagues). By using
               <a href="https://www.atlassian.com/software/jira">Jira</a>
               software we can automatically link these pull requests to Jira
@@ -1116,8 +1169,20 @@
               usertests (see <a href="#project--prototyping">prototyping</a> &
               <a href="#project--testing">testing</a>)
             </p>
-            <!-- Prototype result images / videos -->
-            <p>[Prototype result images & videos coming soon]</p>
+            <p>
+              To test the prototype for yourself, click on the button below.
+            </p>
+            <br /><br />
+            <div class="button-container">
+              <a
+                href="https://www.figma.com/proto/gJe1jcC1Z9N1ZeDSkUy6Kq/HappyGreen-Luc?node-id=1301%3A679&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1301%3A679"
+                class="btn"
+                target="_blank"
+              >
+                <span>Figma Prototype</span>
+              </a>
+            </div>
+            <br />
             <p>
               I learned alot from the design & prototyping phase such as working
               with new UI design tools such as Figma, and testing the prototypes
@@ -1128,19 +1193,60 @@
           </div>
           <div class="mt-md sidenav--item" id="results--app">
             <h4>App</h4>
-            <p>[App results coming once project is done]</p>
+            <p>
+              I'm happy with the MVP I was able to develop. It involves key
+              features such as tab-based navigation, user and product overviews,
+              organization info, adding new users, connecting & disconnecting
+              products from users, and more.
+            </p>
+            <p>
+              All of these functions are connected to a newly generated back-end
+              for this WEAR organization app. I was responsible for all the
+              front-end interfaces and connectivity, as well as connecting
+              everything to the back-end by calling the API and extracting the
+              neccessary data from the response, which was then stored in the
+              state with Redux. Based on this data I was then able to create
+              dynamic UI components that translated this data to the front-end.
+            </p>
+            <p>
+              While I did have a lot of input in how the back-end should be
+              organized and features it should contain, my colleagues were
+              responsible for "creating" the back-end endpoints for me to
+              connect to.
+            </p>
             <!-- App result images / videos -->
-            <p>[App result images & videos coming soon]</p>
+            <div class="case-images">
+              <div class="image-full mv-md recording">
+                <div class="recording-container">
+                  <video
+                    muted
+                    autoplay
+                    loop
+                    playsinline
+                    controls
+                    class="lazyload"
+                    src="../../src/img/assets/projects/happygreen/designs/app-result-recording-LOWQUALITY.mp4"
+                    data-src="../../src/img/assets/projects/happygreen/designs/app-result-recording.mp4"
+                  ></video>
+                  <p class="image-description">App MVP - Result</p>
+                </div>
+              </div>
+            </div>
             <p>
               I learned alot while building and contributing to this app. Not
               only did I learn how to use new programming languages or
-              techniques such as React Native, Redux and Styled Components, I
-              also learned what it was like to work alongside a team of
-              developers and using proper version control systems such as
-              combining Jira issues with GitHub pull requests, and automation
-              with GitHub actions / workflows (I even added some Git workflows
-              to this portfolio website during my internship by having automatic
-              deployment based on Git pushes).
+              techniques such as React Native, Redux, Styled Components and
+              brushing up on my JavaScript knowledge, I also learned what it was
+              like to work alongside a team of developers and using proper
+              version control systems such as combining Jira issues with GitHub
+              pull requests, and automation with GitHub actions / workflows (I
+              even added some Git workflows to this portfolio website during my
+              internship by having automatic deployment based on Git pushes).
+            </p>
+            <p>
+              Unfortunately, because the project I worked on is directly
+              integrated into the existing codebase, the Git repository is
+              private and cannot be accessed from outside.
             </p>
           </div>
         </section>
@@ -1163,6 +1269,17 @@
             to inquire for an internship at HappyGreen which included tasks that
             build upon my previously acquired knowledge.
           </p>
+          <br /><br />
+          <div class="button-container">
+            <a
+              href="../../src/files/happygreen/other/solliciting.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Solliciting process</span>
+            </a>
+          </div>
+          <br />
           <h4 class="mt-md">Learning outcome 2:</h4>
           <p class="text-bold text-italic">
             "Perform a problem analysis resulting in a clearly defined
@@ -1173,6 +1290,24 @@
             up with a project plan that defined a problem and came with a
             fitting solution.
           </p>
+          <br /><br />
+          <div class="button-container">
+            <a
+              href="../../src/files/happygreen/other/projectproposal.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Project proposal</span>
+            </a>
+            <a
+              href="../../src/files/happygreen/projectplan/projectplan.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Project plan</span>
+            </a>
+          </div>
+          <br />
           <h4 class="mt-md">Learning outcome 3:</h4>
           <p class="text-bold text-italic">
             "Work independently, according to plan, and methodically correct in
@@ -1185,6 +1320,31 @@
             design -> prototyping -> testing -> developing, I showed that I was
             able to create professional products based on information gathered.
           </p>
+          <br /><br />
+          <div class="button-container">
+            <a
+              href="../../src/files/happygreen/research/General NFC research.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>General NFC research</span>
+            </a>
+            <a
+              href="../../src/files/happygreen/research/personas.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>User personas</span>
+            </a>
+            <a
+              href="../../src/files/happygreen/research/Maze prototype testing.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Maze prototype testing</span>
+            </a>
+          </div>
+          <br />
           <h4 class="mt-md">Learning outcome 4:</h4>
           <p class="text-bold text-italic">
             "Reflect on your own qualities and preferences in relation to your
@@ -1197,6 +1357,17 @@
             was able to reflect upon my own qualities and preferences that I
             realized during this internship.
           </p>
+          <br /><br />
+          <div class="button-container">
+            <a
+              href="../../src/files/happygreen/other/reflection.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Reflection</span>
+            </a>
+          </div>
+          <br />
           <h4 class="mt-md">Learning outcome 5:</h4>
           <p class="text-bold text-italic">
             "Communicate and collaborate efficiently and functionally with
@@ -1210,11 +1381,41 @@
             colleagues informed on the status of Jira issues and requested code
             reviews when needed.
           </p>
+          <p>
+            Below are documents that contain both my own communication
+            experiences and the feedback I received from colleagues about me,
+            aswell as an advice report.
+          </p>
+          <br /><br />
+          <div class="button-container">
+            <a
+              href="../../src/files/happygreen/other/communication.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Communication</span>
+            </a>
+            <a
+              href="../../src/files/happygreen/other/colleaguefeedback.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Colleague feedback</span>
+            </a>
+            <a
+              href="../../src/files/happygreen/other/advisoryreport.pdf"
+              class="btn"
+              target="_blank"
+            >
+              <span>Advisory report</span>
+            </a>
+          </div>
+          <br />
         </section>
         <!-- /Learning outcomes -->
-        <!-- Other -->
-        <section class="other sidenav--item" id="other">
-          <h1>Other</h1>
+        <!-- Extras -->
+        <section class="extras sidenav--item" id="extras">
+          <h1>Extras</h1>
           <p>
             During my internship I didn't only work on the main assignment, but
             also some things that can be placed into the "other" category. Think
@@ -1344,37 +1545,7 @@
             </div>
           </div>
         </section>
-        <!-- /Other -->
-        <!-- Reflection -->
-        <section class="reflection sidenav--item" id="reflection">
-          <h1>Reflection</h1>
-          <p>
-            This internship has been a great learning experience for me. I
-            really got to feel what it was like working in a team of developers
-            and contributing to a real product.
-          </p>
-          <p>
-            Overall I think the internship period went well and I learned what I
-            wanted to learn. I'm satisfied with the end products and the steps
-            it took me to get there. Being able to be involved every step of the
-            way isn't always how it goes for interns, so I'm glad HappyGreen
-            gave me the opportunity to learn in alot of areas.
-          </p>
-          <p>
-            This internship also showed me how the worlds of design &
-            development combine into a whole in the real world. It's been great
-            to see how I can be involved in a project from start to finish, and
-            this process has also helped me realize what I want to keep on doing
-            once I have my degree, which is continuing on to be a front-end
-            developer that dabbles in design.
-          </p>
-          <p>
-            I'm thankful for all the feedback my colleagues and supervisors gave
-            me throughout this internship. Luckily it was all positive and I
-            believe HappyGreen was happy to have me as an intern.
-          </p>
-        </section>
-        <!-- /Reflection -->
+        <!-- /Extras -->
         <!-- Next project -->
         <div class="next-project">
           <a href="../medifit/">
