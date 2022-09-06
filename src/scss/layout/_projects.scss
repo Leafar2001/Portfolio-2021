@@ -26,8 +26,8 @@
         justify-content: center;
       }
     }
-    @for $i from 1 through 7 {
-      &:nth-child(7n + #{$i}) {
+    @for $i from 1 through 8 {
+      &:nth-child(8n + #{$i}) {
         &:after {
           content: "0" + $i;
         }
